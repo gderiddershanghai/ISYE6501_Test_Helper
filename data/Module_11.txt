@@ -1,0 +1,4 @@
+Module 11 – Variable Selection
+Methods: Different techniques, including Forward Selection, Backward Elimination, Stepwise Regression, Lasso, Ridge Regression, and Elastic Net, are used for variable selection and regression.
+Formulas: Ridge Regression minimizes squared residuals with a penalty term, Lasso Regression adds a constraint on the sum of absolute coefficients, and Elastic Net combines penalties for absolute values and squares of coefficients.
+Considerations: The choice of method depends on specific model requirements, data characteristics, and interpretability needs. Lasso and Elastic Net enable variable selection, while Ridge Regression does not.
