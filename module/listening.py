@@ -6,8 +6,6 @@ import time
 from helpers.states import Token
 
 
-
-# Add evironment variables, incl. OpenAI API key and GCP credentials
 _ = load_dotenv(find_dotenv()) # read local .env file
 openai.api_key  = os.getenv('OPENAI_API_KEY')
 
