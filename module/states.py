@@ -2,12 +2,12 @@ import time
 from dotenv import load_dotenv, find_dotenv
 import numpy as np
 import random
-from questions.general_questions_m1 import MIDTERM_1_QUESTIONS
-from questions.general_questions_m2 import MIDTERM_2_QUESTIONS
-from questions.knowledge_check_m1 import KNOWLEDGE_1_QUESTIONS
-from questions.knowledge_check_m2 import KNOWLEDGE_2_QUESTIONS
-from questions.summaries import FINAL_SUMMARY,MIDTERM_1_SUMMARY,MIDTERM_2_SUMMARY
-from helpers.exam_tester import exam_prep, exam_correction
+from general_questions_m1 import MIDTERM_1_QUESTIONS
+from general_questions_m2 import MIDTERM_2_QUESTIONS
+from knowledge_check_m1 import KNOWLEDGE_1_QUESTIONS
+from knowledge_check_m2 import KNOWLEDGE_2_QUESTIONS
+from summaries import FINAL_SUMMARY,MIDTERM_1_SUMMARY,MIDTERM_2_SUMMARY
+from exam_tester import exam_prep, exam_correction
 question_index = np.random.choice(range(15), size=2, replace=False)
 q1 = question_index[0]
 q2 = question_index[1]
