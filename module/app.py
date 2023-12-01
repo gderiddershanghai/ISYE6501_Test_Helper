@@ -3,7 +3,7 @@ import openai
 import os
 from dotenv import load_dotenv, find_dotenv
 import time
-from helpers.states import Token
+from states import Token
 import streamlit as st
 
 _ = load_dotenv(find_dotenv()) # read local .env file
