@@ -1,53 +1,43 @@
 import time
 from dotenv import load_dotenv, find_dotenv
+import numpy as np
+import random
+from questions.general_questions_m1 import MIDTERM_1_QUESTIONS
+from questions.general_questions_m2 import MIDTERM_2_QUESTIONS
+from questions.knowledge_check_m1 import KNOWLEDGE_1_QUESTIONS
+from questions.knowledge_check_m2 import KNOWLEDGE_2_QUESTIONS
+from questions.summaries import FINAL_SUMMARY,MIDTERM_1_SUMMARY,MIDTERM_2_SUMMARY
+from helpers.exam_tester import exam_prep, exam_correction
+question_index = np.random.choice(range(15), size=2, replace=False)
+q1 = question_index[0]
+q2 = question_index[1]
+
+final_long_form = random.choice([MIDTERM_2_QUESTIONS,MIDTERM_2_QUESTIONS])
+final_short_form = random.choice([KNOWLEDGE_1_QUESTIONS,KNOWLEDGE_2_QUESTIONS])
 
 #====================STATES===================
-mid_term_1 = {"input_language": "en", "output_language": "en", "scenario": "wake_word", "quest": "main", "function": get_wake_word}
-mid_term_2 = {"input_language": "en", "output_language": "en", "scenario": "intent_detection", "quest": "main", "function": get_intent_turbo}
-final_1 = {"input_language": "cs", "output_language": "en", "scenario": "czech_jack", "quest": "main", "function": get_english_translation}
+mid_term_1 = {'summary': MIDTERM_1_SUMMARY, 'long_form_question_1': MIDTERM_1_QUESTIONS[q1], 'long_form_question_2': MIDTERM_1_QUESTIONS[q2], 'short_form_question_1': KNOWLEDGE_1_QUESTIONS[q1],'short_form_question_2': KNOWLEDGE_1_QUESTIONS[q2], "function": exam_prep}
+mid_term_2 = {'summary': MIDTERM_2_SUMMARY, 'long_form_question_1': MIDTERM_2_QUESTIONS[q1], 'long_form_question_2': MIDTERM_2_QUESTIONS[q2], 'short_form_question_1': KNOWLEDGE_2_QUESTIONS[q1],'short_form_question_2': KNOWLEDGE_1_QUESTIONS[q2], "function": exam_prep}
+final = {'summary': FINAL_SUMMARY, 'long_form_question_1': MIDTERM_1_QUESTIONS[q1], 'long_form_question_2': MIDTERM_2_QUESTIONS[q2], 'short_form_question_1': KNOWLEDGE_1_QUESTIONS[q1],'short_form_question_2': KNOWLEDGE_2_QUESTIONS[q1], "function": exam_prep}
+correction = {"function": exam_correction}
 
-module_review = {"input_language": "en", "output_language": "cs", "scenario": "english_to_czech ", "quest": "main", "function": get_czech_translation}
-rephrase = {"input_language": "en", "output_language": "en-cs", "scenario": "rephrase", "quest": "main", "function": correction}
-explain_main = {"input_language": "en", "output_language": "en", "scenario": "explain", "quest": "main", "function": explain}
-
-stop = {"input_language": "en", "output_language": "en", "scenario": "stop", "quest": "main", "function": get_intent_turbo}
-# __states__ = [wake_word,intent_detection,czech_jack,english_to_czech,rephrase,explain_main,roleplay,roleplay_explain, roleplay_translate_jack, roleplay_translate_to_czech,
-# speech, speech_explain,speech_translate_jack,speech_translate_to_czech, book, book_explain, book_translate_jack, book_translate_to_czech, stop]
+module_review = { "function": 1234}
 
 # #====================STATES_DICTIONARY===================
 STATES_DICTIONARY = {
-    "book": book,
-    "speech": speech,
-    "roleplay":roleplay,
-    "book": book,
-    "roleplay_explain": roleplay_explain,
-    "roleplay_translate_jack":roleplay_translate_jack,
-    "roleplay_translate_to_czech": roleplay_translate_to_czech,
-    "speech_explain": speech_explain,
-    "speech_translate_jack":speech_translate_jack,
-    "speech_translate_to_czech": speech_translate_to_czech,
-    "book_explain": book_explain,
-    "book_translate_jack":book_translate_jack,
-    "book_translate_to_czech": book_translate_to_czech,
-    "intent_detection": intent_detection,
-    "other": intent_detection,
-    "rephrase": rephrase,
-    "czech_translator": english_to_czech,
-    "english_explainer": explain_main,
-    "speech_writer": speech,
-    "english_translator": czech_jack,
-    "music": music,
-    "music_explain": music_explain,
-    "music_translate_jack":music_translate_jack,
-    "music_translate_to_czech": music_translate_to_czech,
+    "midterm_1": mid_term_1,
+    "midterm_2": mid_term_2,
+    "final": final,
+    "correction": correction,
+    "module_review": module_review,
     }
 
 
 #====================TOKEN===================
 class Token():
 
-    def __init__(self, STATE=wake_word):
-        self.STATE = STATE
+    def __init__(self, STATE="final"):
+        self.STATE = STATES_DICTIONARY[STATE]
         self.audio = None
         self.messages = None
         self.user_text = None
@@ -56,12 +46,15 @@ class Token():
         self.active = True
         self.loops = 0
         self.errors = 0
-        self.czech_text = None
-        self.side_task_complete = False
-        self.roleplay_scenario = None
-        self.speak = True
+        self.summary = STATES_DICTIONARY[STATE]['summary']
+        self.long_form_question_1 = STATES_DICTIONARY[STATE]['long_form_question_1']
+        self.long_form_question_2 = STATES_DICTIONARY[STATE]['long_form_question_2']
+        self.short_form_question_1 = STATES_DICTIONARY[STATE]['short_form_question_1']
+        self.short_form_question_2 = STATES_DICTIONARY[STATE]['short_form_question_2']
+        self.assistant_message = None
         self.hallucinate = False
         self.interrupted = False
+        self.exam_correction = None
 
     def turn_off(self):
         self.active = False
@@ -90,24 +83,14 @@ class Token():
     def increase_error_count(self):
         self.errors += 1
 
-    def reset_intent(self):
-        print("resetting to intent_detection")
-        self.STATE = intent_detection
-
-    def change_state(self, text="intent_detection"):
-
-        if text == "stop":
-            self.active = False
-        elif text in STATES_DICTIONARY:
+    def change_state(self, text):
+        if text in STATES_DICTIONARY:
             self.STATE = STATES_DICTIONARY[text]
-        else:
 
-            text="intent_detection"
-            self.STATE = STATES_DICTIONARY[text]
 
 
 if __name__ == "__main__":
-    token = Token(STATE=book)
+    token = Token(STATE="mid_term_1")
     print(token.__dict__)
     # token.system_text = "There are seventeen pirates in the basement"
     # token.user_text = "translate the text please"

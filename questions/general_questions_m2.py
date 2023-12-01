@@ -225,9 +225,9 @@ Questions 7a, 7b
 A charity is testing two different mailings to see whether one generates more donations than another. The charity is using A/B testing:
 For each person on the charity's mailing list, the charity randomly selects one mailing or the other to send. The results after 2000 trials are shown below.
 
-Trials      Donation rate       95% confidence interval
-Option A    1036                4.8%                3.6%-6.2%
-Option B    964                 10.4%               8.5%-12.3%
+Trials      Donation rate       95 percent confidence interval
+Option A    1036                4.8 percent                3.6 percent - 6.2 percent
+Option B    964                 10.4 percent               8.5 percent - 12.3 percent
 Note: The "donation rate" is the fraction of recipients who donate. Higher donation rates are better.
 
 7a. What should the charity do?

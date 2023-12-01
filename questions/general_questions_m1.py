@@ -81,11 +81,11 @@ Model       AIC     Corrected AIC    BIC
 6           -1.31   1.35             15.90
 7           0.19    3.71             19.31
 
-Question 4c
-0.75/3.0 points (graded)
-Based on the table above and the figure shown for Question 4a, select all of the following statements that are correct.
+Question
 
-- Adjusted [metric from figure above 4a] and BIC (see table above 4c) give qualitatively opposite evaluations of Model 1.
+Based on the table above and the figure , select all of the following statements that are correct.
+
+- Adjusted R_squared and BIC give qualitatively opposite evaluations of Model 1.
 - Among Models 1 and 3, AIC suggests that Model 1 is e^(-6.51-(5.58))/2 = 62.8 percent as likely as Model 3 to be better.
 - Among Models 1 and 3, AIC suggests that Model 3 is e^(-6.51-(5.58))/2 = 62.8 percent as likely as Model 1 to be better.
 - BIC suggests that Model 3 is very likely to be better than Model 4.
@@ -116,7 +116,7 @@ midterm_1_q5 =     """
 
 
 midterm_1_q6 = """
-Information for all parts of Question 5
+Information for all parts of the Question
 Atlanta’s main library has collected the following day-by-day data over the past six years (more than 2000 data points):
 
 x1 = Number of books borrowed from the library on that day
@@ -128,7 +128,7 @@ x6 = Whether public schools were open that day
 x7 = Number of books borrowed the day before
 t = Time
 
-Question 5a
+Question a
 
 Select all data that are categorical (including binary data):
 
@@ -139,7 +139,7 @@ Select all data that are categorical (including binary data):
 - Whether the library was closed that day (correct)
 - Whether public schools were open that day
 
-Questions 5b and 5c
+Questions b and c
 
 The library believes that there is a day-by-day word-of-mouth marketing effect: if more books were borrowed yesterday, then more books will be borrowed today (and if fewer books were borrowed yesterday, fewer books will be borrowed today), so they add a new predictor:
 
@@ -373,7 +373,7 @@ midterm_1_q14 = """
 
 
 midterm_1_q15 = """
-5. A modeler built a support vector machine (SVM) model for a problem, and found that it correctly
+A modeler built a support vector machine (SVM) model for a problem, and found that it correctly
 predicted 86 percent of the training set and 76 percent of the validation set.
 a. When evaluated on the test data set, the expected correct prediction percent for the
 SVM model is…
