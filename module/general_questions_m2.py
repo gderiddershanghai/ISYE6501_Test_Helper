@@ -84,11 +84,11 @@ b. Select all of the models/approaches the provider could use to create a robust
 """
 
 midterm_2_q5 = """
-Questions 2a, 2b
+Questions
 
 Five classification models were built for predicting whether a neighborhood will soon see a large rise in home prices,
 based on public elementary school ratings and other factors. The training data set was missing the school rating variable
-for every new school (3% of the data points).
+for every new school (3 percent of the data points).
 
 Because ratings are unavailable for newly-opened schools, it is believed that locations that have recently experienced
 high population growth are more likely to have missing school rating data.
@@ -106,7 +106,7 @@ Model 5 used a categorical variable: first, a classification model was used to e
 to have been built as a result of recent population growth; and then each neighborhood was categorized as "data available",
 "missing, population growth", or "missing, other reason".
 
-2a. If school ratings can be reasonably well-predicted from the other factors, and new schools built due to recent
+a. If school ratings can be reasonably well-predicted from the other factors, and new schools built due to recent
 population growth cannot be reasonably well-classified using the other factors, which model would you recommend?
 - Model 1
 - Model 2
@@ -114,7 +114,7 @@ population growth cannot be reasonably well-classified using the other factors, 
 - Model 4
 - Model 5
 
-2b. In which of the following situations would you recommend using Model 3? [All predictions and classifications below
+b. In which of the following situations would you recommend using Model 3? [All predictions and classifications below
 are using the other factors.]
 - Ratings can be well-predicted, and reasons for building schools can be well-classified.
 - Ratings can be well-predicted, and reasons for building schools cannot be well-classified.
@@ -364,8 +364,191 @@ J. Utilizing in marketing effectiveness and process optimization
 K. Enhancing decision-making in competitive scenarios
 
 """
+midterm_2_q16 =  """
+Question: A manufacturing company wants to minimize production costs while meeting the demand for its products. The production involves various constraints like machine hours, labor availability, and material costs.
+
+a. Select all of the models/approaches the company could use to minimize production costs while meeting demand:
+1.	Linear Programming
+2.	Elastic Net
+3.	Integer Programming
+4.	Support Vector Machine
+5.	Convex Optimization
+The company also wants to forecast future demand for its products to better plan production schedules and raw material purchases.
+b. Select all of the models/approaches the company could use to forecast future product demand:
+1.	Time Series Analysis
+2.	Lasso Regression
+3.	Stochastic Optimization
+4.	Logistic Regression
+5.	Random Forest
+"""
+
+midterm_2_q17 =  """
+Question: An energy company is planning to optimize the distribution of electricity across a network of cities to ensure efficient power delivery and minimize losses.
+a. Select all of the models/approaches the company could use to optimize electricity distribution:
+1.	Network Optimization
+2.	Dynamic Programming
+3.	Integer Programming
+4.	Clustering
+5.	Ridge Regression
+The company also aims to predict electricity consumption patterns to better match supply with demand, especially during peak hours.
+b. Select all of the models/approaches the company could use to predict electricity consumption patterns:
+1.	Time Series Analysis
+2.	Support Vector Machine
+3.	Elastic Net
+4.	Stochastic Optimization
+5.	Logistic Regression
+"""
+
+midterm_2_q18 =  """
+Question: An energy company is planning to optimize the distribution of electricity across a network of cities to ensure efficient power delivery and minimize losses.
+a. Select all of the models/approaches the company could use to optimize electricity distribution:
+1.	Network Optimization
+2.	Dynamic Programming
+3.	Integer Programming
+4.	Clustering
+5.	Ridge Regression
+The company also aims to predict electricity consumption patterns to better match supply with demand, especially during peak hours.
+b. Select all of the models/approaches the company could use to predict electricity consumption patterns:
+1.	Time Series Analysis
+2.	Support Vector Machine
+3.	Elastic Net
+4.	Stochastic Optimization
+5.	Logistic Regression
+"""
+
+midterm_2_q19 =  """
+Questions
+
+Four predictive models were developed to forecast the likelihood of a new business succeeding in a specific area, based on local economic indicators, demographic data, and other factors. The training dataset was missing the demographic diversity score for certain newly developed areas (4% of the data points).
+
+It is hypothesized that areas with rapid industrial growth are more likely to have missing demographic diversity scores.
+
+Model A used mean substitution, filling in the missing data with the average demographic diversity score from the rest of the data.
+Model B used a predictive imputation method, creating a linear regression model to estimate the missing demographic diversity scores based on other variables.
+Model C used a two-step approach: initially, it employed a logistic regression model to predict (based on other variables) if a new industrial area is likely due to recent industrial growth or for other reasons (like technological advancements), and then used this prediction to apply one of two different linear regression models to estimate the demographic diversity score; one model for areas developed due to industrial growth and another for areas developed for other reasons.
+Model D introduced a categorical variable to indicate areas with missing data, categorizing them as either "data available", "missing, industrial growth", or "missing, other reasons".
+
+a. If demographic diversity scores can be accurately estimated from other factors, and new industrial areas attributed to rapid industrial growth cannot be effectively classified using the other factors, which model would you recommend?
+
+Model A
+Model B
+Model C
+Model D
+
+b. In which of the following situations would you recommend using Model C? [All estimations and classifications below are based on the other factors.]
+
+Diversity scores can be accurately estimated, and reasons for industrial area development can be effectively classified.
+Diversity scores can be accurately estimated, and reasons for industrial area development cannot be effectively classified.
+Diversity scores cannot be accurately estimated, and reasons for industrial area development can be effectively classified.
+Diversity scores cannot be accurately estimated, and reasons for industrial area development cannot be effectively classified.
+"""
+midterm_2_q20 =  """
+A financial consulting company plans to use machine learning to predict stock market trends based on a range of economic indicators. They have historical data on stock prices, various economic indicators, and trading volumes. However, they lack reliable historical data on investor sentiment, which is believed to be a key influencing factor. They have current sentiment data but do not know historical sentiment values.
+Analyzing the question:
+
+Stock prices, economic indicators, and trading volumes are numerical values.
+For questions lacking reliable historical data on a key factor (investor sentiment), time series models might not be directly applicable.
+a. For each of the questions below, select a model/approach that the company could use.
+
+i. What model/approach could the company use to predict future stock market trends based on economic indicators and trading volumes?
+Options: Neural Networks, Support Vector Regression, or ARIMA
+
+ii. What model/approach could the company use to select the most influential economic indicators?
+Options: Feature Importance in Random Forest, Ridge Regression, or Principal Component Analysis (PCA)
+
+iii. Suppose the company wants to investigate if there was a significant change in stock market behavior after a major economic policy change. What model/approach could they use to identify if and when a significant change occurred?
+Options: Change Point Detection methods, Bayesian Structural Time Series, or Interrupted Time Series Analysis
+"""
+
+midterm_2_q21 = """
+A health care research organization aims to predict patient readmission rates based on various clinical and demographic factors. They have access to a comprehensive dataset including patient age, gender, medical history, treatment details, and socio-economic factors. However, they lack detailed data on patient lifestyle choices, which could significantly impact readmission rates.
+Analyzing the question:
+
+Patient characteristics and treatment details are categorical and numerical.
+The absence of detailed lifestyle data suggests a need for models that can handle incomplete information effectively.
+a. For each of the questions below, select a model/approach that the organization could use. [NOTE: CHOICES WILL BE THINGS LIKE "K-Means Clustering", "Decision Trees", "Naive Bayes", etc.]
+
+i.  What model/approach could the organization use to predict patient readmission rates based on available clinical and demographic data?
+Options: Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, Neural Networks, K-Nearest Neighbors, Gradient Boosting
+
+ii.  What model/approach could the organization use to group patients into similar categories based on their clinical and demographic data?
+Options: K-Means Clustering, Random Forest, Linear Program, Poisson
+
+iii.  If the organization wanted to understand which factors are most predictive of readmission, what model/approach could they use for feature selection and importance?
+Options: Lasso Regression, Ridge Regression, Elastic Net, Recursive Feature Elimination, Feature Importance in Ensemble Methods, Correlation Analysis
+
+iv.  In the scenario where the organization wants to evaluate the accuracy of their predictive model, which techniques could they use?
+Options: Cross-Validation, Confusion Matrix, ROC Curve, Precision-Recall Curve, Brier Score, F1 Score, Log-Loss
+
+"""
+
+midterm_2_q22 = """
+For the scenarios described in your questions, selecting the appropriate probability distribution involves understanding the nature of the event being modeled and the type of data:
+
+1. Duration a customer spends shopping in a store
+Choose from: Exponential, Normal, Weibull, Poisson, Log-Normal
+
+2. Number of emails received by an office worker in an hour
+Choose from: Poisson, Binomial, Negative Binomial, Geometric, Bernoulli
+
+3. Number of customers who return a product within 30 days out of the first 200 sales
+Choose from: Binomial, Poisson, Hypergeometric, Negative Binomial, Geometric
+
+4. Number of correct answers before the first wrong attempt in a multiple-choice quiz
+Choose from: Geometric, Binomial, Negative Binomial, Poisson, Exponential
+
+5. Time taken for a website to load after clicking a link
+Choose from: Exponential, Normal, Gamma, Weibull, Bernouilli
+
+"""
+
+midterm_2_q23 = """
+For each of the following scenarios, select the most appropriate model/approach to use. Note that some models/approaches may be applicable to more than one scenario.
+
+MODELS/APPROACHES
+i. Markov Decision Processes
+ii. Logistic Regression
+iii. Neural Networks
+iv. Cusum
+v. Decision Tree Analysis
+vi. Dynamic Programming
+
+SCENARIOS
+a. Choosing the best layout for a retail store to maximize customer flow and sales, based on customer movement patterns.
+b. Predicting the likelihood of a patient developing a specific disease based on their lifestyle choices, age, and family history.
+c. Determining the most efficient route for a delivery truck that has multiple stops in a city, considering traffic conditions.
+d. Automating the process of categorizing customer reviews into positive, negative, or neutral sentiments.
+e. Deciding the optimal investment strategy for a retirement fund, given the uncertainties in the financial market.
+"""
+
+midterm_2_q24 = """
+For each of the scenarios presented, the choice between linear regression and logistic regression depends on the nature of the outcome variable (continuous or categorical/binary). Here are the answers based on the descriptions:
+1. Which model is more suitable to predict the final grade of a student based on their attendance, assignment scores, and class participation?
+
+2. Which model is more appropriate for predicting whether a bank's loan applicant is likely to default based on their credit history and income level?
+
+3. Which model would be more directly suitable for estimating the average daily electricity consumption of a household based on the number of occupants and appliance usage?
+
+4. Which model is best suited for determining the probability that a customer will subscribe to a new service based on demographic data and past subscription history?
+"""
+
+midterm_2_q25 = """
+A technology company is analyzing various aspects of its operations and market dynamics. They have collected extensive data over time and are looking to apply appropriate models to gain insights.
+
+For each of the following situations, specify which model is more appropriate: ARIMA, Louvain Algorithm, or Integer Linear Programming.
+
+A. The company wants to forecast its quarterly sales for the next two years based on past sales data, which shows seasonal trends and some irregular fluctuations.
+
+B. The company aims to understand the structure of its internal communication network to identify tightly-knit groups or communities within its workforce.
+
+C. The company needs to optimize the allocation of its limited resources across different projects, ensuring maximum efficiency while adhering to budget and manpower constraints.
+
+"""
+
 
 
 MIDTERM_2_QUESTIONS = [midterm_2_q1,midterm_2_q2,midterm_2_q3,midterm_2_q4,midterm_2_q5,midterm_2_q6,
                        midterm_2_q7,midterm_2_q8,midterm_2_q9,midterm_2_q10,midterm_2_q11,midterm_2_q12,
-                       midterm_2_q13,midterm_2_q14,midterm_2_q15]
+                       midterm_2_q13,midterm_2_q14,midterm_2_q15,midterm_2_q16,midterm_2_q17,midterm_2_q18,
+                       midterm_2_q19,midterm_2_q20,midterm_2_q21,midterm_2_q22,midterm_2_q23,midterm_2_q24,
+                       midterm_2_q25]

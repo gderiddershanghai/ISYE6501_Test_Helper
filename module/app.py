@@ -15,7 +15,6 @@ div.stButton > button:first-child {
     background-color: #0099ff;
     color: white;
 }
-/* You can also target hover, active states etc. */
 div.stButton > button:first-child:hover {
     background-color: #0077cc;
 }
@@ -28,7 +27,7 @@ def main():
     st.markdown(button_style, unsafe_allow_html=True)
     with st.sidebar:
         st.markdown('<a href="https://github.com/gderiddershanghai/ISYE6501_Test_Helper"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/gderiddershanghai/ISYE6501_Test_Helper?style=social"></a>', unsafe_allow_html=True)
-        st.markdown('<small>Page views: <img src="https://www.cutercounter.com/hits.php?id=hexoxdck&nd=4&style=2" border="0" alt="visitor counter"></small>', unsafe_allow_html=True)
+        st.markdown('<small>Page views: <img src="https://www.cutercounter.com/hits.php?id=huxookkp&nd=6&style=1" border="0" alt="visitor counter"></small>', unsafe_allow_html=True)
         st.caption("_**Author's Note:** Feel free to use my prompts and create your own GPT. Same goes for the summaries and example questions. In my experience uploading detailed summaries leads to better results than the entire course transcript.")
 
 

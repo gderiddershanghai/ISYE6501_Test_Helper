@@ -113,7 +113,137 @@ Splitting graphs into highly-connected communities
 Demand forecasting
 """
 
+check_2_q16= """
+Which formula represents the objective of Ridge Regression?
+A. Minimize: ∑(yi−∑βjxij)〖^2〗 subject to ∑∣βj∣≤t
+B. Minimize: ∑(yi−∑βjxij)〖^2〗+λ1∑∣βj∣+λ2∑βj〖^2〗
+C. Minimize: ∑(yi−∑βjxij)〖^2〗2+λ∑βj〖^2〗
+D. Minimize: ∑(yi−∑βjxij)〖^2〗2+λ∑βj
+"""
 
+check_2_q17= """
+Which variable selection method combines both Lasso and Ridge approaches?
+A. Forward Selection
+B. Backward Elimination
+C. Stepwise Regression
+D. Elastic Net
+
+"""
+
+check_2_q18= """
+In Ridge Regression, what does the tuning parameter λ control?
+A. The size of coefficients.
+B. The sum of the absolute values of the coefficients.
+C. The number of factors in the model.
+D. The p-value thresholds.
+"""
+
+check_2_q19= """
+What does "blocking" involve in the context of Design of Experiments (DOE)?
+A. Selecting a random sample of data
+B. Identifying and accounting for factors that could introduce variability in the results
+C. Collecting data without any controls
+D. Analyzing data without statistical techniques
+"""
+
+check_2_q20= """
+In which field is the Weibull distribution frequently used, and what does it model?
+A. The Weibull distribution is used in finance to model stock prices.
+B. The Weibull distribution is used in manufacturing to model production rates.
+C. The Weibull distribution is used in reliability engineering and models various types of data, particularly failure rates and survival times.
+D. The Weibull distribution is used in sports analytics to model player performance.
+"""
+
+check_2_q21= """
+When is the Poisson distribution commonly used, and what does the parameter
+λ represent?
+A. The Poisson distribution is used for continuous data, and
+λ represents the average value.
+
+B. The Poisson distribution is used for counting events in a fixed interval, and
+λ represents the average number of events.
+
+C. The Poisson distribution is used for modeling geometric shapes, and
+λ represents the shape parameter.
+
+D. The Poisson distribution is used in finance, and
+λ represents the interest rate.
+"""
+
+check_2_q22= """
+How does the Binomial distribution differ from the Bernoulli distribution in terms of modeling?
+A. The Binomial distribution predicts the number of successes in a fixed number of trials, while the Bernoulli distribution models individual events with two outcomes.
+B. The Binomial distribution is used for continuous data, while the Bernoulli distribution is used for discrete data.
+C. The Binomial distribution can have more than two possible outcomes, while the Bernoulli distribution is limited to two outcomes.
+D. The Binomial distribution assumes no probability of success, while the Bernoulli distribution assumes a fixed probability of success.
+"""
+
+check_2_q23= """
+In optimization models, what are the three key components?
+A. Data, constraints, and objectives
+B. Variables, constraints, and an objective function
+C. Variables, equations, and parameters
+D. Decisions, goals, and constraints
+"""
+
+
+check_2_q24= """
+What is a dynamic program in optimization modeling?
+A. A program that adapts to changing constraints in real-time.
+B. A program that uses complex mathematical equations to optimize solutions.
+C. A program that divides the system into states, decisions, and uses Bellman's equation to determine optimal decisions.
+D. A program that focuses on optimizing linear functions.
+"""
+
+check_2_q25= """
+McNemar's Test is primarily designed for:
+A. Comparing the means of two independent samples.
+B. Analyzing correlations between two continuous variables.
+C. Analyzing categorical data in a 2x2 contingency table.
+D. Predicting future outcomes based on historical data.
+"""
+
+check_2_q26= """
+When should the Wilcoxon Signed Rank Test be used?
+A. When analyzing normally distributed data.
+B. When comparing two independent samples.
+C. When working with non-normal data in paired samples.
+D. When conducting before-and-after studies.
+"""
+
+check_2_q27= """
+The Mann-Whitney Test is particularly useful for comparing:
+A. Means from two independent samples.
+B. Medians from two independent samples.
+C. Variances from two paired samples.
+D. Proportions from two dependent samples.
+"""
+
+check_2_q28= """
+The Louvain Algorithm is primarily used for:
+A. Solving linear equations.
+B. Detecting communities in large networks.
+C. Analyzing textual data.
+D. Predicting stock prices.
+"""
+
+check_2_q29= """
+In the context of game theory, what does Nash Equilibrium refer to?
+A. The point where all players lose.
+B. The point where no player can improve their outcome by changing their strategy.
+C. The point where one player dominates all others.
+D. The point where all players cooperate fully.
+"""
+
+check_2_q30= """
+In Bayesian modeling, what is the purpose of the posterior distribution?
+A. To represent the prior beliefs and knowledge of the modeler.
+B. It describes the likelihood of observed data given the model parameters.
+C. To summarize the historical data used in the model.
+D. It quantifies the uncertainty about model parameters after considering both prior beliefs and observed data.
+"""
 KNOWLEDGE_2_QUESTIONS = [check_2_q1, check_2_q2, check_2_q3, check_2_q4, check_2_q5, check_2_q6,
                         check_2_q7, check_2_q8, check_2_q9, check_2_q10, check_2_q11, check_2_q12,
-                        check_2_q13, check_2_q14, check_2_q15]
+                        check_2_q13, check_2_q14, check_2_q15,check_2_q16, check_2_q17, check_2_q18,
+                        check_2_q19, check_2_q20, check_2_q21, check_2_q22, check_2_q23, check_2_q24,
+                        check_2_q25, check_2_q26, check_2_q27, check_2_q28, check_2_q29, check_2_q30,]
