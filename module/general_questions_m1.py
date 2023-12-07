@@ -519,11 +519,11 @@ midterm_1_q18 = """
 Question A1\n
 A regional healthcare provider has collected extensive data on patient visits over the years, including patient demographics, symptoms, diagnoses, treatments, and outcomes. The organization now wants to leverage this data to predict patient readmission risks and identify key factors that contribute to higher readmission rates. This insight will help them in allocating resources more effectively and improving patient care strategies. Choose the appropriate models/approaches from the list below that the healthcare provider could use for predicting patient readmissions and understanding the underlying factors.
 
-\nCUSUM: A method for change detection that compares the mean of an observed distribution with a threshold level for change, abbreviated as cumulative sum.
-\nK-nearest-neighbor classification: A non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space.
-\nLogistic Regression: A statistical model that in its basic form uses a logistic function to model a binary dependent variable, often used for binary classification.
-\nMulti-armed bandit: A problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain.
-\nSupport Vector Machine: A supervised learning model with associated learning algorithms that analyze data used for classification and regression analysis.
+\n-CUSUM: A method for change detection that compares the mean of an observed distribution with a threshold level for change, abbreviated as cumulative sum.
+\n-K-nearest-neighbor classification: A non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space.
+\n-Logistic Regression: A statistical model that in its basic form uses a logistic function to model a binary dependent variable, often used for binary classification.
+\n-Multi-armed bandit: A problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain.
+\n-Support Vector Machine: A supervised learning model with associated learning algorithms that analyze data used for classification and regression analysis.
 """
 
 # midterm_1_q18 = """
@@ -648,18 +648,18 @@ A pharmaceutical company produces medications in batches of 200 units, with each
 For each description below, choose the most appropriate option:
 
 \na. The observed variable (y_t) in the context of this study:
-\nSequence number in batch
-\nDay within batch that unit was completed
-\nTime until first reported efficacy drop
+\n-Sequence number in batch
+\n-Day within batch that unit was completed
+\n-Time until first reported efficacy drop
 
 \nb. The seasonal length (L) in this analysis:
-\n200 (number of units in a batch)
-\n7 (days to complete a batch)
+\n-200 (number of units in a batch)
+\n-7 (days to complete a batch)
 
 \nc. If the seasonal component (C_t) values are consistently lower towards the end of the batch, it suggests:
-\nUnits produced later in a batch tend to show efficacy drop more quickly.
-\nUnits produced later in a batch tend to maintain efficacy longer.
-\nThis question is designed to assess the application of time series analysis in a production context and the interpretation of its results.
+\n-Units produced later in a batch tend to show efficacy drop more quickly.
+\n-Units produced later in a batch tend to maintain efficacy longer.
+\n-This question is designed to assess the application of time series analysis in a production context and the interpretation of its results.
 
 """
 

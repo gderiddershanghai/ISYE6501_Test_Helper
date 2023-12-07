@@ -7,19 +7,19 @@ be used, zero, one, or more than one time in the five questions.
 \n
 Choose from Binomial, Poisson, Weibull, Exponential, Geometric, Bernoulli Distributions
 \n
-Question A1
+Question A1\n
 Time between people entering a grocery store
 \n
-Question A2
+Question A2\n
 Number of hits to a real estate web site each minute
 \n
-Question A3
+Question A3\n
 Number of penalty kicks that are saved by the goalkeeper, out of the first 96 taken
 \n
-Question A4
+Question A4\n
 Number of faces correctly identified by deep learning (DL) software until an error is made
 \n
-Question A5
+Question A5\n
 Time between hits on a real estate web site
 \n
 """
@@ -28,19 +28,19 @@ midterm_2_q2 ="""
 Match the problem to the distribution:\n
 Choose from Binomial, Poisson, Weibull, Exponential, Geometric, Bernoulli Distributions
 \n
-Question A1:
+Question A1:\n
 Lifetime of light bulbs produced in a factory.
 \n
-Question A2:
+Question A2:\n
 Number of customers arriving at a bank per hour.
 \n
-Question A3:
+Question A3:\n
 Number of correct answers in a multiple-choice exam with 50 questions, each with four options, where a student guesses all answers.
 \n
-Question A4:
+Question A4:\n
 Time until a newly launched website receives its first hundred visitors.
 \n
-Question A5:
+Question A5:\n
 The number of trials needed for a new machine to successfully complete its first task without error.
 
 """
@@ -172,16 +172,16 @@ Choices:
 - General Nonconvex Program\n
 - Integer Program\n
 
-Question a:
+Question a:\n
 Minimize the sum of (log(c_i) * x_i), subject to the sum of (a_ij * x_i) greater than or equal to b_j for all j, and all x_i greater than or equal to 0.
 \n
-Question b:
+Question b:\n
 Maximize the sum of (c_i * x_i), subject to the sum of (a_ij * x_i) greater than or equal to b_j for all j, and all x_i greater than or equal to 0.
 \n
-Question c:
+Question c:\n
 Minimize the sum of (c_i * x_i^2), subject to the sum of (a_ij * x_i) greater than or equal to b_j for all j, and all x_i greater than or equal to 0.
 \n
-Question d:
+Question d:\n
 Maximize the sum of (c_i * x_i), subject to the sum of (a_ij * x_i) greater than or equal to b_j for all j, and all x_i belonging to {0, 1}.
 """
 
@@ -268,27 +268,27 @@ Question A1\n
 For each question,
 select the most appropriate model/approach to answer the question/analyze the situation described.
 Each model/approach might be used zero, one, or more than one time in the five questions.
-CHOICES:
-Non-parametric test\n
-Louvain algorithm\n
-Stochastic optimization\n
-Game theoretic analysis\n
-Queueing\n
+CHOICES:\n
+ - Non-parametric test\n
+ - Louvain algorithm\n
+ - Stochastic optimization\n
+ - Game theoretic analysis\n
+ - Queueing\n
 
 
-Question a
+Question a\n
 Does Lasik surgery significantly improve the median vision of people who get that surgery?
 \n
-Question b
+Question b\n
 Which groups of genetic markers often appear together in people?
 \n
-Question c
+Question c\n
 What distinct sets of recipes can be identified where there are many ingredients shared within each set?
 \n
-Question d
+Question d\n
 Determine the best marketing strategy, given that a competitor will react to your choice in his/her decisions.
 \n
-Question e
+Question e\n
 Find sets of terrorists that have a lot of communication within each set.
 
 """
@@ -1000,10 +1000,10 @@ Question A1:\n
 A retail company operates in various regions and is interested in optimizing its inventory management. The company has historical sales data from multiple stores and wants to predict future sales volumes for each product in different locations. This forecasting will help in efficient stock allocation and reducing inventory costs. The company also wants to understand the factors influencing sales to make strategic decisions. Which of the following models/approaches could the company use to predict future sales and understand sales dynamics?
 
 CUSUM:\n
-\nDiscrete event simulation: A simulation that models a system that changes when specific events occur.
-\nLinear Regression:
-\nLogistic Regression Tree:
-\nRandom Linear Regression Forest:
+\n - Discrete event simulation: A simulation that models a system that changes when specific events occur.
+\n - Linear Regression:
+\n - Logistic Regression Tree:
+\n - Random Linear Regression Forest:
 """
 
 # midterm_1_q15 = """
@@ -1063,13 +1063,14 @@ A regional supermarket chain has collected day-to-day data over the last five ye
 \nx4 = Local unemployment rate on that day
 \nx5 = Average temperature on that day
 \nx6 = Local sports team win or loss on the previous day
+
 \na. (3 points) Select all data that are categorical.
 
 The supermarket has built three models using the linear formula b0 + b1x1 + b2x2 + b3x3 + b4x4 + b5x5 + b6x6:
+\n - A linear regression model
+\n - A logistic regression model
+\n - A k-nearest neighbors model
 
-\nA linear regression model
-\nA logistic regression model
-\nA k-nearest neighbors model
 \nb.  For each of the following scenarios (i-iii), which model (1, 2, or 3) would you suggest using?
 \ni. The supermarket wants to estimate the total number of customers visiting the store each day.
 \nii. The supermarket aims to predict the likelihood of having more than 500 customers in the store each day.
@@ -1081,10 +1082,10 @@ Given that the supermarket experiences regular customer patterns with minimal ra
 
 i. What should they expect the best value of α to be, considering the consistency in customer visits?
 
-\nα < 0
-\n0 < α < ½
-\n½ < α < 1
-\nα > 1
+\n - α < 0
+\n - 0 < α < ½
+\n - ½ < α < 1
+\n - α > 1
 """
 
 midterm_1_q18 = """
@@ -1092,10 +1093,10 @@ Question A1\n
 A regional healthcare provider has collected extensive data on patient visits over the years, including patient demographics, symptoms, diagnoses, treatments, and outcomes. The organization now wants to leverage this data to predict patient readmission risks and identify key factors that contribute to higher readmission rates. This insight will help them in allocating resources more effectively and improving patient care strategies. Choose the appropriate models/approaches from the list below that the healthcare provider could use for predicting patient readmissions and understanding the underlying factors.
 
 \nCUSUM: A method for change detection that compares the mean of an observed distribution with a threshold level for change, abbreviated as cumulative sum.
-\nK-nearest-neighbor classification: A non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space.
-\nLogistic Regression: A statistical model that in its basic form uses a logistic function to model a binary dependent variable, often used for binary classification.
-\nMulti-armed bandit: A problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain.
-\nSupport Vector Machine: A supervised learning model with associated learning algorithms that analyze data used for classification and regression analysis.
+\n - K-nearest-neighbor classification: A non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space.
+\n - Logistic Regression: A statistical model that in its basic form uses a logistic function to model a binary dependent variable, often used for binary classification.
+\n - Multi-armed bandit: A problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain.
+\n - Support Vector Machine: A supervised learning model with associated learning algorithms that analyze data used for classification and regression analysis.
 """
 
 # midterm_1_q18 = """
@@ -1220,18 +1221,18 @@ A pharmaceutical company produces medications in batches of 200 units, with each
 For each description below, choose the most appropriate option:
 
 \na. The observed variable (y_t) in the context of this study:
-\nSequence number in batch
-\nDay within batch that unit was completed
-\nTime until first reported efficacy drop
+\n - Sequence number in batch
+\n - Day within batch that unit was completed
+\n - Time until first reported efficacy drop
 
 \nb. The seasonal length (L) in this analysis:
-\n200 (number of units in a batch)
-\n7 (days to complete a batch)
+\n - 200 (number of units in a batch)
+\n - 7 (days to complete a batch)
 
 \nc. If the seasonal component (C_t) values are consistently lower towards the end of the batch, it suggests:
-\nUnits produced later in a batch tend to show efficacy drop more quickly.
-\nUnits produced later in a batch tend to maintain efficacy longer.
-\nThis question is designed to assess the application of time series analysis in a production context and the interpretation of its results.
+\n - Units produced later in a batch tend to show efficacy drop more quickly.
+\n - Units produced later in a batch tend to maintain efficacy longer.
+\n - This question is designed to assess the application of time series analysis in a production context and the interpretation of its results.
 
 """
 
@@ -1246,69 +1247,69 @@ Classification and Clustering in Patient Segmentation
 The team wants to segment patients into groups for targeted treatment approaches. They have the following data points for each patient: age, gender, diagnosis, treatment type, and recovery time.
 \n
 A1. Which model would be best for classifying patients into high-risk and low-risk categories based on their treatment outcomes?
-\nCusum
-\nK-Nearest Neighbors
-\nSupport Vector Machines
+\n - Cusum
+\n - K-Nearest Neighbors
+\n - Support Vector Machines
 
 A2.For clustering patients based on similarities in their diagnosis and treatment types, which algorithm would be most effective?
-\nK-Means Clustering
-\nPCA
-\nGARCH Variance Clustering
+\n - K-Means Clustering
+\n - PCA
+\n - GARCH Variance Clustering
 \n
 Question b: Time Series Analysis for Predicting Treatment Efficacy
 
 The team is also interested in predicting the efficacy of treatments over time.
 
 A3. If the team wants to forecast treatment efficacy based on past trends and seasonal variations, which model should they use?
-\nARIMA
-\nExponential Smoothing
-\nRandom Forests
+\n - ARIMA
+\n - Exponential Smoothing
+\n - Random Forests
 
 A4.To detect significant changes in treatment efficacy over time, which method would be most suitable?
-\nCUSUM
-\nPrincipal Component Analysis
-\nBox-Cox Transformation
+\n - CUSUM
+\n - Principal Component Analysis
+\n - Box-Cox Transformation
 """
 
 midterm_1_q22 = """
 Question A1: \nSupport Vector Machines (SVM) and K-Nearest Neighbor (KNN) in Classification
 
 a. A bank is developing a model to classify loan applicants as high-risk or low-risk. Given the importance of minimizing the misclassification of high-risk applicants, which model would be more suitable?
-\nSVM
-\nKNN
+\n - SVM
+\n - KNN
 
 b. In a medical diagnosis system, which model would be preferable for classifying patients based on a dataset with many overlapping characteristics?
-\nSVM
-\nKNN
+\n - SVM
+\n - KNN
 
 Question A2: Validation and Model Assessment
 \na. A marketing team has developed several predictive models for customer behavior. To avoid overfitting, which approach should they use for model assessment?
-\nCross-validation
-\nTraining on the entire dataset
+\n - Cross-validation
+\n - Training on the entire dataset
 \nb. When choosing between two different models for predicting sales, one with a lower AIC and one with a higher BIC, which model should be preferred considering both simplicity and likelihood?
-\nModel with lower AIC
-\nModel with higher BIC
+\n - Model with lower AIC
+\n - Model with higher BIC
 """
 
 midterm_1_q23 = """
 Question A1: \nClustering and Outlier Detection in Data Analysis
 
 \na. A retailer wants to segment their customer base for targeted marketing. Which clustering method would be best for a dataset with well-defined, separate customer groups?
-\nK-means Clustering
-\nPCA
+\n - K-means Clustering
+\n - PCA
 
 \nb. In analyzing customer purchase data, the team identifies several extreme values. What is the most appropriate initial step in handling these outliers?
-\nRemoving them from the dataset
-\nInvestigating their source and context
+\n - Removing them from the dataset
+\n - Investigating their source and context
 
 \nQuestion A2: Time Series Analysis and Exponential Smoothing
 \na. A utility company is analyzing electricity usage patterns over time. To forecast future usage that exhibits both trend and seasonality, which method would be most appropriate?
-\nARIMA
-\nExponential Smoothing with trend and seasonality
+\n - ARIMA
+\n - Exponential Smoothing with trend and seasonality
 
 \nb. If the company wants to smooth out short-term fluctuations in daily usage data while giving more weight to recent observations, what should be the approach to setting the alpha value in exponential smoothing?
-\nA high alpha value
-\nA low alpha value
+\n - A high alpha value
+\n - A low alpha value
 """
 
 midterm_1_q24 = """
@@ -1317,30 +1318,30 @@ Question A1: \nClassification Techniques
 \nA financial institution is implementing a new system to classify loan applicants based on risk.
 
 \na. Which classifier would be more effective for categorizing applicants into 'high risk' and 'low risk', considering the cost of misclassification?
-\nLinear Regression
-\nK-Nearest Neighbor (KNN)
-\nSupport Vector Machine (SVM)
-\nRandom Forest
+\n-Linear Regression
+\n-K-Nearest Neighbor (KNN)
+\n-Support Vector Machine (SVM)
+\n-Random Forest
 
 \nb. In a scenario where the bank needs to identify potential fraudulent transactions, which approach should they use, given the transactions data is highly imbalanced?
-\nHard Classifiers
-\nSoft Classifiers
-\nDecision Trees
-\nBayesian Classifiers
+\n-Hard Classifiers
+\n-Soft Classifiers
+\n-Decision Trees
+\n-Bayesian Classifiers
 
 \nQuestion A2: Model Validation and Testing
 An e-commerce company is evaluating different models for predicting customer purchase behavior.
 \na. To ensure the chosen model is not overfitting, which method should be used for validating the model's effectiveness?
-\nCross-Validation
-\nTraining on Entire Dataset
-\nAIC/BIC Comparison
-\nHoldout Method
+\n-Cross-Validation
+\n-Training on Entire Dataset
+\n-AIC/BIC Comparison
+\n-Holdout Method
 
 \nb. If the model performs well on the training data but poorly on the validation data, what might this indicate?
-\nThe model is underfitting
-\nThe model is overfitting
-\nThe model is perfectly fitted
-\nThe model is not complex enough
+\n-The model is underfitting
+\n-The model is overfitting
+\n-The model is perfectly fitted
+\n-The model is not complex enough
 """
 
 midterm_1_q25 = """
@@ -1348,10 +1349,10 @@ Question A1: \nClustering in Market Segmentation
 
 A marketing agency is segmenting its audience for targeted advertising campaigns.
 \na. For creating customer segments based on shopping behavior and preferences, which clustering method would be most suitable?
-\nK-means Clustering
-\nKNN Clustering
-\nPCA
-\nPoisson Variance Classification
+\n-K-means Clustering
+\n-KNN Clustering
+\n-PCA
+\n-Poisson Variance Classification
 
 Question A2: Regression Analysis for Sales Forecasting
 A retail chain is analyzing factors affecting its sales performance.
