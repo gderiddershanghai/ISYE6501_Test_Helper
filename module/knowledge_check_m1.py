@@ -8,11 +8,11 @@ A survey of 25 people recorded each person’s family size and type of car.
 """
 
 check_1_q2 = """
-2. Which of these is structured data?
+a. Which of these is structured data?
 -The contents of a person’s Twitter feed
 -The amount of money in a person’s bank account
 
-3. Which of these is time series data?
+b. Which of these is time series data?
 -The average cost of a house in the United States every year since 1820
 -The height of each professional basketball player in the NBA at the start of the season
 """

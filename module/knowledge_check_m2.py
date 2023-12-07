@@ -37,7 +37,7 @@ Which of these is a way that multi-armed bandit models deal with balancing explo
 """
 
 check_2_q6 = """
-1. If the time between customer arrivals to a restaurant at lunchtime fits the exponential distribution, then which of the following is true?
+If the time between customer arrivals to a restaurant at lunchtime fits the exponential distribution, then which of the following is true?
 - The number of arrivals per unit time follows the Weibull distribution.
 - The number of arrivals per unit time follows the Poisson distribution.
 

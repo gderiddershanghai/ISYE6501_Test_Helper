@@ -68,15 +68,14 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 
 def exam_prep(token):
 
-
-
     question = f"""
+    Long Exam Question
     {token.long_form_question_1}
     ___________________________________________________________________________
-
+    Short Exam Questions
+    B1
     {token.short_form_question_2}
-
-    ___________________________________________________________________________
+    B2
     {token.short_form_question_1}
     """
 
