@@ -51,7 +51,7 @@ def main():
             placeholder_text = "Enter your answer here..."
 
             with st.form("prompt_form", clear_on_submit=True):
-                token.user_text = st.text_area("Prompt", placeholder=placeholder_text, height=300)
+                token.user_text = st.text_area("Your Answer:", placeholder=placeholder_text, height=300)
                 prompt_submitted = st.form_submit_button("Check Answer")
 
             if prompt_submitted:

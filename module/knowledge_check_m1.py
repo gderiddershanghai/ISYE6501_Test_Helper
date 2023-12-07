@@ -1,235 +1,235 @@
 
 check_1_q1 = """
-A survey of 25 people recorded each person’s family size and type of car.
-1. Which of these is a data point?
--The 14th person’s family size and car type
--The 14th person’s family size
--The car type of each person
+\nA survey of 25 people recorded each person’s family size and type of car.
+\n1. Which of these is a data point?
+\n-The 14th person’s family size and car type
+\n-The 14th person’s family size
+\n-The car type of each person
 """
 
 check_1_q2 = """
-a. Which of these is structured data?
--The contents of a person’s Twitter feed
--The amount of money in a person’s bank account
+\na. Which of these is structured data?
+\n-The contents of a person’s Twitter feed
+\n-The amount of money in a person’s bank account
 
-b. Which of these is time series data?
--The average cost of a house in the United States every year since 1820
--The height of each professional basketball player in the NBA at the start of the season
+\nb. Which of these is time series data?
+\n-The average cost of a house in the United States every year since 1820
+\n-The height of each professional basketball player in the NBA at the start of the season
 """
 check_1_q3 = """
-When comparing models, if we use the same data to pick the best model as we do to estimate how good the best one is, what is likely to happen?
--The model will appear to be better than it really is.
--The model will appear to be worse than it really is.
--The model will appear to be just as good as it really is.
+\nWhen comparing models, if we use the same data to pick the best model as we do to estimate how good the best one is, what is likely to happen?
+\n-The model will appear to be better than it really is.
+\n-The model will appear to be worse than it really is.
+\n-The model will appear to be just as good as it really is.
 """
 
 check_1_q4 = """
-In k-fold cross-validation, how many times is each part of the data used for training, and for validation?
--k times for training, and k times for validation
--1 time for training, and k-1 times for validation
--k-1 times for training, and 1 time for validation
+\nIn k-fold cross-validation, how many times is each part of the data used for training, and for validation?
+\n-k times for training, and k times for validation
+\n-1 time for training, and k-1 times for validation
+\n-k-1 times for training, and 1 time for validation
 
 """
 
 check_1__q5 = """
-The k-means algorithm for clustering is a “heuristic” because…
-…it runs quickly.
-…it never gets the best answer.
-…it isn’t guaranteed to get the best answer.
+\nThe k-means algorithm for clustering is a “heuristic” because…
+\n…it runs quickly.
+\n…it never gets the best answer.
+\n…it isn’t guaranteed to get the best answer.
 """
 
 check_1__q6 = """
-Which of these is generally a good reason to remove an outlier from your data set?
-The outlier is an incorrectly-entered data, not real data.
-Outliers like this only happen occasionally.
+\nWhich of these is generally a good reason to remove an outlier from your data set?
+\nThe outlier is an incorrectly-entered data, not real data.
+\nOutliers like this only happen occasionally.
 """
 
 check_1_q7 = """
-In the CUSUM model, having a higher threshold T makes it…
-…detect changes faster, and less likely to falsely detect changes.
-…detect changes faster, and more likely to falsely detect changes.
-…detect changes slower, and less likely to falsely detect changes.
-…detect changes slower, and more likely to falsely detect changes.
+\nIn the CUSUM model, having a higher threshold T makes it…
+\n…detect changes faster, and less likely to falsely detect changes.
+\n…detect changes faster, and more likely to falsely detect changes.
+\n…detect changes slower, and less likely to falsely detect changes.
+\n…detect changes slower, and more likely to falsely detect changes.
 
 """
 
 check_1_q8 = """
-A multiplicative seasonality, like in the Holt-Winters method, means that the seasonal effect is…
-- The same regardless of the baseline value.
-- Proportional to the baseline value.
+\nA multiplicative seasonality, like in the Holt-Winters method, means that the seasonal effect is…
+\n- The same regardless of the baseline value.
+\n- Proportional to the baseline value.
 
 """
 check_1_q9 = """
-Is exponential smoothing better for short-term forecasting or long-term forecasting?
-Short-term
-Long-term
+\nIs exponential smoothing better for short-term forecasting or long-term forecasting?
+\nShort-term
+\nLong-term
 
 """
 check_1_q10 = """
-Why is GARCH different from ARIMA and exponential smoothing?
-- GARCH uses time series data
-- GARCH is autoregressive
-- GARCH estimates variance
+\nWhy is GARCH different from ARIMA and exponential smoothing?
+\n- GARCH uses time series data
+\n- GARCH is autoregressive
+\n- GARCH estimates variance
 """
 check_1_q11 = """
-When would regression be used instead of a time series model?
-- When there are other factors or predictors that affect the response
-- When only previous values of the response affect its current value
+\nWhen would regression be used instead of a time series model?
+\n- When there are other factors or predictors that affect the response
+\n- When only previous values of the response affect its current value
 
 """
 check_1_q12 = """
-If two models are approximately equally good, measures like AIC and BIC will favor the simpler model. Simpler models are often better because…
--Simple models are easier to explain and “sell” to managers and executives
--The effects observed in simple models are easier for everyone, including analytics professionals, to understand
--Simple models are less likely to be over-fit to random effects
--All of the above
+\nIf two models are approximately equally good, measures like AIC and BIC will favor the simpler model. Simpler models are often better because…
+\n-Simple models are easier to explain and “sell” to managers and executives
+\n-The effects observed in simple models are easier for everyone, including analytics professionals, to understand
+\n-Simple models are less likely to be over-fit to random effects
+\n-All of the above
 
 
 """
 check_1_q13 = """
-What does “heteroscedasticity” mean?
--The variance is different in different ranges of the data correct
--The variances of two samples of data are different from each other
+\nWhat does “heteroscedasticity” mean?
+\n-The variance is different in different ranges of the data correct
+\n-The variances of two samples of data are different from each other
 
 """
 check_1_q14= """
-A model is built to determine whether data points belong to a category or not. A “true negative” result is:
-- A data point that is in the category, but the model incorrectly says it isn’t.
-- A data point that is not in the category, but the model incorrectly says it is.
-- A data point that is in the category, and the model correctly says it is.
-- A data point that is not in the category, and the model correctly says so.
-- A “Debbie Downer” (someone who often says negative things that bring down everyone’s mood).
+\nA model is built to determine whether data points belong to a category or not. A “true negative” result is:
+\n- A data point that is in the category, but the model incorrectly says it isn’t.
+\n- A data point that is not in the category, but the model incorrectly says it is.
+\n- A data point that is in the category, and the model correctly says it is.
+\n- A data point that is not in the category, and the model correctly says so.
+\n- A “Debbie Downer” (someone who often says negative things that bring down everyone’s mood).
 
 """
 check_1_q15= """
-A common rule of thumb is to stop branching if a leaf would contain less than 5 percent of the data points. Why not keep branching and allow models to find very close fits to each very small subset of data?
--Actually, that sounds like a great idea – we should keep branching and let models find very close fits to very small subsets of data!
--Fitting to very small subsets of data will cause overfitting.
--Fitting to very small subsets of data will make the tree have too many leaves.
+\nA common rule of thumb is to stop branching if a leaf would contain less than 5 percent of the data points. Why not keep branching and allow models to find very close fits to each very small subset of data?
+\n-Actually, that sounds like a great idea – we should keep branching and let models find very close fits to very small subsets of data!
+\n-Fitting to very small subsets of data will cause overfitting.
+\n-Fitting to very small subsets of data will make the tree have too many leaves.
 """
 
 check_1_q16 = """
-In K-fold cross-validation, what does 'k' represent?
+\nIn K-fold cross-validation, what does 'k' represent?
 
-A. The number of data points in the test set.
-B. The number of features in the dataset.
-C. The number of parts the data is split into.
-D. The number of attributes in the training set.
+\nA. The number of data points in the test set.
+\nB. The number of features in the dataset.
+\nC. The number of parts the data is split into.
+\nD. The number of attributes in the training set.
 """
 
 check_1_q17 = """
-What is the primary purpose of using a separate test data set in model validation?
+\nWhat is the primary purpose of using a separate test data set in model validation?
 
-A. To optimize model parameters.
-B. To assess model effectiveness on random patterns.
-C. To choose the best-performing model.
-D. To estimate true model performance.
+\nA. To optimize model parameters.
+\nB. To assess model effectiveness on random patterns.
+\nC. To choose the best-performing model.
+\nD. To estimate true model performance.
 """
 
 check_1_q18 = """
-Which of the following best describes the concept of classification in analytics?
+\nWhich of the following best describes the concept of classification in analytics?
 
-A. Identifying the most common category among neighbors.
-B. Separating different categories with maximum margin.
-C. Assessing the cost of different types of errors.
-D. Measuring distances between data points.
+\nA. Identifying the most common category among neighbors.
+\nB. Separating different categories with maximum margin.
+\nC. Assessing the cost of different types of errors.
+\nD. Measuring distances between data points.
 """
 
 check_1_q19 = """
-What is the main iterative process in the K-means clustering algorithm?
-A. Calculating distances between data points.
-B. Assigning data points to the nearest cluster center.
-C. Calculating p-norms for distance measurements.
-D. Creating Voronoi diagrams.
+\nWhat is the main iterative process in the K-means clustering algorithm?
+\nA. Calculating distances between data points.
+\nB. Assigning data points to the nearest cluster center.
+\nC. Calculating p-norms for distance measurements.
+\nD. Creating Voronoi diagrams.
 """
 
 check_1_q20 = """
-Question 4: Practical K-means
-What is the purpose of the "elbow diagram" in K-means clustering?
-A. To show the shape of the clusters.
-B. To visualize the data distribution.
-C. To decide the number of clusters.
-D. To identify outliers in the data.
+\nQuestion 4: Practical K-means
+\nWhat is the purpose of the "elbow diagram" in K-means clustering?
+\nA. To show the shape of the clusters.
+\nB. To visualize the data distribution.
+\nC. To decide the number of clusters.
+\nD. To identify outliers in the data.
 """
 
 check_1_q21 = """
-What are the different types of outliers?
-A. Single outliers and double outliers.
-B. Point outliers, contextual outliers, and collective outliers.
-C. Inliers and outliers.
-D. Clean data and noisy data.
+\nWhat are the different types of outliers?
+\nA. Single outliers and double outliers.
+\nB. Point outliers, contextual outliers, and collective outliers.
+\nC. Inliers and outliers.
+\nD. Clean data and noisy data.
 """
 
 check_1_q22 = """
-What is the primary purpose of change detection in data analysis?
-A. Identifying historical data patterns
-B. Detecting changes in data over time
-C. Smoothing out data fluctuations
-D. Estimating baseline values
+\nWhat is the primary purpose of change detection in data analysis?
+\nA. Identifying historical data patterns
+\nB. Detecting changes in data over time
+\nC. Smoothing out data fluctuations
+\nD. Estimating baseline values
 """
 
 check_1_q23 = """
-what do different parameter values in CUSUM affect?
-A. The nature of the data
-B. The sensitivity of change detection
-C. The data collection process
-D. The data visualization
+\nwhat do different parameter values in CUSUM affect?
+\nA. The nature of the data
+\nB. The sensitivity of change detection
+\nC. The data collection process
+\nD. The data visualization
 """
 
 check_1_q24 = """
-What does exponential smoothing primarily help in determining when analyzing time series data?
-A. The latest observation
-B. Baseline data value
-C. Seasonality factors
-D. Random fluctuations
+\nWhat does exponential smoothing primarily help in determining when analyzing time series data?
+\nA. The latest observation
+\nB. Baseline data value
+\nC. Seasonality factors
+\nD. Random fluctuations
 """
 
 check_1_q25 = """
-In exponential smoothing, what does the coefficient alpha balance in the model?
-A. Baseline and trend estimates
-B. Latest observation and previous estimate
-C. Seasonality and cyclical effects
-D. Forecasting errors
+\nIn exponential smoothing, what does the coefficient alpha balance in the model?
+\nA. Baseline and trend estimates
+\nB. Latest observation and previous estimate
+\nC. Seasonality and cyclical effects
+\nD. Forecasting errors
 """
 
 check_1_q26 = """
-What is the primary purpose of the Box-Cox transformation in data preparation?
-A. Reduce dimensionality of data
-B. Normalize data distributions
-C. Remove outliers from data
-D. Adjust data for seasonal effects
+\nWhat is the primary purpose of the Box-Cox transformation in data preparation?
+\nA. Reduce dimensionality of data
+\nB. Normalize data distributions
+\nC. Remove outliers from data
+\nD. Adjust data for seasonal effects
 """
 
 check_1_q27 = """
-What is the main objective of Principal Component Analysis (PCA)?
-A. Increase the number of predictors
-B. Remove all variance in data
-C. Simplify complex datasets
-D. Introduce correlation among variables
+\nWhat is the main objective of Principal Component Analysis (PCA)?
+\nA. Increase the number of predictors
+\nB. Remove all variance in data
+\nC. Simplify complex datasets
+\nD. Introduce correlation among variables
 """
 
 check_1_q28 = """
-In Principal Component Analysis (PCA), what do eigenvalues and eigenvectors determine?
-A. The number of principal components
-B. The orthogonality of data
-C. The transformation of data
-D. The correlation among variables
+\nIn Principal Component Analysis (PCA), what do eigenvalues and eigenvectors determine?
+\nA. The number of principal components
+\nB. The orthogonality of data
+\nC. The transformation of data
+\nD. The correlation among variables
 """
 
 check_1_q29 = """
-What is the primary advantage of Classification and Regression Trees (CART) in regression analysis?
-A. They use a single regression model for all data points.
-B. They allow the use of separate coefficients for different data segments.
-C. They are less prone to overfitting compared to other methods.
-D. They do not require pruning.
+\nWhat is the primary advantage of Classification and Regression Trees (CART) in regression analysis?
+\nA. They use a single regression model for all data points.
+\nB. They allow the use of separate coefficients for different data segments.
+\nC. They are less prone to overfitting compared to other methods.
+\nD. They do not require pruning.
 """
 
 check_1_q30 = """
-In logistic regression, what is the range of predicted probabilities?
-A. -1 to 1
-B. 0 to 1
-C. 0 to infinity
-D. -infinity to infinity
+\nIn logistic regression, what is the range of predicted probabilities?
+\nA. -1 to 1
+\nB. 0 to 1
+\nC. 0 to infinity
+\nD. -infinity to infinity
 """
 
 KNOWLEDGE_1_QUESTIONS = [check_1_q1, check_1_q2, check_1_q3, check_1_q4, check_1__q5, check_1__q6,
