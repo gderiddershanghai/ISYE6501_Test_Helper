@@ -460,6 +460,7 @@ b. In which of the following situations would you recommend using Model C? [All 
 \nDiversity scores cannot be accurately estimated, and reasons for industrial area development can be effectively classified.
 \nDiversity scores cannot be accurately estimated, and reasons for industrial area development cannot be effectively classified.
 """
+
 midterm_2_q20 =  """
 Question A1\n
 A financial consulting company plans to use machine learning to predict stock market trends based on a range of economic indicators. They have historical data on stock prices, various economic indicators, and trading volumes. However, they lack reliable historical data on investor sentiment, which is believed to be a key influencing factor. They have current sentiment data but do not know historical sentiment values.
