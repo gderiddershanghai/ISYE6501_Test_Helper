@@ -550,6 +550,20 @@ kc_other_question_27 = {
     'chapter_information': 'Other'
 }
 
+kc_other_question_27_ = {
+    'question': "(Claude generated) A researcher is interested in comparing the time spent exercising (in minutes) between two independent groups: individuals with sedentary jobs and individuals with active jobs. The data is skewed and does not meet the assumptions of normality. Which statistical test would be most appropriate for this scenario?",
+    'options_list': [
+        "Independent samples t-test",
+        "Paired samples t-test",
+        "One-way ANOVA",
+        "Mann-Whitney U test"
+    ],
+    'correct_answer': "Mann-Whitney U test",
+    'explanation': "The Mann-Whitney U test is a non-parametric alternative to the independent samples t-test. It is used to compare the distributions of two independent groups when the data is ordinal or continuous but does not meet the assumptions of normality or equal variances. In this case, since the data on exercise time is skewed and violates the normality assumption, the Mann-Whitney U test is the most appropriate choice for comparing the two independent groups (sedentary jobs and active jobs).",
+    'chapter_information': 'Other'
+}
+
+
 kc_other_question_28 = {
     'question': "(GPT generated) The Louvain Algorithm is primarily used for:",
     'options_list': [
