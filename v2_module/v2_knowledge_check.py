@@ -724,6 +724,392 @@ kc15_question_15ggg_3 = {
 
 
 
+check_1_q1 = {
+    'question': "A survey of 25 people recorded each person’s family size and type of car. Which of these is a data point?",
+    'options_list': [
+        'The 14th person’s family size and car type',
+        'The 14th person’s family size',
+        'The car type of each person'
+    ],
+    'correct_answer': 'The 14th person’s family size and car type',
+    'explanation': "A data point is a single observation in a dataset. In this context, a complete record containing both the family size and car type represents a data point.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q2 = {
+    'question': (
+        "a. Which of these is structured data?"
+        "\n- The contents of a person’s Twitter feed"
+        "\n- The amount of money in a person’s bank account"
+        "\n\n"
+        "b. Which of these is time series data?"
+        "\n- The average cost of a house in the United States every year since 1820"
+        "\n- The height of each professional basketball player in the NBA at the start of the season"
+    ),
+    'correct_answer': (
+        "a: The amount of money in a person’s bank account"
+        "\nb: The average cost of a house in the United States every year since 1820"
+    ),
+    'explanation': (
+        "Structured data is highly organized and easily searchable, such as numeric data in a bank account. Time series data is collected or recorded over time, like the average cost of a house over many years.",
+    ),
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q3 = {
+    'question': "When comparing models, if we use the same data to pick the best model as we do to estimate how good the best one is, what is likely to happen?",
+    'options_list': [
+        'The model will appear to be better than it really is.',
+        'The model will appear to be worse than it really is.',
+        'The model will appear to be just as good as it really is.'
+    ],
+    'correct_answer': 'The model will appear to be better than it really is.',
+    'explanation': "Using the same data to select and evaluate a model can lead to overfitting, causing the model to perform better on the training data than it does in practice.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q4 = {
+    'question': "In k-fold cross-validation, how many times is each part of the data used for training, and for validation?",
+    'options_list': [
+        'k times for training, and k times for validation',
+        '1 time for training, and k-1 times for validation',
+        'k-1 times for training, and 1 time for validation'
+    ],
+    'correct_answer': 'k-1 times for training, and 1 time for validation',
+    'explanation': "In k-fold cross-validation, the data is split into k parts. Each part is used once for validation and k-1 times for training, providing a robust assessment of model performance.",
+    'chapter_information': 'midterm 1'
+}
+
+
+check_1__q5 = {
+    'question': "The k-means algorithm for clustering is a “heuristic” because...",
+    'options_list': [
+        '...it runs quickly.',
+        '...it never gets the best answer.',
+        '...it isn’t guaranteed to get the best answer.'
+    ],
+    'correct_answer': '...it isn’t guaranteed to get the best answer.',
+    'explanation': "A heuristic algorithm like k-means doesn't guarantee an optimal solution. It uses a practical approach to find a solution within a reasonable time, but it may not always achieve the best answer.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1__q6 = {
+    'question': "Which of these is generally a good reason to remove an outlier from your data set?",
+    'options_list': [
+        'The outlier is an incorrectly-entered data, not real data.',
+        'Outliers like this only happen occasionally.'
+    ],
+    'correct_answer': 'The outlier is an incorrectly-entered data, not real data.',
+    'explanation': "An outlier should be removed if it's due to incorrect data entry or isn't representative of actual data. Removing these kinds of outliers helps ensure data quality and validity.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q7 = {
+    'question': "In the CUSUM model, having a higher threshold T makes it...",
+    'options_list': [
+        '...detect changes faster, and less likely to falsely detect changes.',
+        '...detect changes faster, and more likely to falsely detect changes.',
+        '...detect changes slower, and less likely to falsely detect changes.',
+        '...detect changes slower, and more likely to falsely detect changes.'
+    ],
+    'correct_answer': '...detect changes slower, and less likely to falsely detect changes.',
+    'explanation': "In the CUSUM model, a higher threshold T requires a larger deviation for change detection, leading to slower change detection but reducing the likelihood of false positives.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q8 = {
+    'question': "A multiplicative seasonality, like in the Holt-Winters method, means that the seasonal effect is...",
+    'options_list': [
+        'The same regardless of the baseline value.',
+        'Proportional to the baseline value.'
+    ],
+    'correct_answer': 'Proportional to the baseline value.',
+    'explanation': "In multiplicative seasonality, the seasonal effect varies with the baseline value. Higher baselines lead to larger seasonal effects, while lower baselines lead to smaller seasonal effects.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q9 = {
+    'question': "Is exponential smoothing better for short-term forecasting or long-term forecasting?",
+    'options_list': [
+        'Short-term',
+        'Long-term'
+    ],
+    'correct_answer': 'Short-term',
+    'explanation': "Exponential smoothing gives more weight to recent observations, making it ideal for short-term forecasting, where trends and patterns are influenced by recent data.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q10 = {
+    'question': "Why is GARCH different from ARIMA and exponential smoothing?",
+    'options_list': [
+        'GARCH uses time series data',
+        'GARCH is autoregressive',
+        'GARCH estimates variance'
+    ],
+    'correct_answer': 'GARCH estimates variance',
+    'explanation': "GARCH (Generalized Autoregressive Conditional Heteroskedasticity) models variance and is used for forecasting volatility, unlike ARIMA and exponential smoothing, which focus on time-series forecasting.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q11 = {
+    'question': "When would regression be used instead of a time series model?",
+    'options_list': [
+        'When there are other factors or predictors that affect the response',
+        'When only previous values of the response affect its current value'
+    ],
+    'correct_answer': 'When there are other factors or predictors that affect the response',
+    'explanation': "Regression is used when multiple factors or predictors affect a response, allowing the model to consider these additional influences. Time series models focus primarily on previous values of the response to predict future values.",
+    'chapter_information': 'midterm 1'
+}
+
+
+check_1_q12 = {
+    'question': "If two models are approximately equally good, measures like AIC and BIC will favor the simpler model. Simpler models are often better because...",
+    'options_list': [
+        'Simple models are easier to explain and “sell” to managers and executives',
+        'The effects observed in simple models are easier for everyone, including analytics professionals, to understand',
+        'Simple models are less likely to be over-fit to random effects',
+        'All of the above'
+    ],
+    'correct_answer': 'All of the above',
+    'explanation': "Simpler models have several advantages: they are easier to understand and explain, less prone to overfitting, and more straightforward to communicate to stakeholders.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q13 = {
+    'question': "What does “heteroscedasticity” mean?",
+    'options_list': [
+        'The variance is different in different ranges of the data',
+        'The variances of two samples of data are different from each other'
+    ],
+    'correct_answer': 'The variance is different in different ranges of the data',
+    'explanation': "Heteroscedasticity refers to a condition where the variance of a variable changes across the data range. This can indicate that a model's assumptions may not hold true across all data points.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q14 = {
+    'question': "A model is built to determine whether data points belong to a category or not. A “true negative” result is:",
+    'options_list': [
+        'A data point that is in the category, but the model incorrectly says it isn’t.',
+        'A data point that is not in the category, but the model incorrectly says it is.',
+        'A data point that is in the category, and the model correctly says it is.',
+        'A data point that is not in the category, and the model correctly says so.',
+        'A “Debbie Downer” (someone who often says negative things that bring down everyone’s mood).'
+    ],
+    'correct_answer': 'A data point that is not in the category, and the model correctly says so.',
+    'explanation': "A true negative is when a data point that doesn't belong to a category is correctly identified as not belonging to that category. It indicates a correct negative classification.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q15 = {
+    'question': "A common rule of thumb is to stop branching if a leaf would contain less than 5 percent of the data points. Why not keep branching and allow models to find very close fits to each very small subset of data?",
+    'options_list': [
+        'Actually, that sounds like a great idea – we should keep branching and let models find very close fits to very small subsets of data!',
+        'Fitting to very small subsets of data will cause overfitting.',
+        'Fitting to very small subsets of data will make the tree have too many leaves.'
+    ],
+    'correct_answer': 'Fitting to very small subsets of data will cause overfitting.',
+    'explanation': "Overfitting occurs when a model is excessively complex, fitting to specific noise or variations in the training data, which reduces its ability to generalize to new data.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q16 = {
+    'question': "In K-fold cross-validation, what does 'k' represent?",
+    'options_list': [
+        'The number of data points in the test set.',
+        'The number of features in the dataset.',
+        'The number of parts the data is split into.',
+        'The number of attributes in the training set.'
+    ],
+    'correct_answer': 'The number of parts the data is split into.',
+    'explanation': "In K-fold cross-validation, 'k' refers to the number of parts into which the data is split for training and validation. Each part serves as a validation set, while the others are used for training.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q17 = {
+    'question': "What is the primary purpose of using a separate test data set in model validation?",
+    'options_list': [
+        'A. To optimize model parameters.',
+        'B. To assess model effectiveness on random patterns.',
+        'C. To choose the best-performing model.',
+        'D. To estimate true model performance.'
+    ],
+    'correct_answer': 'D. To estimate true model performance.',
+    'explanation': "A test data set provides an unbiased evaluation of a model's performance on unseen data, allowing for a more accurate assessment of how the model will perform in real-world applications.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q18 = {
+    'question': "Which of the following best describes the concept of classification in analytics?",
+    'options_list': [
+        'A. Identifying the most common category among neighbors.',
+        'B. Separating different categories with maximum margin.',
+        'C. Assessing the cost of different types of errors.',
+        'D. Measuring distances between data points.'
+    ],
+    'correct_answer': 'B. Separating different categories with maximum margin.',
+    'explanation': "Classification involves assigning data points to predefined categories. A common approach is to separate categories with a decision boundary, typically maximizing the margin between them to reduce misclassification.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q19 = {
+    'question': "What is the main iterative process in the K-means clustering algorithm?",
+    'options_list': [
+        'A. Calculating distances between data points.',
+        'B. Assigning data points to the nearest cluster center.',
+        'C. Calculating p-norms for distance measurements.',
+        'D. Creating Voronoi diagrams.'
+    ],
+    'correct_answer': 'B. Assigning data points to the nearest cluster center.',
+    'explanation': "The K-means algorithm involves iteratively assigning data points to the nearest cluster center based on calculated distances, and then recalculating the cluster centers based on the new assignments.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q20 = {
+    'question': "What is the purpose of the 'elbow diagram' in K-means clustering?",
+    'options_list': [
+        'A. To show the shape of the clusters.',
+        'B. To visualize the data distribution.',
+        'C. To decide the number of clusters.',
+        'D. To identify outliers in the data.'
+    ],
+    'correct_answer': 'C. To decide the number of clusters.',
+    'explanation': "The elbow diagram in K-means clustering is used to determine the optimal number of clusters. It plots the within-cluster sum of squares against the number of clusters, with the 'elbow' indicating the point where adding more clusters yields diminishing returns.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q21 = {
+    'question': "What are the different types of outliers?",
+    'options_list': [
+        'A. Single outliers and double outliers.',
+        'B. Point outliers, contextual outliers, and collective outliers.',
+        'C. Inliers and outliers.',
+        'D. Clean data and noisy data.'
+    ],
+    'correct_answer': 'B. Point outliers, contextual outliers, and collective outliers.',
+    'explanation': "Outliers can be classified into three types: point outliers (single unusual data points), contextual outliers (outliers within a specific context or condition), and collective outliers (anomalies within a group of data points).",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q22 = {
+    'question': "What is the primary purpose of change detection in data analysis?",
+    'options_list': [
+        'A. Identifying historical data patterns',
+        'B. Detecting changes in data over time',
+        'C. Smoothing out data fluctuations',
+        'D. Estimating baseline values'
+    ],
+    'correct_answer': 'B. Detecting changes in data over time',
+    'explanation': "Change detection focuses on identifying significant shifts or variations in data over time, helping to recognize trends, patterns, or anomalies in a dataset.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q23 = {
+    'question': "What do different parameter values in CUSUM affect?",
+    'options_list': [
+        'A. The nature of the data',
+        'B. The sensitivity of change detection',
+        'C. The data collection process',
+        'D. The data visualization'
+    ],
+    'correct_answer': 'B. The sensitivity of change detection',
+    'explanation': "CUSUM parameters determine how sensitive the model is to changes in data. Adjusting these parameters affects how quickly and accurately the model detects changes.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q24 = {
+    'question': "What does exponential smoothing primarily help in determining when analyzing time series data?",
+    'options_list': [
+        'A. The latest observation',
+        'B. Baseline data value',
+        'C. Seasonality factors',
+        'D. Random fluctuations'
+    ],
+    'correct_answer': 'D. Random fluctuations',
+    'explanation': "Exponential smoothing is used to smooth out random fluctuations in time series data, making it easier to identify trends, seasonality, and other underlying patterns.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q25 = {
+    'question': "In exponential smoothing, what does the coefficient alpha balance in the model?",
+    'options_list': [
+        'A. Baseline and trend estimates',
+        'B. Latest observation and previous estimate',
+        'C. Seasonality and cyclical effects',
+        'D. Forecasting errors'
+    ],
+    'correct_answer': 'B. Latest observation and previous estimate',
+    'explanation': "In exponential smoothing, the coefficient alpha controls the weighting between the latest observation and the previous estimate. A higher alpha gives more weight to recent data, while a lower alpha gives more weight to historical trends.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q26 = {
+    'question': "What is the primary purpose of the Box-Cox transformation in data preparation?",
+    'options_list': [
+        'A. Reduce dimensionality of data',
+        'B. Normalize data distributions',
+        'C. Remove outliers from data',
+        'D. Adjust data for seasonal effects'
+    ],
+    'correct_answer': 'B. Normalize data distributions',
+    'explanation': "The Box-Cox transformation is used to normalize data distributions, allowing for more effective analysis and meeting the assumptions of parametric statistical tests.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q27 = {
+    'question': "What is the main objective of Principal Component Analysis (PCA)?",
+    'options_list': [
+        'A. Increase the number of predictors',
+        'B. Remove all variance in data',
+        'C. Simplify complex datasets',
+        'D. Introduce correlation among variables'
+    ],
+    'correct_answer': 'C. Simplify complex datasets',
+    'explanation': "PCA aims to reduce the dimensionality of complex datasets by identifying key components that capture most of the variance, thus simplifying the dataset while retaining essential information.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q28 = {
+    'question': "In Principal Component Analysis (PCA), what do eigenvalues and eigenvectors determine?",
+    'options_list': [
+        'A. The number of principal components',
+        'B. The orthogonality of data',
+        'C. The transformation of data',
+        'D. The correlation among variables'
+    ],
+    'correct_answer': 'A. The number of principal components',
+    'explanation': "Eigenvalues and eigenvectors in PCA help determine the number of principal components by indicating the amount of variance each component captures. The number of principal components to retain is often based on the eigenvalues.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q29 = {
+    'question': "What is the primary advantage of Classification and Regression Trees (CART) in regression analysis?",
+    'options_list': [
+        'A. They use a single regression model for all data points.',
+        'B. They allow the use of separate coefficients for different data segments.',
+        'C. They are less prone to overfitting compared to other methods.',
+        'D. They do not require pruning.'
+    ],
+    'correct_answer': 'B. They allow the use of separate coefficients for different data segments.',
+    'explanation': "CART allows the creation of different regression models for different data segments, providing flexibility and improving accuracy for diverse data subsets.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q30 = {
+    'question': "In logistic regression, what is the range of predicted probabilities?",
+    'options_list': [
+        'A. -1 to 1',
+        'B. 0 to 1',
+        'C. 0 to infinity',
+        'D. -infinity to infinity'
+    ],
+    'correct_answer': 'B. 0 to 1',
+    'explanation': "Logistic regression outputs probabilities ranging from 0 to 1, indicating the likelihood of a binary outcome. The logistic function maps values to this range, ensuring valid probability predictions.",
+    'chapter_information': 'midterm 1'
+}
+
+
+
 KC_MPC_QUESTIONS = []
 global_items = list(globals().items())
 # print(global_items)
