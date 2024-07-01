@@ -636,843 +636,843 @@ q20 ={
     ),
 
 }
-midterm_1_q21 = {
-    'question': (
-        "A healthcare analytics team is working on various models to analyze patient data for improving treatment outcomes. They have collected extensive patient data over the years, including demographics, treatment details, and health outcomes."
-        "\n\n"
-        "a. For classifying patients into high-risk and low-risk categories based on their treatment outcomes, which model would be best suited?"
-        "\n"
-        "Cusum\n"
-        "K-Nearest Neighbors\n"
-        "Support Vector Machines (SVM)\n\n"
-        "b. To cluster patients based on similarities in their diagnosis and treatment types, which algorithm would be most effective?"
-        "\n"
-        "K-Means Clustering\n"
-        "PCA\n"
-        "GARCH Variance Clustering\n\n"
-        "The healthcare analytics team is also interested in predicting the efficacy of treatments over time."
-        "\n\n"
-        "a. If the team wants to forecast treatment efficacy based on past trends and seasonal variations, which model should they use?"
-        "\n"
-        "ARIMA\n"
-        "Exponential Smoothing\n"
-        "Random Forests\n\n"
-        "b. To detect significant changes in treatment efficacy over time, which method would be most suitable?"
-        "\n"
-        "CUSUM\n"
-        "Principal Component Analysis\n"
-        "Box-Cox Transformation"
-    ),
-    'correct_answer': (
-        "a. Support Vector Machines (SVM)\n\n"
-        "b. K-Means Clustering\n\n"
-        "a. Exponential Smoothing\n\n"
-        "b. CUSUM"
-    ),
-    'explanation': (
-        "a. Support Vector Machines (SVM) are effective for classifying patients into distinct categories based on a clear decision boundary, ideal for high-risk and low-risk segmentation.\n\n"
-        "b. K-Means Clustering is widely used for creating clusters with well-defined groupings, making it suitable for segmenting patients based on diagnosis and treatment types.\n\n"
-        "a. Exponential Smoothing is ideal for forecasting trends with seasonal components, providing a smooth approach to predicting treatment efficacy.\n\n"
-        "b. CUSUM (Cumulative Sum) is a robust method for detecting significant changes or shifts in data over time, well-suited for monitoring treatment efficacy."
-    )
-}
+# midterm_1_q21 = {
+#     'question': (
+#         "A healthcare analytics team is working on various models to analyze patient data for improving treatment outcomes. They have collected extensive patient data over the years, including demographics, treatment details, and health outcomes."
+#         "\n\n"
+#         "a. For classifying patients into high-risk and low-risk categories based on their treatment outcomes, which model would be best suited?"
+#         "\n"
+#         "Cusum\n"
+#         "K-Nearest Neighbors\n"
+#         "Support Vector Machines (SVM)\n\n"
+#         "b. To cluster patients based on similarities in their diagnosis and treatment types, which algorithm would be most effective?"
+#         "\n"
+#         "K-Means Clustering\n"
+#         "PCA\n"
+#         "GARCH Variance Clustering\n\n"
+#         "The healthcare analytics team is also interested in predicting the efficacy of treatments over time."
+#         "\n\n"
+#         "a. If the team wants to forecast treatment efficacy based on past trends and seasonal variations, which model should they use?"
+#         "\n"
+#         "ARIMA\n"
+#         "Exponential Smoothing\n"
+#         "Random Forests\n\n"
+#         "b. To detect significant changes in treatment efficacy over time, which method would be most suitable?"
+#         "\n"
+#         "CUSUM\n"
+#         "Principal Component Analysis\n"
+#         "Box-Cox Transformation"
+#     ),
+#     'correct_answer': (
+#         "a. Support Vector Machines (SVM)\n\n"
+#         "b. K-Means Clustering\n\n"
+#         "a. Exponential Smoothing\n\n"
+#         "b. CUSUM"
+#     ),
+#     'explanation': (
+#         "a. Support Vector Machines (SVM) are effective for classifying patients into distinct categories based on a clear decision boundary, ideal for high-risk and low-risk segmentation.\n\n"
+#         "b. K-Means Clustering is widely used for creating clusters with well-defined groupings, making it suitable for segmenting patients based on diagnosis and treatment types.\n\n"
+#         "a. Exponential Smoothing is ideal for forecasting trends with seasonal components, providing a smooth approach to predicting treatment efficacy.\n\n"
+#         "b. CUSUM (Cumulative Sum) is a robust method for detecting significant changes or shifts in data over time, well-suited for monitoring treatment efficacy."
+#     )
+# }
 
-midterm_1_q22 = {
-    'question': (
-        "A bank is developing a model to classify loan applicants as high-risk or low-risk, with the goal of minimizing misclassification."
-        "\n\n"
-        "a. Which model would be more suitable for this task, considering the importance of minimizing the misclassification of high-risk applicants?"
-        "\n"
-        "Support Vector Machines (SVM)\n"
-        "K-Nearest Neighbors (KNN)\n\n"
-        "b. In a medical diagnosis system, which model would be preferable for classifying patients based on a dataset with many overlapping characteristics?"
-        "\n"
-        "Support Vector Machines (SVM)\n"
-        "K-Nearest Neighbors (KNN)\n\n"
-        "A marketing team has developed several predictive models for customer behavior."
-        "\n\n"
-        "a. To avoid overfitting, which approach should they use for model assessment?"
-        "\n"
-        "Cross-validation\n"
-        "Training on the entire dataset\n\n"
-        "b. When choosing between two different models for predicting sales, one with a lower AIC and one with a higher BIC, which model should be preferred considering both simplicity and likelihood?"
-        "\n"
-        "Model with lower AIC\n"
-        "Model with higher BIC"
-    ),
-    'correct_answer': (
-        "a. Support Vector Machines (SVM)\n\n"
-        "b. Support Vector Machines (SVM)\n\n"
-        "a. Cross-validation\n\n"
-        "b. Model with lower AIC"
-    ),
-    'explanation': (
-        "a. Support Vector Machines (SVM) offer a robust decision boundary that is effective for binary classification tasks where the cost of misclassification is high, making it suitable for loan risk assessment.\n\n"
-        "b. SVMs are also preferred in a medical diagnosis system with overlapping characteristics due to their ability to handle complex decision boundaries.\n\n"
-        "a. Cross-validation helps avoid overfitting by testing the model on different subsets of data, providing a comprehensive validation approach.\n\n"
-        "b. A model with a lower AIC (Akaike Information Criterion) is generally preferred because it balances simplicity and likelihood, reducing the risk of overfitting."
-    )
-}
+# midterm_1_q22 = {
+#     'question': (
+#         "A bank is developing a model to classify loan applicants as high-risk or low-risk, with the goal of minimizing misclassification."
+#         "\n\n"
+#         "a. Which model would be more suitable for this task, considering the importance of minimizing the misclassification of high-risk applicants?"
+#         "\n"
+#         "Support Vector Machines (SVM)\n"
+#         "K-Nearest Neighbors (KNN)\n\n"
+#         "b. In a medical diagnosis system, which model would be preferable for classifying patients based on a dataset with many overlapping characteristics?"
+#         "\n"
+#         "Support Vector Machines (SVM)\n"
+#         "K-Nearest Neighbors (KNN)\n\n"
+#         "A marketing team has developed several predictive models for customer behavior."
+#         "\n\n"
+#         "a. To avoid overfitting, which approach should they use for model assessment?"
+#         "\n"
+#         "Cross-validation\n"
+#         "Training on the entire dataset\n\n"
+#         "b. When choosing between two different models for predicting sales, one with a lower AIC and one with a higher BIC, which model should be preferred considering both simplicity and likelihood?"
+#         "\n"
+#         "Model with lower AIC\n"
+#         "Model with higher BIC"
+#     ),
+#     'correct_answer': (
+#         "a. Support Vector Machines (SVM)\n\n"
+#         "b. Support Vector Machines (SVM)\n\n"
+#         "a. Cross-validation\n\n"
+#         "b. Model with lower AIC"
+#     ),
+#     'explanation': (
+#         "a. Support Vector Machines (SVM) offer a robust decision boundary that is effective for binary classification tasks where the cost of misclassification is high, making it suitable for loan risk assessment.\n\n"
+#         "b. SVMs are also preferred in a medical diagnosis system with overlapping characteristics due to their ability to handle complex decision boundaries.\n\n"
+#         "a. Cross-validation helps avoid overfitting by testing the model on different subsets of data, providing a comprehensive validation approach.\n\n"
+#         "b. A model with a lower AIC (Akaike Information Criterion) is generally preferred because it balances simplicity and likelihood, reducing the risk of overfitting."
+#     )
+# }
 
-midterm_1_q20 = {
-    'question': (
-        "A pharmaceutical company produces medications in batches of 200 units, with each batch taking an average of 7 days to complete. They have data on the sequence number of each unit in the batch, the day it was completed within the batch, and the time until the first reported efficacy drop in patients. The company plans to use triple exponential smoothing to analyze patterns in the time until efficacy drop based on a unit’s sequence number in its batch."
-        "\n\n"
-        "a. The observed variable (y_t) in the context of this study:"
-        "\n- Sequence number in batch"
-        "\n- Day within batch that unit was completed"
-        "\n- Time until first reported efficacy drop\n\n"
-        "b. The seasonal length (L) in this analysis:"
-        "\n- 200 (number of units in a batch)"
-        "\n- 7 (days to complete a batch)\n\n"
-        "c. If the seasonal component (C_t) values are consistently lower towards the end of the batch, it suggests:"
-        "\n- Units produced later in a batch tend to show efficacy drop more quickly."
-        "\n- Units produced later in a batch tend to maintain efficacy longer."
-        "\n- This question is designed to assess the application of time series analysis in a production context and the interpretation of its results."
-    ),
-    'correct_answer': (
-        "a. Time until first reported efficacy drop\n\n"
-        "b. 7 (days to complete a batch)\n\n"
-        "c. Units produced later in a batch tend to show efficacy drop more quickly."
-    ),
-    'explanation': (
-        "a. The observed variable (y_t) is the primary outcome of interest, which in this context is the time until the first reported efficacy drop."
-        "\n\n"
-        "b. The seasonal length (L) in triple exponential smoothing should correspond to the recurring pattern, which in this case is the 7-day cycle to complete a batch."
-        "\n\n"
-        "c. If the seasonal component (C_t) is lower towards the end of the batch, it indicates that units produced later in the batch tend to show efficacy drop more quickly, suggesting potential issues with production consistency."
-    )
-}
+# midterm_1_q20 = {
+#     'question': (
+#         "A pharmaceutical company produces medications in batches of 200 units, with each batch taking an average of 7 days to complete. They have data on the sequence number of each unit in the batch, the day it was completed within the batch, and the time until the first reported efficacy drop in patients. The company plans to use triple exponential smoothing to analyze patterns in the time until efficacy drop based on a unit’s sequence number in its batch."
+#         "\n\n"
+#         "a. The observed variable (y_t) in the context of this study:"
+#         "\n- Sequence number in batch"
+#         "\n- Day within batch that unit was completed"
+#         "\n- Time until first reported efficacy drop\n\n"
+#         "b. The seasonal length (L) in this analysis:"
+#         "\n- 200 (number of units in a batch)"
+#         "\n- 7 (days to complete a batch)\n\n"
+#         "c. If the seasonal component (C_t) values are consistently lower towards the end of the batch, it suggests:"
+#         "\n- Units produced later in a batch tend to show efficacy drop more quickly."
+#         "\n- Units produced later in a batch tend to maintain efficacy longer."
+#         "\n- This question is designed to assess the application of time series analysis in a production context and the interpretation of its results."
+#     ),
+#     'correct_answer': (
+#         "a. Time until first reported efficacy drop\n\n"
+#         "b. 7 (days to complete a batch)\n\n"
+#         "c. Units produced later in a batch tend to show efficacy drop more quickly."
+#     ),
+#     'explanation': (
+#         "a. The observed variable (y_t) is the primary outcome of interest, which in this context is the time until the first reported efficacy drop."
+#         "\n\n"
+#         "b. The seasonal length (L) in triple exponential smoothing should correspond to the recurring pattern, which in this case is the 7-day cycle to complete a batch."
+#         "\n\n"
+#         "c. If the seasonal component (C_t) is lower towards the end of the batch, it indicates that units produced later in the batch tend to show efficacy drop more quickly, suggesting potential issues with production consistency."
+#     )
+# }
 
-midterm_1_q17 = {
-    'question': (
-        "A regional supermarket chain has collected day-to-day data over the last five years (approximately 1800 data points)."
-        "\n\n"
-        "x1 = Number of customers visiting the store that day"
-        "\nx2 = Day of the week"
-        "\nx3 = Whether the day was part of a promotional event"
-        "\nx4 = Local unemployment rate on that day"
-        "\nx5 = Average temperature on that day"
-        "\nx6 = Local sports team win or loss on the previous day\n\n"
-        "a. Select all data that are categorical."
-        "\n"
-        "x2\n"
-        "x3\n"
-        "x6\n\n"
-        "The supermarket has built three models using the linear formula b0 + b1x1 + b2x2 + b3x3 + b4x4 + b5x5 + b6x6."
-        "\n\n"
-        "1. Linear Regression"
-        "\n2. Logistic Regression"
-        "\n3. K-nearest neighbors\n\n"
-        "b. For each of the following scenarios (i-iii), which model (1, 2, or 3) would you suggest using?"
-        "\n"
-        "i. The supermarket wants to estimate the total number of customers visiting the store each day."
-        "\n- Linear Regression\n\n"
-        "ii. The supermarket aims to predict the likelihood of having more than 500 customers in the store each day."
-        "\n- Logistic Regression\n\n"
-        "iii. The supermarket seeks to classify days into high or low customer traffic based on a threshold of 500 customers."
-        "\n- K-nearest neighbors\n\n"
-        "A regional supermarket chain has implemented a triple exponential smoothing (Holt-Winters) model to forecast the number of customers visiting the store each day. The model includes a multiplicative seasonal pattern with a weekly cycle (i.e., L=7)."
-        "\n\n"
-        "i. What should they expect the best value of α to be, considering the consistency in customer visits?"
-        "\n- 0 < α < ½"
-    ),
-    'correct_answer': (
-        "a. x2, x3, x6\n\n"
-        "i. Linear Regression\n\n"
-        "ii. Logistic Regression\n\n"
-        "iii. K-nearest neighbors\n\n"
-        "i. 0 < α < ½"
-    ),
-    'explanation': (
-        "a. The categorical variables in this dataset are the day of the week (x2), whether the day was part of a promotional event (x3), and the local sports team win or loss on the previous day (x6)."
-        "\n\n"
-        "i. Linear Regression is appropriate for estimating the total number of customers visiting the store each day, given its continuous output."
-        "\n\n"
-        "ii. Logistic Regression is suitable for predicting the likelihood of having more than 500 customers, as it involves a binary classification."
-        "\n\n"
-        "iii. K-nearest neighbors is useful for classifying days into high or low customer traffic based on a threshold, given its non-parametric nature."
-        "\n\n"
-        "i. In triple exponential smoothing, an alpha value between 0 and ½ is generally optimal when there's consistent data with minimal random variation."
-    )
-}
+# midterm_1_q17 = {
+#     'question': (
+#         "A regional supermarket chain has collected day-to-day data over the last five years (approximately 1800 data points)."
+#         "\n\n"
+#         "x1 = Number of customers visiting the store that day"
+#         "\nx2 = Day of the week"
+#         "\nx3 = Whether the day was part of a promotional event"
+#         "\nx4 = Local unemployment rate on that day"
+#         "\nx5 = Average temperature on that day"
+#         "\nx6 = Local sports team win or loss on the previous day\n\n"
+#         "a. Select all data that are categorical."
+#         "\n"
+#         "x2\n"
+#         "x3\n"
+#         "x6\n\n"
+#         "The supermarket has built three models using the linear formula b0 + b1x1 + b2x2 + b3x3 + b4x4 + b5x5 + b6x6."
+#         "\n\n"
+#         "1. Linear Regression"
+#         "\n2. Logistic Regression"
+#         "\n3. K-nearest neighbors\n\n"
+#         "b. For each of the following scenarios (i-iii), which model (1, 2, or 3) would you suggest using?"
+#         "\n"
+#         "i. The supermarket wants to estimate the total number of customers visiting the store each day."
+#         "\n- Linear Regression\n\n"
+#         "ii. The supermarket aims to predict the likelihood of having more than 500 customers in the store each day."
+#         "\n- Logistic Regression\n\n"
+#         "iii. The supermarket seeks to classify days into high or low customer traffic based on a threshold of 500 customers."
+#         "\n- K-nearest neighbors\n\n"
+#         "A regional supermarket chain has implemented a triple exponential smoothing (Holt-Winters) model to forecast the number of customers visiting the store each day. The model includes a multiplicative seasonal pattern with a weekly cycle (i.e., L=7)."
+#         "\n\n"
+#         "i. What should they expect the best value of α to be, considering the consistency in customer visits?"
+#         "\n- 0 < α < ½"
+#     ),
+#     'correct_answer': (
+#         "a. x2, x3, x6\n\n"
+#         "i. Linear Regression\n\n"
+#         "ii. Logistic Regression\n\n"
+#         "iii. K-nearest neighbors\n\n"
+#         "i. 0 < α < ½"
+#     ),
+#     'explanation': (
+#         "a. The categorical variables in this dataset are the day of the week (x2), whether the day was part of a promotional event (x3), and the local sports team win or loss on the previous day (x6)."
+#         "\n\n"
+#         "i. Linear Regression is appropriate for estimating the total number of customers visiting the store each day, given its continuous output."
+#         "\n\n"
+#         "ii. Logistic Regression is suitable for predicting the likelihood of having more than 500 customers, as it involves a binary classification."
+#         "\n\n"
+#         "iii. K-nearest neighbors is useful for classifying days into high or low customer traffic based on a threshold, given its non-parametric nature."
+#         "\n\n"
+#         "i. In triple exponential smoothing, an alpha value between 0 and ½ is generally optimal when there's consistent data with minimal random variation."
+#     )
+# }
 
-midterm_1_q18 = {
-    'question': (
-        "A regional healthcare provider has collected extensive data on patient visits over the years, including patient demographics, symptoms, diagnoses, treatments, and outcomes. The organization now wants to leverage this data to predict patient readmission risks and identify key factors that contribute to higher readmission rates."
-        "\n\n"
-        "Choose the appropriate models/approaches from the list below that the healthcare provider could use for predicting patient readmissions and understanding the underlying factors."
-        "\n"
-        "- CUSUM\n"
-        "- K-nearest-neighbor classification\n"
-        "- Logistic Regression\n"
-        "- Multi-armed bandit\n"
-        "- Support Vector Machine\n"
-    ),
-    'correct_answer': (
-        "- Logistic Regression\n"
-        "- K-nearest-neighbor classification\n"
-        "- Support Vector Machine"
-    ),
-    'explanation': (
-        "Logistic Regression is suitable for predicting patient readmission risks due to its binary classification approach. It helps identify key factors contributing to higher readmission rates."
-        "\n\n"
-        "K-nearest-neighbor classification can be used to predict patient readmissions by finding the closest matches in the dataset, aiding in understanding patterns."
-        "\n\n"
-        "Support Vector Machine is also suitable for binary classification tasks, providing robust decision boundaries for predicting patient readmission risks."
-    )
-}
-midterm_1_q16 = """
-Question A1\n
-A company has noticed an increasing trend in customer service calls on Mondays over the past 15 years. The company wants to analyze whether there has been a significant change in this Monday trend in customer service calls during this period. Select all of the approaches that might reasonably be correct.
-\n
-i. Develop 15 separate logistic regression models, one for each year, with "is it Monday?" as one of the predictor variables; then apply a CUSUM analysis on the yearly coefficients for the Monday variable.
-\n
-ii. Implement time series forecasting using ARIMA, focusing on Mondays for the 780 weeks, and then use CUSUM on the forecasted values to identify any significant shifts.
-\n
-iii. Apply CUSUM directly on the volume of customer service calls received each of the 780 Mondays over the past 15 years.
-"""
+# midterm_1_q18 = {
+#     'question': (
+#         "A regional healthcare provider has collected extensive data on patient visits over the years, including patient demographics, symptoms, diagnoses, treatments, and outcomes. The organization now wants to leverage this data to predict patient readmission risks and identify key factors that contribute to higher readmission rates."
+#         "\n\n"
+#         "Choose the appropriate models/approaches from the list below that the healthcare provider could use for predicting patient readmissions and understanding the underlying factors."
+#         "\n"
+#         "- CUSUM\n"
+#         "- K-nearest-neighbor classification\n"
+#         "- Logistic Regression\n"
+#         "- Multi-armed bandit\n"
+#         "- Support Vector Machine\n"
+#     ),
+#     'correct_answer': (
+#         "- Logistic Regression\n"
+#         "- K-nearest-neighbor classification\n"
+#         "- Support Vector Machine"
+#     ),
+#     'explanation': (
+#         "Logistic Regression is suitable for predicting patient readmission risks due to its binary classification approach. It helps identify key factors contributing to higher readmission rates."
+#         "\n\n"
+#         "K-nearest-neighbor classification can be used to predict patient readmissions by finding the closest matches in the dataset, aiding in understanding patterns."
+#         "\n\n"
+#         "Support Vector Machine is also suitable for binary classification tasks, providing robust decision boundaries for predicting patient readmission risks."
+#     )
+# }
+# midterm_1_q16 = """
+# Question A1\n
+# A company has noticed an increasing trend in customer service calls on Mondays over the past 15 years. The company wants to analyze whether there has been a significant change in this Monday trend in customer service calls during this period. Select all of the approaches that might reasonably be correct.
+# \n
+# i. Develop 15 separate logistic regression models, one for each year, with "is it Monday?" as one of the predictor variables; then apply a CUSUM analysis on the yearly coefficients for the Monday variable.
+# \n
+# ii. Implement time series forecasting using ARIMA, focusing on Mondays for the 780 weeks, and then use CUSUM on the forecasted values to identify any significant shifts.
+# \n
+# iii. Apply CUSUM directly on the volume of customer service calls received each of the 780 Mondays over the past 15 years.
+# """
 
-midterm_1_q13 = """
-Confusion Matrix for Shoplifting Prediction Model:
-=======================================================================
-                       Predicted Not Shoplifting   Predicted Shoplifting
-Actual Not Shoplifting            1200                       300
-Actual Shoplifting                 150                       350
-=======================================================================
+# midterm_1_q13 = """
+# Confusion Matrix for Shoplifting Prediction Model:
+# =======================================================================
+#                        Predicted Not Shoplifting   Predicted Shoplifting
+# Actual Not Shoplifting            1200                       300
+# Actual Shoplifting                 150                       350
+# =======================================================================
 
-This confusion matrix represents the outcomes of a shoplifting prediction model. The model predicts whether an individual is likely to commit shoplifting ('Predicted Shoplifting')
-or not ('Predicted Not Shoplifting'), and the results are compared against the actual occurrences ('Actual Shoplifting' and 'Actual Not Shoplifting').
+# This confusion matrix represents the outcomes of a shoplifting prediction model. The model predicts whether an individual is likely to commit shoplifting ('Predicted Shoplifting')
+# or not ('Predicted Not Shoplifting'), and the results are compared against the actual occurrences ('Actual Shoplifting' and 'Actual Not Shoplifting').
 
-Questions about the Shoplifting Prediction Model's Confusion Matrix:
+# Questions about the Shoplifting Prediction Model's Confusion Matrix:
 
-Question A1:\n
-Calculate the model's accuracy (the proportion of true results among the total number of cases examined).
-\nA) (1200 + 350) / (1200 + 300 + 150 + 350)
-\nB) (1200 + 150) / (1200 + 300 + 150 + 350)
-\nC) (300 + 350) / (1200 + 300 + 150 + 350)
+# Question A1:\n
+# Calculate the model's accuracy (the proportion of true results among the total number of cases examined).
+# \nA) (1200 + 350) / (1200 + 300 + 150 + 350)
+# \nB) (1200 + 150) / (1200 + 300 + 150 + 350)
+# \nC) (300 + 350) / (1200 + 300 + 150 + 350)
 
-Question A2:\n
-Determine the model's precision for shoplifting predictions (the proportion of correctly predicted shoplifting incidents to the total predicted as shoplifting).
-\nA) 350 / (300 + 350)
-\nB) 1200 / (1200 + 150)
-\nC) 350 / (1200 + 350)
+# Question A2:\n
+# Determine the model's precision for shoplifting predictions (the proportion of correctly predicted shoplifting incidents to the total predicted as shoplifting).
+# \nA) 350 / (300 + 350)
+# \nB) 1200 / (1200 + 150)
+# \nC) 350 / (1200 + 350)
 
-Question A3:\n
-Calculate the model's recall for shoplifting predictions (the ability of the model to identify actual shoplifting incidents).
-\nA) 350 / (150 + 350)
-\nB) 300 / (1200 + 300)
-\nC) 1200 / (1200 + 150)
+# Question A3:\n
+# Calculate the model's recall for shoplifting predictions (the ability of the model to identify actual shoplifting incidents).
+# \nA) 350 / (150 + 350)
+# \nB) 300 / (1200 + 300)
+# \nC) 1200 / (1200 + 150)
 
-Question A4:\n
-Based on the confusion matrix, which statement is true regarding the model's predictions?
-\nA) The model is more accurate in predicting non-shoplifting incidents than shoplifting incidents.
-\nB) The model has the same accuracy for predicting shoplifting and non-shoplifting incidents.
-\nC) The model is more accurate in predicting shoplifting incidents than non-shoplifting incidents.
+# Question A4:\n
+# Based on the confusion matrix, which statement is true regarding the model's predictions?
+# \nA) The model is more accurate in predicting non-shoplifting incidents than shoplifting incidents.
+# \nB) The model has the same accuracy for predicting shoplifting and non-shoplifting incidents.
+# \nC) The model is more accurate in predicting shoplifting incidents than non-shoplifting incidents.
 
-"""
-midterm_1_q14 = """
-A1\n
-Matching\n
-Choices:\n
-\nA. Classification
-\nB. Clustering
-\nC. Dimensionality Reduction
-\nD. Outlier Detection
+# """
+# midterm_1_q14 = """
+# A1\n
+# Matching\n
+# Choices:\n
+# \nA. Classification
+# \nB. Clustering
+# \nC. Dimensionality Reduction
+# \nD. Outlier Detection
 
-\nA1. Astronomers have a collection of long-exposure CCD images of distant celestial objects. They are unsure about the types of these objects and seek to group similar ones together. Which method is more suitable?
-\nA2. An astronomer has manually categorized hundreds of images and now wishes to use analytics to automatically categorize new images. Which approach is most fitting?
-\nA3. A data scientist wants to reduce the complexity of a high-dimensional dataset to visualize it more effectively, while preserving as much information as possible. Which technique should they use?
-\nA4. A financial analyst is examining a large set of transaction data to identify unusual transactions that might indicate fraudulent activity. Which method is most appropriate?
-"""
+# \nA1. Astronomers have a collection of long-exposure CCD images of distant celestial objects. They are unsure about the types of these objects and seek to group similar ones together. Which method is more suitable?
+# \nA2. An astronomer has manually categorized hundreds of images and now wishes to use analytics to automatically categorize new images. Which approach is most fitting?
+# \nA3. A data scientist wants to reduce the complexity of a high-dimensional dataset to visualize it more effectively, while preserving as much information as possible. Which technique should they use?
+# \nA4. A financial analyst is examining a large set of transaction data to identify unusual transactions that might indicate fraudulent activity. Which method is most appropriate?
+# """
 
-midterm_1_q1_5 = """
-Question A1:\n
+# midterm_1_q1_5 = """
+# Question A1:\n
 
-A retail company operates in various regions and is interested in optimizing its inventory management. The company has historical sales data from multiple stores and wants to predict future sales volumes for each product in different locations. This forecasting will help in efficient stock allocation and reducing inventory costs. The company also wants to understand the factors influencing sales to make strategic decisions. Which of the following models/approaches could the company use to predict future sales and understand sales dynamics?
+# A retail company operates in various regions and is interested in optimizing its inventory management. The company has historical sales data from multiple stores and wants to predict future sales volumes for each product in different locations. This forecasting will help in efficient stock allocation and reducing inventory costs. The company also wants to understand the factors influencing sales to make strategic decisions. Which of the following models/approaches could the company use to predict future sales and understand sales dynamics?
 
-CUSUM:\n
-\nDiscrete event simulation: A simulation that models a system that changes when specific events occur.
-\nLinear Regression:
-\nLogistic Regression Tree:
-\nRandom Linear Regression Forest:
-"""
+# CUSUM:\n
+# \nDiscrete event simulation: A simulation that models a system that changes when specific events occur.
+# \nLinear Regression:
+# \nLogistic Regression Tree:
+# \nRandom Linear Regression Forest:
+# """
 
-midterm_1_q13 = {
-    'question': (
-        "Confusion Matrix for Shoplifting Prediction Model:"
-        "\n======================================================================="
-        "\n                       Predicted Not Shoplifting   Predicted Shoplifting"
-        "\nActual Not Shoplifting            1200                       300"
-        "\nActual Shoplifting                 150                       350"
-        "\n======================================================================="
-        "\n\n"
-        "This confusion matrix represents the outcomes of a shoplifting prediction model. The model predicts whether an individual is likely to commit shoplifting ('Predicted Shoplifting') or not ('Predicted Not Shoplifting'), and the results are compared against the actual occurrences ('Actual Shoplifting' and 'Actual Not Shoplifting')."
-        "\n\n"
-        "Questions about the Shoplifting Prediction Model's Confusion Matrix:"
-        "\n\n"
-        "Question A1:\n"
-        "Calculate the model's accuracy (the proportion of true results among the total number of cases examined)."
-        "\n"
-        "A) (1200 + 350) / (1200 + 300 + 150 + 350)"
-        "\nB) (1200 + 150) / (1200 + 300 + 150 + 350)"
-        "\nC) (300 + 350) / (1200 + 300 + 150 + 350)\n\n"
-        "Question A2:\n"
-        "Determine the model's precision for shoplifting predictions (the proportion of correctly predicted shoplifting incidents to the total predicted as shoplifting)."
-        "\n"
-        "A) 350 / (300 + 350)"
-        "\nB) 1200 / (1200 + 150)"
-        "\nC) 350 / (1200 + 350)\n\n"
-        "Question A3:\n"
-        "Calculate the model's recall for shoplifting predictions (the ability of the model to identify actual shoplifting incidents)."
-        "\n"
-        "A) 350 / (150 + 350)"
-        "\nB) 300 / (1200 + 300)"
-        "\nC) 1200 / (1200 + 150)\n\n"
-        "Question A4:\n"
-        "Based on the confusion matrix, which statement is true regarding the model's predictions?"
-        "\n"
-        "A) The model is more accurate in predicting non-shoplifting incidents than shoplifting incidents."
-        "\nB) The model has the same accuracy for predicting shoplifting and non-shoplifting incidents."
-        "\nC) The model is more accurate in predicting shoplifting incidents than non-shoplifting incidents."
-    ),
-    'correct_answer': (
-        "A1: A) (1200 + 350) / (1200 + 300 + 150 + 350)\n\n"
-        "A2: A) 350 / (300 + 350)\n\n"
-        "A3: A) 350 / (150 + 350)\n\n"
-        "A4: A) The model is more accurate in predicting non-shoplifting incidents than shoplifting incidents."
-    ),
-    'explanation': (
-        "A1: The model's accuracy is the proportion of true results among the total cases, which is calculated as (1200 + 350) / (1200 + 300 + 150 + 350), yielding 1550/2000, or 77.5%."
-        "\n\n"
-        "A2: Precision for shoplifting predictions is the proportion of correctly predicted shoplifting incidents to the total predicted as shoplifting, which is calculated as 350 / (300 + 350), resulting in 350/650, or approximately 53.85%."
-        "\n\n"
-        "A3: Recall for shoplifting predictions is the ability of the model to identify actual shoplifting incidents, calculated as 350 / (150 + 350), resulting in 350/500, or 70%."
-        "\n\n"
-        "A4: The model is more accurate in predicting non-shoplifting incidents, as it correctly identifies 1200 out of 1500 cases, giving a higher accuracy compared to shoplifting predictions."
-    )
-}
+# midterm_1_q13 = {
+#     'question': (
+#         "Confusion Matrix for Shoplifting Prediction Model:"
+#         "\n======================================================================="
+#         "\n                       Predicted Not Shoplifting   Predicted Shoplifting"
+#         "\nActual Not Shoplifting            1200                       300"
+#         "\nActual Shoplifting                 150                       350"
+#         "\n======================================================================="
+#         "\n\n"
+#         "This confusion matrix represents the outcomes of a shoplifting prediction model. The model predicts whether an individual is likely to commit shoplifting ('Predicted Shoplifting') or not ('Predicted Not Shoplifting'), and the results are compared against the actual occurrences ('Actual Shoplifting' and 'Actual Not Shoplifting')."
+#         "\n\n"
+#         "Questions about the Shoplifting Prediction Model's Confusion Matrix:"
+#         "\n\n"
+#         "Question A1:\n"
+#         "Calculate the model's accuracy (the proportion of true results among the total number of cases examined)."
+#         "\n"
+#         "A) (1200 + 350) / (1200 + 300 + 150 + 350)"
+#         "\nB) (1200 + 150) / (1200 + 300 + 150 + 350)"
+#         "\nC) (300 + 350) / (1200 + 300 + 150 + 350)\n\n"
+#         "Question A2:\n"
+#         "Determine the model's precision for shoplifting predictions (the proportion of correctly predicted shoplifting incidents to the total predicted as shoplifting)."
+#         "\n"
+#         "A) 350 / (300 + 350)"
+#         "\nB) 1200 / (1200 + 150)"
+#         "\nC) 350 / (1200 + 350)\n\n"
+#         "Question A3:\n"
+#         "Calculate the model's recall for shoplifting predictions (the ability of the model to identify actual shoplifting incidents)."
+#         "\n"
+#         "A) 350 / (150 + 350)"
+#         "\nB) 300 / (1200 + 300)"
+#         "\nC) 1200 / (1200 + 150)\n\n"
+#         "Question A4:\n"
+#         "Based on the confusion matrix, which statement is true regarding the model's predictions?"
+#         "\n"
+#         "A) The model is more accurate in predicting non-shoplifting incidents than shoplifting incidents."
+#         "\nB) The model has the same accuracy for predicting shoplifting and non-shoplifting incidents."
+#         "\nC) The model is more accurate in predicting shoplifting incidents than non-shoplifting incidents."
+#     ),
+#     'correct_answer': (
+#         "A1: A) (1200 + 350) / (1200 + 300 + 150 + 350)\n\n"
+#         "A2: A) 350 / (300 + 350)\n\n"
+#         "A3: A) 350 / (150 + 350)\n\n"
+#         "A4: A) The model is more accurate in predicting non-shoplifting incidents than shoplifting incidents."
+#     ),
+#     'explanation': (
+#         "A1: The model's accuracy is the proportion of true results among the total cases, which is calculated as (1200 + 350) / (1200 + 300 + 150 + 350), yielding 1550/2000, or 77.5%."
+#         "\n\n"
+#         "A2: Precision for shoplifting predictions is the proportion of correctly predicted shoplifting incidents to the total predicted as shoplifting, which is calculated as 350 / (300 + 350), resulting in 350/650, or approximately 53.85%."
+#         "\n\n"
+#         "A3: Recall for shoplifting predictions is the ability of the model to identify actual shoplifting incidents, calculated as 350 / (150 + 350), resulting in 350/500, or 70%."
+#         "\n\n"
+#         "A4: The model is more accurate in predicting non-shoplifting incidents, as it correctly identifies 1200 out of 1500 cases, giving a higher accuracy compared to shoplifting predictions."
+#     )
+# }
 
-midterm_1_q14 = {
-    'question': (
-        "A1\n"
-        "Matching\n"
-        "Choices:\n"
-        "\nA. Classification"
-        "\nB. Clustering"
-        "\nC. Dimensionality Reduction"
-        "\nD. Outlier Detection\n\n"
-        "A1. Astronomers have a collection of long-exposure CCD images of distant celestial objects. They are unsure about the types of these objects and seek to group similar ones together. Which method is more suitable?"
-        "\n\n"
-        "A2. An astronomer has manually categorized hundreds of images and now wishes to use analytics to automatically categorize new images. Which approach is most fitting?"
-        "\n\n"
-        "A3. A data scientist wants to reduce the complexity of a high-dimensional dataset to visualize it more effectively, while preserving as much information as possible. Which technique should they use?"
-        "\n\n"
-        "A4. A financial analyst is examining a large set of transaction data to identify unusual transactions that might indicate fraudulent activity. Which method is most appropriate?"
-    ),
-    'correct_answer': (
-        "A1: B. Clustering\n\n"
-        "A2: A. Classification\n\n"
-        "A3: C. Dimensionality Reduction\n\n"
-        "A4: D. Outlier Detection"
-    ),
-    'explanation': (
-        "A1: Clustering is suitable for grouping similar objects, making it ideal for astronomers seeking to group celestial objects based on their characteristics."
-        "\n\n"
-        "A2: Classification is appropriate for automatically categorizing new images based on manually categorized examples."
-        "\n\n"
-        "A3: Dimensionality Reduction helps reduce the complexity of a high-dimensional dataset for visualization, preserving key information."
-        "\n\n"
-        "A4: Outlier Detection is designed to identify unusual data points or anomalies, which is ideal for identifying potential fraudulent activity in transaction data."
-    )
-}
+# midterm_1_q14 = {
+#     'question': (
+#         "A1\n"
+#         "Matching\n"
+#         "Choices:\n"
+#         "\nA. Classification"
+#         "\nB. Clustering"
+#         "\nC. Dimensionality Reduction"
+#         "\nD. Outlier Detection\n\n"
+#         "A1. Astronomers have a collection of long-exposure CCD images of distant celestial objects. They are unsure about the types of these objects and seek to group similar ones together. Which method is more suitable?"
+#         "\n\n"
+#         "A2. An astronomer has manually categorized hundreds of images and now wishes to use analytics to automatically categorize new images. Which approach is most fitting?"
+#         "\n\n"
+#         "A3. A data scientist wants to reduce the complexity of a high-dimensional dataset to visualize it more effectively, while preserving as much information as possible. Which technique should they use?"
+#         "\n\n"
+#         "A4. A financial analyst is examining a large set of transaction data to identify unusual transactions that might indicate fraudulent activity. Which method is most appropriate?"
+#     ),
+#     'correct_answer': (
+#         "A1: B. Clustering\n\n"
+#         "A2: A. Classification\n\n"
+#         "A3: C. Dimensionality Reduction\n\n"
+#         "A4: D. Outlier Detection"
+#     ),
+#     'explanation': (
+#         "A1: Clustering is suitable for grouping similar objects, making it ideal for astronomers seeking to group celestial objects based on their characteristics."
+#         "\n\n"
+#         "A2: Classification is appropriate for automatically categorizing new images based on manually categorized examples."
+#         "\n\n"
+#         "A3: Dimensionality Reduction helps reduce the complexity of a high-dimensional dataset for visualization, preserving key information."
+#         "\n\n"
+#         "A4: Outlier Detection is designed to identify unusual data points or anomalies, which is ideal for identifying potential fraudulent activity in transaction data."
+#     )
+# }
 
-midterm_1_q15 = {
-    'question': (
-        "A retail company operates in various regions and is interested in optimizing its inventory management. The company has historical sales data from multiple stores and wants to predict future sales volumes for each product in different locations. This forecasting will help in efficient stock allocation and reducing inventory costs."
-        "\n\n"
-        "The company also wants to understand the factors influencing sales to make strategic decisions. Which of the following models/approaches could the company use to predict future sales and understand sales dynamics?"
-        "\n"
-        "- CUSUM\n"
-        "- Discrete event simulation\n"
-        "- Linear Regression\n"
-        "- Logistic Regression\n"
-        "- Random Forest\n"
-    ),
-    'correct_answer': (
-        "- Linear Regression\n"
-        "- Random Forest\n"
-        "- Discrete event simulation"
-    ),
-    'explanation': (
-        "Linear Regression can predict future sales volumes based on historical data, providing a straightforward regression model for forecasting."
-        "\n\n"
-        "Random Forest is useful for predicting sales dynamics, given its ensemble nature, which helps capture complex relationships."
-        "\n\n"
-        "Discrete event simulation can model changes in a system when specific events occur, useful for understanding inventory management and stock allocation."
-    )
-}
+# midterm_1_q15 = {
+#     'question': (
+#         "A retail company operates in various regions and is interested in optimizing its inventory management. The company has historical sales data from multiple stores and wants to predict future sales volumes for each product in different locations. This forecasting will help in efficient stock allocation and reducing inventory costs."
+#         "\n\n"
+#         "The company also wants to understand the factors influencing sales to make strategic decisions. Which of the following models/approaches could the company use to predict future sales and understand sales dynamics?"
+#         "\n"
+#         "- CUSUM\n"
+#         "- Discrete event simulation\n"
+#         "- Linear Regression\n"
+#         "- Logistic Regression\n"
+#         "- Random Forest\n"
+#     ),
+#     'correct_answer': (
+#         "- Linear Regression\n"
+#         "- Random Forest\n"
+#         "- Discrete event simulation"
+#     ),
+#     'explanation': (
+#         "Linear Regression can predict future sales volumes based on historical data, providing a straightforward regression model for forecasting."
+#         "\n\n"
+#         "Random Forest is useful for predicting sales dynamics, given its ensemble nature, which helps capture complex relationships."
+#         "\n\n"
+#         "Discrete event simulation can model changes in a system when specific events occur, useful for understanding inventory management and stock allocation."
+#     )
+# }
 
-midterm_1_q10 = {
-    'question': (
-        "Model Suitability Analysis\n\n"
-        "For each statistical and machine learning model listed below, select the type of analysis it is best suited for."
-        " There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
-        "\n\n"
-        "A1. Ridge Regression"
-        "\n- Predicting a continuous response variable with feature data."
-        "\n- Dealing with multicollinearity in regression analysis."
-        "\n- Forecasting future values in a time-series dataset."
-        "\n- Classifying binary outcomes."
-        "\n\n"
-        "A2. Lasso Regression"
-        "\n- Selecting important features in a large dataset."
-        "\n- Predicting a numerical outcome based on feature data."
-        "\n- Analyzing patterns in time-series data."
-        "\n- Identifying categories in unstructured data."
-        "\n\n"
-        "A3. Principal Component Analysis (PCA)"
-        "\n- Reducing the dimensionality of a large dataset."
-        "\n- Forecasting trends in a time-series dataset."
-        "\n- Classifying items into categories based on feature data."
-        "\n- Detecting changes in the variance of a dataset over time."
-    ),
-    'correct_answer': (
-        "A1: Dealing with multicollinearity in regression analysis\n\n"
-        "A2: Selecting important features in a large dataset\n\n"
-        "A3: Reducing the dimensionality of a large dataset"
-    ),
-    'explanation': (
-        "A1: Ridge Regression is best suited for dealing with multicollinearity in regression analysis because it adds a regularization term that reduces the impact of correlated variables."
-        "\n\n"
-        "A2: Lasso Regression is ideal for selecting important features in a large dataset because it adds a regularization term that can shrink some coefficients to zero, effectively removing less important features."
-        "\n\n"
-        "A3: Principal Component Analysis (PCA) is designed to reduce dimensionality by transforming the original dataset into a smaller set of uncorrelated variables, retaining the most information."
-    )
-}
+# midterm_1_q10 = {
+#     'question': (
+#         "Model Suitability Analysis\n\n"
+#         "For each statistical and machine learning model listed below, select the type of analysis it is best suited for."
+#         " There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
+#         "\n\n"
+#         "A1. Ridge Regression"
+#         "\n- Predicting a continuous response variable with feature data."
+#         "\n- Dealing with multicollinearity in regression analysis."
+#         "\n- Forecasting future values in a time-series dataset."
+#         "\n- Classifying binary outcomes."
+#         "\n\n"
+#         "A2. Lasso Regression"
+#         "\n- Selecting important features in a large dataset."
+#         "\n- Predicting a numerical outcome based on feature data."
+#         "\n- Analyzing patterns in time-series data."
+#         "\n- Identifying categories in unstructured data."
+#         "\n\n"
+#         "A3. Principal Component Analysis (PCA)"
+#         "\n- Reducing the dimensionality of a large dataset."
+#         "\n- Forecasting trends in a time-series dataset."
+#         "\n- Classifying items into categories based on feature data."
+#         "\n- Detecting changes in the variance of a dataset over time."
+#     ),
+#     'correct_answer': (
+#         "A1: Dealing with multicollinearity in regression analysis\n\n"
+#         "A2: Selecting important features in a large dataset\n\n"
+#         "A3: Reducing the dimensionality of a large dataset"
+#     ),
+#     'explanation': (
+#         "A1: Ridge Regression is best suited for dealing with multicollinearity in regression analysis because it adds a regularization term that reduces the impact of correlated variables."
+#         "\n\n"
+#         "A2: Lasso Regression is ideal for selecting important features in a large dataset because it adds a regularization term that can shrink some coefficients to zero, effectively removing less important features."
+#         "\n\n"
+#         "A3: Principal Component Analysis (PCA) is designed to reduce dimensionality by transforming the original dataset into a smaller set of uncorrelated variables, retaining the most information."
+#     )
+# }
 
-midterm_1_q11 = {
-    'question': (
-        "Model Suitability Analysis\n\n"
-        "For each statistical and machine learning model listed below, select the type of analysis it is best suited for."
-        " There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
-        "\n\n"
-        "A1. Decision Trees (e.g., CART)"
-        "\n- Predicting the category of an item based on feature data."
-        "\n- Forecasting numerical values two time periods in the future."
-        "\n- Identifying clusters in feature data."
-        "\n- Analyzing the variance in time-series data."
-        "\n\n"
-        "A2. Random Forest"
-        "\n- Predicting the likelihood of an event based on feature data."
-        "\n- Classifying items into categories based on feature data."
-        "\n- Estimating the amount of a variable two time periods in the future using time-series data."
-        "\n- Detecting patterns in large datasets with many variables."
-        "\n\n"
-        "A3. Naive Bayes Classifier"
-        "\n- Classifying text data into predefined categories."
-        "\n- Predicting future trends based on historical time-series data."
-        "\n- Estimating the probability of an event occurring in the future."
-        "\n- Analyzing variance in feature data."
-    ),
-    'correct_answer': (
-        "A1: Predicting the category of an item based on feature data\n\n"
-        "A2: Detecting patterns in large datasets with many variables\n\n"
-        "A3: Classifying text data into predefined categories"
-    ),
-    'explanation': (
-        "A1: Decision Trees are well-suited for predicting the category of an item based on feature data, providing a clear visual representation of the decision-making process."
-        "\n\n"
-        "A2: Random Forest is designed to detect patterns in large datasets with many variables, using an ensemble of decision trees to improve prediction accuracy."
-        "\n\n"
-        "A3: Naive Bayes Classifier is optimal for classifying text data into predefined categories, given its probabilistic approach that assumes independence among features."
-    )
-}
+# midterm_1_q11 = {
+#     'question': (
+#         "Model Suitability Analysis\n\n"
+#         "For each statistical and machine learning model listed below, select the type of analysis it is best suited for."
+#         " There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
+#         "\n\n"
+#         "A1. Decision Trees (e.g., CART)"
+#         "\n- Predicting the category of an item based on feature data."
+#         "\n- Forecasting numerical values two time periods in the future."
+#         "\n- Identifying clusters in feature data."
+#         "\n- Analyzing the variance in time-series data."
+#         "\n\n"
+#         "A2. Random Forest"
+#         "\n- Predicting the likelihood of an event based on feature data."
+#         "\n- Classifying items into categories based on feature data."
+#         "\n- Estimating the amount of a variable two time periods in the future using time-series data."
+#         "\n- Detecting patterns in large datasets with many variables."
+#         "\n\n"
+#         "A3. Naive Bayes Classifier"
+#         "\n- Classifying text data into predefined categories."
+#         "\n- Predicting future trends based on historical time-series data."
+#         "\n- Estimating the probability of an event occurring in the future."
+#         "\n- Analyzing variance in feature data."
+#     ),
+#     'correct_answer': (
+#         "A1: Predicting the category of an item based on feature data\n\n"
+#         "A2: Detecting patterns in large datasets with many variables\n\n"
+#         "A3: Classifying text data into predefined categories"
+#     ),
+#     'explanation': (
+#         "A1: Decision Trees are well-suited for predicting the category of an item based on feature data, providing a clear visual representation of the decision-making process."
+#         "\n\n"
+#         "A2: Random Forest is designed to detect patterns in large datasets with many variables, using an ensemble of decision trees to improve prediction accuracy."
+#         "\n\n"
+#         "A3: Naive Bayes Classifier is optimal for classifying text data into predefined categories, given its probabilistic approach that assumes independence among features."
+#     )
+# }
 
-midterm_1_q12 = {
-    'question': (
-        "A1\n"
-        "Select all of the following reasons that data should not be scaled until point outliers are removed:"
-        "\n"
-        "- If data is scaled first, the range of data after outliers are removed will be narrower than intended."
-        "\n- If data is scaled first, the range of data after outliers are removed will be wider than intended."
-        "\n- Point outliers would appear to be valid data if not removed before scaling."
-        "\n- Valid data would appear to be outliers if data is scaled first.\n\n"
-        "A2\n"
-        "Select all of the following situations in which using a variable selection approach like lasso or stepwise regression would be important:"
-        "\n"
-        "- It is too costly to create a model with a large number of variables."
-        "\n- There are too few data points to avoid overfitting if all variables are included."
-        "\n- Time-series data is being used."
-        "\n- There are fewer data points than variables."
-    ),
-    'correct_answer': (
-        "A1: If data is scaled first, the range of data after outliers are removed will be narrower than intended"
-        "\n\n"
-        "A2: It is too costly to create a model with a large number of variables"
-        "\n- There are too few data points to avoid overfitting if all variables are included"
-    ),
-    'explanation': (
-        "A1: If data is scaled first, the range of data after outliers are removed will be narrower than intended, affecting the scaling process."
-        "\n\n"
-        "A2: Using variable selection approaches like lasso or stepwise regression is important when it is too costly to create a model with many variables, or when there are too few data points to avoid overfitting."
-    )
-}
-
-
-midterm_1_q9 = {
-    'question': (
-        "Model Suitability Analysis\n\n"
-        "For each statistical and machine learning model listed below, select the type of analysis it is best suited for. "
-        "There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
-        "\n\n"
-        "A1. Time Series Analysis (e.g., ARMA, ARIMA)"
-        "\n- Predicting future values in a time-series dataset."
-        "\n- Classifying items based on time-dependent features."
-        "\n- Analyzing the seasonal components of time-series data."
-        "\n- Estimating the probability of an event occurring in the future."
-        "\n\n"
-        "A2. k-Nearest-Neighbor Classification (kNN)"
-        "\n- Using feature data to predict whether or not something will happen two time periods in the future."
-        "\n- Using feature data to predict the probability of something happening two time periods in the future."
-        "\n- Using time-series data to predict the amount of something two time periods in the future."
-        "\n- Using time-series data to predict the variance of something two time periods in the future."
-        "\n\n"
-        "A3. Exponential Smoothing"
-        "\n- Using time-series data to predict the amount of something two time periods in the future."
-        "\n- Analyzing the seasonal components of time-series data."
-        "\n- Using time-series data to predict future trends."
-    ),
-    'correct_answer': (
-        "A1: Predicting future values in a time-series dataset\n\n"
-        "A2: Using feature data to predict whether or not something will happen two time periods in the future\n\n"
-        "A3: Using time-series data to predict the amount of something two time periods in the future"
-    ),
-    'explanation': (
-        "A1: Time Series Analysis, such as ARIMA, is most suitable for predicting future values in a time-series dataset, providing forecasting capabilities with seasonal components."
-        "\n\n"
-        "A2: k-Nearest-Neighbor Classification (kNN) is best for using feature data to predict binary outcomes, as it relies on the proximity to known data points to classify new data."
-        "\n\n"
-        "A3: Exponential Smoothing is appropriate for predicting the amount of something in a time-series dataset, offering a smoothing approach to forecast trends and address variability."
-    )
-}
-
-midterm_1_q8 = {
-    'question': (
-        "For each scenario, identify the most relevant statistical measure: AIC (Akaike Information Criterion), R-squared, Specificity, or Variance. Variance is included as a distractor and may not be the correct answer."
-        "\n\n"
-        "Definitions:"
-        "\nAIC (Akaike Information Criterion): Balances the model's fit with the complexity by penalizing the number of parameters."
-        "\nR-squared: Measures the proportion of variance in the dependent variable explained by the independent variables."
-        "\nSpecificity: Not relevant in this context."
-        "\nVariance: Measures the dispersion of a set of data points."
-        "\n\n"
-        "Choices:"
-        "\nA. AIC"
-        "\nB. R-squared"
-        "\nC. Specificity"
-        "\nD. Variance"
-        "\n\n"
-        "Scenarios:"
-        "\n\n"
-        "Question A1:"
-        "A researcher is assessing various linear regression models to predict future profits of a company, aiming to find a balance between model complexity and fit."
-        "\n\n"
-        "Question A2:"
-        "In a study evaluating the effect of advertising on sales, the analyst seeks to understand how changes in advertising budgets correlate with variations in sales figures."
-        "\n\n"
-        "Question A3:"
-        "An economist is choosing among different models to forecast economic growth, with a focus on avoiding overfitting in the presence of many potential predictor variables."
-    ),
-    'correct_answer': (
-        "A1: AIC\n\n"
-        "A2: R-squared\n\n"
-        "A3: AIC"
-    ),
-    'explanation': (
-        "A1: AIC is the most relevant measure for assessing various linear regression models, as it balances model fit with complexity, helping prevent overfitting."
-        "\n\n"
-        "A2: R-squared is the appropriate measure for evaluating the effect of advertising on sales, indicating the proportion of variance in the dependent variable explained by the independent variables."
-        "\n\n"
-        "A3: AIC is suitable for selecting models that avoid overfitting when forecasting economic growth, providing a balance between model complexity and fit."
-    )
-}
-
-midterm_1_q6 = {
-    'question': (
-        "Information for all parts of the question\n\n"
-        "Atlanta’s main library has collected the following day-by-day data over the past six years (more than 2000 data points):"
-        "\n\n"
-        "x1 = Number of books borrowed from the library on that day"
-        "\nx2 = Day of the week"
-        "\nx3 = Temperature"
-        "\nx4 = Amount of rainfall"
-        "\nx5 = Whether the library was closed that day"
-        "\nx6 = Whether public schools were open that day"
-        "\nx7 = Number of books borrowed the day before"
-        "\nt = Time"
-        "\n\n"
-        "a. Select all data that are categorical (including binary data):"
-        "\n"
-        "- Day of the week"
-        "\n- Whether the library was closed that day"
-        "\n- Whether public schools were open that day"
-        "\n\n"
-        "b. If the library is correct that on average, if more books were borrowed yesterday, more books will be borrowed today (and vice versa), what sign (positive or negative) would you expect the new predictor's coefficient β to have?"
-        "\n"
-        "- Positive, higher values of x7 increase the response (books borrowed today)"
-        "\n\n"
-        "c. Does x7 make the model autoregressive?"
-        "\n"
-        "- Yes, because the model uses day t-1 borrowing data to predict day t borrowing."
-    ),
-    'correct_answer': (
-        "a: - Day of the week, - Whether the library was closed that day, - Whether public schools were open that day\n\n"
-        "b: Positive, higher values of x7 increase the response (books borrowed today)\n\n"
-        "c: Yes, because the model uses day t-1 borrowing data to predict day t borrowing."
-    ),
-    'explanation': (
-        "a: Categorical data consists of discrete groups or binary values, which includes 'Day of the week,' 'Whether the library was closed that day,' and 'Whether public schools were open that day.'"
-        "\n\n"
-        "b: If more books borrowed yesterday leads to more books borrowed today, the expected sign for the coefficient β is positive, indicating a direct relationship."
-        "\n\n"
-        "c: A model is autoregressive if it uses previous response data to predict future responses. Using day t-1 borrowing data to predict day t borrowing makes the model autoregressive."
-    )
-}
-
-midterm_1_q7 = {
-    'question': (
-        "Select all of the following statements that are correct:"
-        "\n\n"
-        "- It is likely that the first principal component has much more predictive power than each of the other principal components."
-        "\n- It is likely that the first original covariate has much more predictive power than each of the other covariates."
-        "\n- It is likely that the last original covariate has much less predictive power than each of the other covariates."
-        "\n- The first principal component cannot contain information from all 7 original covariates. (correct)"
-    ),
-    'correct_answer': (
-        "- The first principal component cannot contain information from all 7 original covariates."
-    ),
-    'explanation': (
-        "The first principal component (PCA) captures the most variance in the dataset but cannot contain all the information from the original covariates. It represents a linear combination of original variables, but not the complete set."
-    )
-}
+# midterm_1_q12 = {
+#     'question': (
+#         "A1\n"
+#         "Select all of the following reasons that data should not be scaled until point outliers are removed:"
+#         "\n"
+#         "- If data is scaled first, the range of data after outliers are removed will be narrower than intended."
+#         "\n- If data is scaled first, the range of data after outliers are removed will be wider than intended."
+#         "\n- Point outliers would appear to be valid data if not removed before scaling."
+#         "\n- Valid data would appear to be outliers if data is scaled first.\n\n"
+#         "A2\n"
+#         "Select all of the following situations in which using a variable selection approach like lasso or stepwise regression would be important:"
+#         "\n"
+#         "- It is too costly to create a model with a large number of variables."
+#         "\n- There are too few data points to avoid overfitting if all variables are included."
+#         "\n- Time-series data is being used."
+#         "\n- There are fewer data points than variables."
+#     ),
+#     'correct_answer': (
+#         "A1: If data is scaled first, the range of data after outliers are removed will be narrower than intended"
+#         "\n\n"
+#         "A2: It is too costly to create a model with a large number of variables"
+#         "\n- There are too few data points to avoid overfitting if all variables are included"
+#     ),
+#     'explanation': (
+#         "A1: If data is scaled first, the range of data after outliers are removed will be narrower than intended, affecting the scaling process."
+#         "\n\n"
+#         "A2: Using variable selection approaches like lasso or stepwise regression is important when it is too costly to create a model with many variables, or when there are too few data points to avoid overfitting."
+#     )
+# }
 
 
-midterm_1_q5 = {
-    'question': (
-        "An airline wants to predict airline passenger traffic for the upcoming year."
-        " For each of the specific questions (a-e) listed below, identify the question type (i-viii) it corresponds to."
-        " If a question does not match any of the listed types, leave it uncircled."
-        "\n\n"
-        "Question Types:"
-        "\n"
-        "i. Change detection"
-        "\nii. Classification"
-        "\niii. Clustering"
-        "\niv. Feature-based prediction of a value"
-        "\nv. Feature-based prediction of a probability"
-        "\nvi. Time-series-based prediction"
-        "\nvii. Validation"
-        "\nviii. Variance estimation"
-        "\n\n"
-        "Questions:"
-        "\na. What is the probability that the airline will exceed 1 million passengers next year, considering current travel trends and economic factors?"
-        "\nb. Among various forecasting models for airline passenger traffic, which one is likely to be the most accurate for the upcoming year?"
-        "\nc. Based on the past decade's data, how many passengers are expected to travel via the airline next year?"
-        "\nd. Analyzing the past fifteen years of data, has there been a significant change in passenger traffic during holiday seasons?"
-        "\ne. Considering economic indicators and travel trends over the past 25 years, which years had the most similar passenger traffic patterns?"
-    ),
-    'correct_answer': (
-        "a: v. Feature-based prediction of a probability\n\n"
-        "b: vii. Validation\n\n"
-        "c: vi. Time-series-based prediction\n\n"
-        "d: i. Change detection\n\n"
-        "e: iii. Clustering"
-    ),
-    'explanation': (
-        "a: This question involves predicting the probability of an event occurring, aligning with 'Feature-based prediction of a probability.'"
-        "\n\n"
-        "b: This question seeks the most accurate forecasting model, relating to 'Validation.'"
-        "\n\n"
-        "c: This question requires predicting a future value based on time-series data, which is 'Time-series-based prediction.'"
-        "\n\n"
-        "d: Analyzing significant changes over time corresponds to 'Change detection.'"
-        "\n\n"
-        "e: Identifying years with similar passenger traffic patterns corresponds to 'Clustering.'"
-    )
-}
+# midterm_1_q9 = {
+#     'question': (
+#         "Model Suitability Analysis\n\n"
+#         "For each statistical and machine learning model listed below, select the type of analysis it is best suited for. "
+#         "There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
+#         "\n\n"
+#         "A1. Time Series Analysis (e.g., ARMA, ARIMA)"
+#         "\n- Predicting future values in a time-series dataset."
+#         "\n- Classifying items based on time-dependent features."
+#         "\n- Analyzing the seasonal components of time-series data."
+#         "\n- Estimating the probability of an event occurring in the future."
+#         "\n\n"
+#         "A2. k-Nearest-Neighbor Classification (kNN)"
+#         "\n- Using feature data to predict whether or not something will happen two time periods in the future."
+#         "\n- Using feature data to predict the probability of something happening two time periods in the future."
+#         "\n- Using time-series data to predict the amount of something two time periods in the future."
+#         "\n- Using time-series data to predict the variance of something two time periods in the future."
+#         "\n\n"
+#         "A3. Exponential Smoothing"
+#         "\n- Using time-series data to predict the amount of something two time periods in the future."
+#         "\n- Analyzing the seasonal components of time-series data."
+#         "\n- Using time-series data to predict future trends."
+#     ),
+#     'correct_answer': (
+#         "A1: Predicting future values in a time-series dataset\n\n"
+#         "A2: Using feature data to predict whether or not something will happen two time periods in the future\n\n"
+#         "A3: Using time-series data to predict the amount of something two time periods in the future"
+#     ),
+#     'explanation': (
+#         "A1: Time Series Analysis, such as ARIMA, is most suitable for predicting future values in a time-series dataset, providing forecasting capabilities with seasonal components."
+#         "\n\n"
+#         "A2: k-Nearest-Neighbor Classification (kNN) is best for using feature data to predict binary outcomes, as it relies on the proximity to known data points to classify new data."
+#         "\n\n"
+#         "A3: Exponential Smoothing is appropriate for predicting the amount of something in a time-series dataset, offering a smoothing approach to forecast trends and address variability."
+#     )
+# }
 
-midterm_1_q3 = {
-    'question': (
-        "Question A1"
-        "\nIn the soft classification SVM model where we select coefficients to minimize the following formula:"
-        "\nΣ_{j=1}^n max{0, 1 - (Σ_{i=1}^m a_ix_ij + a_0)y_j} + C Σ_{i=1}^m a_i^2"
-        "\nSelect all of the following statements that are correct."
-        "\n\n"
-        "- Decreasing the value of C could decrease the margin."
-        "\n- Allowing a larger margin could decrease the number of classification errors in the training set."
-        "\n- Decreasing the value of C could increase the number of classification errors in the training set."
-        "\n\n"
-        "Question A2"
-        "\nIn the hard classification SVM model, it might be desirable to not put the classifier in a location that has equal margin on both sides... (select all correct answers):"
-        "\n\n"
-        "- ...because moving the classifier will usually result in fewer classification errors in the validation data."
-        "\n- ...because moving the classifier will usually result in fewer classification errors in the test data."
-        "\n- ...when the costs of misclassifying the two types of points are significantly different."
-    ),
-    'correct_answer': (
-        "A1: - Decreasing the value of C could increase the number of classification errors in the training set\n\n"
-        "A2: - ...when the costs of misclassifying the two types of points are significantly different."
-    ),
-    'explanation': (
-        "A1: In soft classification SVM, decreasing the value of C leads to a larger margin, increasing the possibility of misclassifications in the training set."
-        "\n\n"
-        "A2: In hard classification SVM, unequal margins may be desirable when the costs of misclassification differ between the two types of points."
-    )
-}
+# midterm_1_q8 = {
+#     'question': (
+#         "For each scenario, identify the most relevant statistical measure: AIC (Akaike Information Criterion), R-squared, Specificity, or Variance. Variance is included as a distractor and may not be the correct answer."
+#         "\n\n"
+#         "Definitions:"
+#         "\nAIC (Akaike Information Criterion): Balances the model's fit with the complexity by penalizing the number of parameters."
+#         "\nR-squared: Measures the proportion of variance in the dependent variable explained by the independent variables."
+#         "\nSpecificity: Not relevant in this context."
+#         "\nVariance: Measures the dispersion of a set of data points."
+#         "\n\n"
+#         "Choices:"
+#         "\nA. AIC"
+#         "\nB. R-squared"
+#         "\nC. Specificity"
+#         "\nD. Variance"
+#         "\n\n"
+#         "Scenarios:"
+#         "\n\n"
+#         "Question A1:"
+#         "A researcher is assessing various linear regression models to predict future profits of a company, aiming to find a balance between model complexity and fit."
+#         "\n\n"
+#         "Question A2:"
+#         "In a study evaluating the effect of advertising on sales, the analyst seeks to understand how changes in advertising budgets correlate with variations in sales figures."
+#         "\n\n"
+#         "Question A3:"
+#         "An economist is choosing among different models to forecast economic growth, with a focus on avoiding overfitting in the presence of many potential predictor variables."
+#     ),
+#     'correct_answer': (
+#         "A1: AIC\n\n"
+#         "A2: R-squared\n\n"
+#         "A3: AIC"
+#     ),
+#     'explanation': (
+#         "A1: AIC is the most relevant measure for assessing various linear regression models, as it balances model fit with complexity, helping prevent overfitting."
+#         "\n\n"
+#         "A2: R-squared is the appropriate measure for evaluating the effect of advertising on sales, indicating the proportion of variance in the dependent variable explained by the independent variables."
+#         "\n\n"
+#         "A3: AIC is suitable for selecting models that avoid overfitting when forecasting economic growth, providing a balance between model complexity and fit."
+#     )
+# }
 
-midterm_1_q4 = {
-    'question': (
-        "Select whether a supervised learning model (like regression) is more directly appropriate than an unsupervised learning model (like dimensionality reduction)."
-        "\n\n"
-        "Definitions:"
-        "\nSupervised Learning: Machine learning where the 'correct' answer or outcome is known for each data point in the training set."
-        "\nRegression: A type of supervised learning where the model predicts a continuous outcome."
-        "\nUnsupervised Learning Model: Machine learning where the 'correct' answer is not known for the data points in the training set."
-        "\nDimensionality Reduction: A process in unsupervised learning of reducing the number of random variables under consideration, through feature selection and feature extraction."
-        "\n\n"
-        "Questions:"
-        "\n\n"
-        "- In a dataset of residential property sales, for each property, the sale price is known, and the goal is to predict prices for new listings based on various attributes like location, size, and amenities."
-        "\n\n"
-        "- In a large dataset of customer reviews, there is no specific response variable, but the goal is to understand underlying themes and patterns in the text data."
-        "\n\n"
-        "- In a clinical trial dataset, for each participant, the response to a medication is known, and the task is to predict patient outcomes based on their medical history and trial data."
-    ),
-    'correct_answer': (
-        "- In a dataset of residential property sales, for each property, the sale price is known, and the goal is to predict prices for new listings based on various attributes like location, size, and amenities."
-        "\n- In a clinical trial dataset, for each participant, the response to a medication is known, and the task is to predict patient outcomes based on their medical history and trial data."
-    ),
-    'explanation': (
-        "Supervised learning is appropriate when the 'correct' outcome is known, such as predicting property sale prices based on known values and forecasting patient outcomes based on medical history."
-        "\n\n"
-        "Unsupervised learning is appropriate when the 'correct' outcome is unknown, such as identifying themes and patterns in text data."
-    )
-}
+# midterm_1_q6 = {
+#     'question': (
+#         "Information for all parts of the question\n\n"
+#         "Atlanta’s main library has collected the following day-by-day data over the past six years (more than 2000 data points):"
+#         "\n\n"
+#         "x1 = Number of books borrowed from the library on that day"
+#         "\nx2 = Day of the week"
+#         "\nx3 = Temperature"
+#         "\nx4 = Amount of rainfall"
+#         "\nx5 = Whether the library was closed that day"
+#         "\nx6 = Whether public schools were open that day"
+#         "\nx7 = Number of books borrowed the day before"
+#         "\nt = Time"
+#         "\n\n"
+#         "a. Select all data that are categorical (including binary data):"
+#         "\n"
+#         "- Day of the week"
+#         "\n- Whether the library was closed that day"
+#         "\n- Whether public schools were open that day"
+#         "\n\n"
+#         "b. If the library is correct that on average, if more books were borrowed yesterday, more books will be borrowed today (and vice versa), what sign (positive or negative) would you expect the new predictor's coefficient β to have?"
+#         "\n"
+#         "- Positive, higher values of x7 increase the response (books borrowed today)"
+#         "\n\n"
+#         "c. Does x7 make the model autoregressive?"
+#         "\n"
+#         "- Yes, because the model uses day t-1 borrowing data to predict day t borrowing."
+#     ),
+#     'correct_answer': (
+#         "a: - Day of the week, - Whether the library was closed that day, - Whether public schools were open that day\n\n"
+#         "b: Positive, higher values of x7 increase the response (books borrowed today)\n\n"
+#         "c: Yes, because the model uses day t-1 borrowing data to predict day t borrowing."
+#     ),
+#     'explanation': (
+#         "a: Categorical data consists of discrete groups or binary values, which includes 'Day of the week,' 'Whether the library was closed that day,' and 'Whether public schools were open that day.'"
+#         "\n\n"
+#         "b: If more books borrowed yesterday leads to more books borrowed today, the expected sign for the coefficient β is positive, indicating a direct relationship."
+#         "\n\n"
+#         "c: A model is autoregressive if it uses previous response data to predict future responses. Using day t-1 borrowing data to predict day t borrowing makes the model autoregressive."
+#     )
+# }
 
-midterm_1_q1 = {
-    'question': (
-        "For each of the models (a-m) below, circle one type of question (i-viii) it is commonly used for."
-        " For models that have more than one correct answer, choose any one correct answer."
-        " If there is no correct answer listed, do not circle anything."
-        "\n\n"
-        "Models:"
-        "\na. ARIMA"
-        "\nb. CART"
-        "\nc. Cross validation"
-        "\nd. CUSUM"
-        "\ne. Exponential smoothing"
-        "\nf. GARCH"
-        "\ng. k-means"
-        "\nh. k-nearest-neighbor"
-        "\ni. Linear regression"
-        "\nj. Logistic regression"
-        "\nk. Principal component analysis"
-        "\nl. Random forest"
-        "\nm. Support vector machine"
-        "\n\n"
-        "Question Types:"
-        "\ni. Change detection"
-        "\nii. Classification"
-        "\niii. Clustering"
-        "\niv. Feature-based prediction of a probability"
-        "\nv. Feature-based prediction of a value"
-        "\nvi. Time-series-based prediction"
-        "\nvii. Validation"
-        "\nviii. Variance estimation"
-    ),
-    'correct_answer': (
-        "a. vi. Time-series-based prediction\n\n"
-        "b. ii. Classification\n\n"
-        "c. vii. Validation\n\n"
-        "d. i. Change detection\n\n"
-        "e. vi. Time-series-based prediction\n\n"
-        "f. viii. Variance estimation\n\n"
-        "g. iii. Clustering\n\n"
-        "h. ii. Classification\n\n"
-        "i. v. Feature-based prediction of a value\n\n"
-        "j. iv. Feature-based prediction of a probability\n\n"
-        "k. iii. Clustering\n\n"
-        "l. ii. Classification\n\n"
-        "m. ii. Classification"
-    ),
-    'explanation': (
-        "a. ARIMA is used for time-series-based prediction, analyzing data with trends and seasonality."
-        "\n\n"
-        "b. CART (Classification and Regression Trees) is commonly used for classification, creating decision trees to separate data into distinct groups."
-        "\n\n"
-        "c. Cross validation is used for validation, ensuring model robustness and preventing overfitting."
-        "\n\n"
-        "d. CUSUM (Cumulative Sum) is designed for change detection, identifying shifts in data over time."
-        "\n\n"
-        "e. Exponential smoothing is also used for time-series-based prediction, applying a smoothing factor to forecast trends."
-        "\n\n"
-        "f. GARCH (Generalized Autoregressive Conditional Heteroskedasticity) is used for variance estimation, modeling volatility in financial data."
-        "\n\n"
-        "g. k-means is a clustering method, creating groups based on data similarities."
-        "\n\n"
-        "h. k-nearest-neighbor is used for classification, classifying data based on proximity to other data points."
-        "\n\n"
-        "i. Linear regression is used for feature-based prediction of a value, predicting a continuous outcome."
-        "\n\n"
-        "j. Logistic regression is for feature-based prediction of a probability, predicting binary outcomes."
-        "\n\n"
-        "k. Principal component analysis (PCA) is typically used for clustering, reducing dimensionality and identifying key components."
-        "\n\n"
-        "l. Random forest is often used for classification, employing an ensemble of decision trees."
-        "\n\n"
-        "m. Support vector machine (SVM) is used for classification, creating decision boundaries to separate data."
-    )
-}
+# midterm_1_q7 = {
+#     'question': (
+#         "Select all of the following statements that are correct:"
+#         "\n\n"
+#         "- It is likely that the first principal component has much more predictive power than each of the other principal components."
+#         "\n- It is likely that the first original covariate has much more predictive power than each of the other covariates."
+#         "\n- It is likely that the last original covariate has much less predictive power than each of the other covariates."
+#         "\n- The first principal component cannot contain information from all 7 original covariates. (correct)"
+#     ),
+#     'correct_answer': (
+#         "- The first principal component cannot contain information from all 7 original covariates."
+#     ),
+#     'explanation': (
+#         "The first principal component (PCA) captures the most variance in the dataset but cannot contain all the information from the original covariates. It represents a linear combination of original variables, but not the complete set."
+#     )
+# }
 
-midterm_1_q2 = {
-    'question': (
-        "Select all of the following models that are designed for use with attribute/feature data (i.e., not time-series data):"
-        "\n"
-        "- CUSUM"
-        "\n- Logistic regression"
-        "\n- Support vector machine"
-        "\n- GARCH"
-        "\n- Random forest"
-        "\n- k-means"
-        "\n- Linear regression"
-        "\n- k-nearest-neighbor"
-        "\n- ARIMA"
-        "\n- Principal component analysis"
-        "\n- Exponential smoothing"
-    ),
-    'correct_answer': (
-        "- CUSUM\n"
-        "- Logistic regression\n"
-        "- Support vector machine\n"
-        "- Random forest\n"
-        "- k-means\n"
-        "- Linear regression\n"
-        "- k-nearest-neighbor\n"
-        "- Principal component analysis"
-    ),
-    'explanation': (
-        "These models are designed for use with attribute/feature data, not time-series data:"
-        "\n\n"
-        "- CUSUM is for change detection in attribute/feature data."
-        "\n\n"
-        "- Logistic regression, Support vector machine, Random forest, and k-nearest-neighbor are primarily used for classification."
-        "\n\n"
-        "- Linear regression is for predicting a continuous outcome based on feature data."
-        "\n\n"
-        "- k-means and Principal component analysis (PCA) are for clustering and dimensionality reduction, respectively."
-    )
-}
+
+# midterm_1_q5 = {
+#     'question': (
+#         "An airline wants to predict airline passenger traffic for the upcoming year."
+#         " For each of the specific questions (a-e) listed below, identify the question type (i-viii) it corresponds to."
+#         " If a question does not match any of the listed types, leave it uncircled."
+#         "\n\n"
+#         "Question Types:"
+#         "\n"
+#         "i. Change detection"
+#         "\nii. Classification"
+#         "\niii. Clustering"
+#         "\niv. Feature-based prediction of a value"
+#         "\nv. Feature-based prediction of a probability"
+#         "\nvi. Time-series-based prediction"
+#         "\nvii. Validation"
+#         "\nviii. Variance estimation"
+#         "\n\n"
+#         "Questions:"
+#         "\na. What is the probability that the airline will exceed 1 million passengers next year, considering current travel trends and economic factors?"
+#         "\nb. Among various forecasting models for airline passenger traffic, which one is likely to be the most accurate for the upcoming year?"
+#         "\nc. Based on the past decade's data, how many passengers are expected to travel via the airline next year?"
+#         "\nd. Analyzing the past fifteen years of data, has there been a significant change in passenger traffic during holiday seasons?"
+#         "\ne. Considering economic indicators and travel trends over the past 25 years, which years had the most similar passenger traffic patterns?"
+#     ),
+#     'correct_answer': (
+#         "a: v. Feature-based prediction of a probability\n\n"
+#         "b: vii. Validation\n\n"
+#         "c: vi. Time-series-based prediction\n\n"
+#         "d: i. Change detection\n\n"
+#         "e: iii. Clustering"
+#     ),
+#     'explanation': (
+#         "a: This question involves predicting the probability of an event occurring, aligning with 'Feature-based prediction of a probability.'"
+#         "\n\n"
+#         "b: This question seeks the most accurate forecasting model, relating to 'Validation.'"
+#         "\n\n"
+#         "c: This question requires predicting a future value based on time-series data, which is 'Time-series-based prediction.'"
+#         "\n\n"
+#         "d: Analyzing significant changes over time corresponds to 'Change detection.'"
+#         "\n\n"
+#         "e: Identifying years with similar passenger traffic patterns corresponds to 'Clustering.'"
+#     )
+# }
+
+# midterm_1_q3 = {
+#     'question': (
+#         "Question A1"
+#         "\nIn the soft classification SVM model where we select coefficients to minimize the following formula:"
+#         "\nΣ_{j=1}^n max{0, 1 - (Σ_{i=1}^m a_ix_ij + a_0)y_j} + C Σ_{i=1}^m a_i^2"
+#         "\nSelect all of the following statements that are correct."
+#         "\n\n"
+#         "- Decreasing the value of C could decrease the margin."
+#         "\n- Allowing a larger margin could decrease the number of classification errors in the training set."
+#         "\n- Decreasing the value of C could increase the number of classification errors in the training set."
+#         "\n\n"
+#         "Question A2"
+#         "\nIn the hard classification SVM model, it might be desirable to not put the classifier in a location that has equal margin on both sides... (select all correct answers):"
+#         "\n\n"
+#         "- ...because moving the classifier will usually result in fewer classification errors in the validation data."
+#         "\n- ...because moving the classifier will usually result in fewer classification errors in the test data."
+#         "\n- ...when the costs of misclassifying the two types of points are significantly different."
+#     ),
+#     'correct_answer': (
+#         "A1: - Decreasing the value of C could increase the number of classification errors in the training set\n\n"
+#         "A2: - ...when the costs of misclassifying the two types of points are significantly different."
+#     ),
+#     'explanation': (
+#         "A1: In soft classification SVM, decreasing the value of C leads to a larger margin, increasing the possibility of misclassifications in the training set."
+#         "\n\n"
+#         "A2: In hard classification SVM, unequal margins may be desirable when the costs of misclassification differ between the two types of points."
+#     )
+# }
+
+# midterm_1_q4 = {
+#     'question': (
+#         "Select whether a supervised learning model (like regression) is more directly appropriate than an unsupervised learning model (like dimensionality reduction)."
+#         "\n\n"
+#         "Definitions:"
+#         "\nSupervised Learning: Machine learning where the 'correct' answer or outcome is known for each data point in the training set."
+#         "\nRegression: A type of supervised learning where the model predicts a continuous outcome."
+#         "\nUnsupervised Learning Model: Machine learning where the 'correct' answer is not known for the data points in the training set."
+#         "\nDimensionality Reduction: A process in unsupervised learning of reducing the number of random variables under consideration, through feature selection and feature extraction."
+#         "\n\n"
+#         "Questions:"
+#         "\n\n"
+#         "- In a dataset of residential property sales, for each property, the sale price is known, and the goal is to predict prices for new listings based on various attributes like location, size, and amenities."
+#         "\n\n"
+#         "- In a large dataset of customer reviews, there is no specific response variable, but the goal is to understand underlying themes and patterns in the text data."
+#         "\n\n"
+#         "- In a clinical trial dataset, for each participant, the response to a medication is known, and the task is to predict patient outcomes based on their medical history and trial data."
+#     ),
+#     'correct_answer': (
+#         "- In a dataset of residential property sales, for each property, the sale price is known, and the goal is to predict prices for new listings based on various attributes like location, size, and amenities."
+#         "\n- In a clinical trial dataset, for each participant, the response to a medication is known, and the task is to predict patient outcomes based on their medical history and trial data."
+#     ),
+#     'explanation': (
+#         "Supervised learning is appropriate when the 'correct' outcome is known, such as predicting property sale prices based on known values and forecasting patient outcomes based on medical history."
+#         "\n\n"
+#         "Unsupervised learning is appropriate when the 'correct' outcome is unknown, such as identifying themes and patterns in text data."
+#     )
+# }
+
+# midterm_1_q1 = {
+#     'question': (
+#         "For each of the models (a-m) below, circle one type of question (i-viii) it is commonly used for."
+#         " For models that have more than one correct answer, choose any one correct answer."
+#         " If there is no correct answer listed, do not circle anything."
+#         "\n\n"
+#         "Models:"
+#         "\na. ARIMA"
+#         "\nb. CART"
+#         "\nc. Cross validation"
+#         "\nd. CUSUM"
+#         "\ne. Exponential smoothing"
+#         "\nf. GARCH"
+#         "\ng. k-means"
+#         "\nh. k-nearest-neighbor"
+#         "\ni. Linear regression"
+#         "\nj. Logistic regression"
+#         "\nk. Principal component analysis"
+#         "\nl. Random forest"
+#         "\nm. Support vector machine"
+#         "\n\n"
+#         "Question Types:"
+#         "\ni. Change detection"
+#         "\nii. Classification"
+#         "\niii. Clustering"
+#         "\niv. Feature-based prediction of a probability"
+#         "\nv. Feature-based prediction of a value"
+#         "\nvi. Time-series-based prediction"
+#         "\nvii. Validation"
+#         "\nviii. Variance estimation"
+#     ),
+#     'correct_answer': (
+#         "a. vi. Time-series-based prediction\n\n"
+#         "b. ii. Classification\n\n"
+#         "c. vii. Validation\n\n"
+#         "d. i. Change detection\n\n"
+#         "e. vi. Time-series-based prediction\n\n"
+#         "f. viii. Variance estimation\n\n"
+#         "g. iii. Clustering\n\n"
+#         "h. ii. Classification\n\n"
+#         "i. v. Feature-based prediction of a value\n\n"
+#         "j. iv. Feature-based prediction of a probability\n\n"
+#         "k. iii. Clustering\n\n"
+#         "l. ii. Classification\n\n"
+#         "m. ii. Classification"
+#     ),
+#     'explanation': (
+#         "a. ARIMA is used for time-series-based prediction, analyzing data with trends and seasonality."
+#         "\n\n"
+#         "b. CART (Classification and Regression Trees) is commonly used for classification, creating decision trees to separate data into distinct groups."
+#         "\n\n"
+#         "c. Cross validation is used for validation, ensuring model robustness and preventing overfitting."
+#         "\n\n"
+#         "d. CUSUM (Cumulative Sum) is designed for change detection, identifying shifts in data over time."
+#         "\n\n"
+#         "e. Exponential smoothing is also used for time-series-based prediction, applying a smoothing factor to forecast trends."
+#         "\n\n"
+#         "f. GARCH (Generalized Autoregressive Conditional Heteroskedasticity) is used for variance estimation, modeling volatility in financial data."
+#         "\n\n"
+#         "g. k-means is a clustering method, creating groups based on data similarities."
+#         "\n\n"
+#         "h. k-nearest-neighbor is used for classification, classifying data based on proximity to other data points."
+#         "\n\n"
+#         "i. Linear regression is used for feature-based prediction of a value, predicting a continuous outcome."
+#         "\n\n"
+#         "j. Logistic regression is for feature-based prediction of a probability, predicting binary outcomes."
+#         "\n\n"
+#         "k. Principal component analysis (PCA) is typically used for clustering, reducing dimensionality and identifying key components."
+#         "\n\n"
+#         "l. Random forest is often used for classification, employing an ensemble of decision trees."
+#         "\n\n"
+#         "m. Support vector machine (SVM) is used for classification, creating decision boundaries to separate data."
+#     )
+# }
+
+# midterm_1_q2 = {
+#     'question': (
+#         "Select all of the following models that are designed for use with attribute/feature data (i.e., not time-series data):"
+#         "\n"
+#         "- CUSUM"
+#         "\n- Logistic regression"
+#         "\n- Support vector machine"
+#         "\n- GARCH"
+#         "\n- Random forest"
+#         "\n- k-means"
+#         "\n- Linear regression"
+#         "\n- k-nearest-neighbor"
+#         "\n- ARIMA"
+#         "\n- Principal component analysis"
+#         "\n- Exponential smoothing"
+#     ),
+#     'correct_answer': (
+#         "- CUSUM\n"
+#         "- Logistic regression\n"
+#         "- Support vector machine\n"
+#         "- Random forest\n"
+#         "- k-means\n"
+#         "- Linear regression\n"
+#         "- k-nearest-neighbor\n"
+#         "- Principal component analysis"
+#     ),
+#     'explanation': (
+#         "These models are designed for use with attribute/feature data, not time-series data:"
+#         "\n\n"
+#         "- CUSUM is for change detection in attribute/feature data."
+#         "\n\n"
+#         "- Logistic regression, Support vector machine, Random forest, and k-nearest-neighbor are primarily used for classification."
+#         "\n\n"
+#         "- Linear regression is for predicting a continuous outcome based on feature data."
+#         "\n\n"
+#         "- k-means and Principal component analysis (PCA) are for clustering and dimensionality reduction, respectively."
+#     )
+# }
 
 
 OPEN_QUESTIONS = []
