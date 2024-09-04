@@ -14,7 +14,20 @@ This interactive tool is designed to aid students in preparing for the ISYE 6501
 2. **Open-Ended Questions**: Practice with complex, multi-part questions similar to what you might encounter on the exam. These questions are designed by providing GPT-4 with detailed prompts and course content.
 3. **Chart & Graph Interpretation**: Improve your ability to read and interpret charts and graphs with questions currently being developed.
 
+### Additional Resources:
+- [Lecture Transcripts](https://docs.google.com/document/d/1Hxi5GWcZd3GSm7V6cdnm1HgMvN93eyAaWyX-V3mlRik/edit#heading=h.9af8llygue3h)
+- [Course Website: ISYE 6501 - Intro to Analytics Modeling](https://omscs.gatech.edu/isye-6501-intro-analytics-modeling)
+
 If you find this app useful, please consider giving it a star on GitHub: [ISYE6501_Test_Helper](https://github.com/gderiddershanghai/ISYE6501_Test_Helper). Your support helps us improve and expand the features!
+
+Or check out my other review apps for:
+- [ISYE 6501 Introduction to Analytics Modeling](https://isye6501test-prep.streamlit.app/)
+- [MGT 6203 Analytics for Business](https://mgt-6203-mt-study-aid.streamlit.app/)
+- [ISYE 6740 Computational Data Analytics](https://www.google.com)
+- [CS 7643 Deep Learning](https://deep-learning-practice.streamlit.app/)
+- [CS 7280 Network Science Review App](https://network-science-review.streamlit.app/)
+
+
     """)
 
 def mpc_questions():
