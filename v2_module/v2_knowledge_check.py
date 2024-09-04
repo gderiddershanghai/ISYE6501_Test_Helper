@@ -91,16 +91,6 @@
 #     'chapter_information': 'Week 13: Probability-Based Models / Bernoulli, Binomial and Geometric Distributions'
 # }
 
-# kc2_question_13_2_2 = {
-#     'question': "According to the geometric distribution, what is the probability of having 5 successful sales calls before the first unsuccessful call, if p is the probability of a successful call?",
-#     'options_list': [
-#         'The probability is p^5',
-#         'The probability is (1-p) * p^5'
-#     ],
-#     'correct_answer': '(1-p) * p^5',
-#     'explanation': "The geometric distribution models the probability of observing the first failure after k successes. Hence, the probability of 5 successes followed by one failure is calculated as (1-p) * p^5.",
-#     'chapter_information': 'Week 13: Probability-Based Models / Bernoulli, Binomial and Geometric Distributions'
-# }
 
 # kc2_question_13_3_1 = {
 #     'question': "If the time between customer arrivals to a restaurant at lunchtime fits the exponential distribution, then which of the following is true?",
@@ -292,16 +282,6 @@
 #     'chapter_information': 'Chapter 16: Advanced Models / Non-Parametric Methods'
 # }
 
-# kc16_question_16_2 = {
-#     'question': "How can Bayesian models incorporate expert opinion when there’s not as much data to analyze as we’d like to have?",
-#     'options_list': [
-#         "In Bayes’ theorem, both A and B are parameters that can be adjusted by an expert",
-#         "Expert opinion can be used to define the initial distribution of P(A), and observed data about B can be used with Bayes’ theorem to obtain a revised opinion P(A|B)"
-#     ],
-#     'correct_answer': "Expert opinion can be used to define the initial distribution of P(A), and observed data about B can be used with Bayes’ theorem to obtain a revised opinion P(A|B)",
-#     'explanation': "In Bayesian analysis, expert opinion can be formulated as a prior distribution, which is then updated with observed data to form the posterior distribution.",
-#     'chapter_information': 'Chapter 16: Advanced Models / Bayesian Modeling'
-# }
 
 # kc16_question_16_3 = {
 #     'question': "(Advanced question) Suppose we have a graph where all edge weights are equal to 1. How might you split the nodes into large groups that have very few connections between them?",
@@ -338,61 +318,47 @@
 #     'chapter_information': 'Chapter 16: Advanced Models / Competitive Models'
 # }
 
+# kc2_question_13_2_2 = {
+#     'question': "According to the geometric distribution, what is the probability of having 5 successful sales calls before the first unsuccessful call, if $p$ is the probability of a successful call?",
+#     'options_list': [
+#         "The probability is $p^5$",
+#         "The probability is $(1-p) * p^5$"
+#     ],
+#     'correct_answer': '(1-p) * p^5',
+#     'explanation': "The geometric distribution models the probability of observing the first failure after $k$ successes. Hence, the probability of 5 successes followed by one failure is calculated as $(1-p) * p^5$.",
+#     'chapter_information': 'Week 13: Probability-Based Models / Bernoulli, Binomial and Geometric Distributions'
+# }
+
 
 # ############# GPT GENERATED####################
 
+# kc16_question_16_2 = {
+#     'question': "How can Bayesian models incorporate expert opinion when there’s not as much data to analyze as we’d like to have?",
+#     'options_list': [
+#         "In Bayes’ theorem, both $A$ and $B$ are parameters that can be adjusted by an expert",
+#         "Expert opinion can be used to define the initial distribution of $P(A)$, and observed data about $B$ can be used with Bayes’ theorem to obtain a revised opinion $P(A|B)$"
+#     ],
+#     'correct_answer': "Expert opinion can be used to define the initial distribution of $P(A)$, and observed data about $B$ can be used with Bayes’ theorem to obtain a revised opinion $P(A|B)$",
+#     'explanation': "In Bayesian analysis, expert opinion can be formulated as a prior distribution, which is then updated with observed data to form the posterior distribution.",
+#     'chapter_information': 'Chapter 16: Advanced Models / Bayesian Modeling'
+# }
 
 # kgpt_question_15_1 = {
 #     'question': "The rare book return slot will only open if a rare book is being returned. Select the mathematical constraint that corresponds to this English sentence.",
 #     'options_list': [
-#         'x_rare_slot <= x_rare_book',
-#         'x_rare_book = 1 - x_rare_slot',
-#         'x_regular_slot >= M * x_rare_slot',
-#         'x_rare_book + x_regular_book <= 1'
+#         "$x_{\\text{rare\_slot}} \\leq x_{\\text{rare\_book}}$",
+#         "$x_{\\text{rare\_book}} = 1 - x_{\\text{rare\_slot}}$",
+#         "$x_{\\text{regular\_slot}} \\geq M \\times x_{\\text{rare\_slot}}$",
+#         "$x_{\\text{rare\_book}} + x_{\\text{regular\_book}} \\leq 1$"
 #     ],
-#     'correct_answer': 'x_rare_slot <= x_rare_book',
+#     'correct_answer': '$x_{\\text{rare\_slot}} \\leq x_{\\text{rare\_book}}$',
 #     'explanation': "This constraint ensures that the rare book return slot cannot open unless a rare book is being returned, maintaining proper usage of the return slots.",
 #     'chapter_information': 'Chapter 15: Optimization'
 # }
 
-# kgpt_question_15_2 = {
-#     'question': "The repeat customer discount is valid only if the first-time customer discount has not been used. Select the mathematical constraint that corresponds to this English sentence.",
-#     'options_list': [
-#         'y_repeat <= y_first_time',
-#         'y_first_time + y_repeat <= 1',
-#         'y_repeat >= M * y_first_time',
-#         'y_first_time = 1 - y_repeat'
-#     ],
-#     'correct_answer': 'y_first_time + y_repeat <= 1',
-#     'explanation': "This constraint prevents a customer from using both first-time and repeat customer discounts simultaneously, ensuring the exclusive benefit of each discount.",
-#     'chapter_information': 'Chapter 15: Optimization'
-# }
 
-# kgpt_question_15_3 = {
-#     'question': "The fast pass for Thunderbolt is only available to guests with a premium pass. Select the mathematical constraint that corresponds to this English sentence.",
-#     'options_list': [
-#         'x_thunderbolt_fast <= x_premium_pass',
-#         'x_premium_pass = 1 - x_thunderbolt_fast',
-#         'x_thunderbolt_fast >= M * x_premium_pass',
-#         'x_thunderbolt_fast + x_standard_pass <= 1'
-#     ],
-#     'correct_answer': 'x_thunderbolt_fast <= x_premium_pass',
-#     'explanation': "By setting this constraint, the theme park ensures that only guests with a premium pass can access the fast pass for the Thunderbolt ride.",
-#     'chapter_information': 'Chapter 15: Optimization'
-# }
 
-# kgpt_question_15_4 = {
-#     'question': "Subscribers can access the advanced analytics module only if they have the professional tier subscription. Select the mathematical constraint that corresponds to this English sentence.",
-#     'options_list': [
-#         'y_analytics_module <= y_pro_subscription',
-#         'y_pro_subscription = 1 - y_analytics_module',
-#         'y_analytics_module >= M * y_pro_subscription',
-#         'y_pro_subscription + y_basic_subscription <= 1'
-#     ],
-#     'correct_answer': 'y_analytics_module <= y_pro_subscription',
-#     'explanation': "This constraint specifies that the advanced analytics module is an exclusive feature available only to users with a professional tier subscription.",
-#     'chapter_information': 'Chapter 15: Optimization'
-# }
+
 
 # kc1_gpt_question_13_1 = {
 #     'question': "(GPT generated) What type of distribution models the number of sales transactions completed each day at a retail store?",
@@ -446,18 +412,6 @@
 #     'chapter_information': 'Chapter 13: Probability-Based Models'
 # }
 
-# kc11__gpt_question_11_4 = {
-#     'question': "(GPT generated) Which formula represents the objective of Ridge Regression?",
-#     'options_list': [
-#         'Minimize: ∑(yi−∑βjxij)^2 subject to ∑|βj|≤t',
-#         'Minimize: ∑(yi−∑βjxij)^2 + λ1∑|βj| + λ2∑βj^2',
-#         'Minimize: ∑(yi−∑βjxij)^22 + λ∑βj^2',
-#         'Minimize: ∑(yi−∑βjxij)^2 + λ∑βj'
-#     ],
-#     'correct_answer': 'Minimize: ∑(yi−∑βjxij)^2 + λ∑βj^2',
-#     'explanation': "Ridge Regression aims to minimize the sum of squared residuals with a penalty on the size of the coefficients, controlled by λ, to avoid overfitting.",
-#     'chapter_information': 'Chapter 11: Variable Selection'
-# }
 
 # kc11__gpt_question_11_5 = {
 #     'question': "(GPT generated) Which variable selection method combines both Lasso and Ridge approaches?",
@@ -721,6 +675,59 @@
 #     'explanation': "Binary variables are crucial in optimization models for representing decisions that have two states, typically yes or no, enabling the modeling of complex decision structures.",
 #     'chapter_information': 'Week 10 – Module 15: Optimization'
 # }
+
+# kgpt_question_15_2 = {
+#     'question': "The repeat customer discount is valid only if the first-time customer discount has not been used. Select the mathematical constraint that corresponds to this English sentence.",
+#     'options_list': [
+#         "$y_{\\text{repeat}} \\leq y_{\\text{first\_time}}$",
+#         "$y_{\\text{first\_time}} + y_{\\text{repeat}} \\leq 1$",
+#         "$y_{\\text{repeat}} \\geq M \\times y_{\\text{first\_time}}$",
+#         "$y_{\\text{first\_time}} = 1 - y_{\\text{repeat}}$"
+#     ],
+#     'correct_answer': '$y_{\\text{first\_time}} + y_{\\text{repeat}} \\leq 1$',
+#     'explanation': "This constraint prevents a customer from using both first-time and repeat customer discounts simultaneously, ensuring the exclusive benefit of each discount.",
+#     'chapter_information': 'Chapter 15: Optimization'
+# }
+
+# kgpt_question_15_3 = {
+#     'question': "The fast pass for Thunderbolt is only available to guests with a premium pass. Select the mathematical constraint that corresponds to this English sentence.",
+#     'options_list': [
+#         "$x_{\\text{thunderbolt\_fast}} \\leq x_{\\text{premium\_pass}}$",
+#         "$x_{\\text{premium\_pass}} = 1 - x_{\\text{thunderbolt\_fast}}$",
+#         "$x_{\\text{thunderbolt\_fast}} \\geq M \\times x_{\\text{premium\_pass}}$",
+#         "$x_{\\text{thunderbolt\_fast}} + x_{\\text{standard\_pass}} \\leq 1$"
+#     ],
+#     'correct_answer': '$x_{\\text{thunderbolt\_fast}} \\leq x_{\\text{premium\_pass}}$',
+#     'explanation': "By setting this constraint, the theme park ensures that only guests with a premium pass can access the fast pass for the Thunderbolt ride.",
+#     'chapter_information': 'Chapter 15: Optimization'
+# }
+
+# kgpt_question_15_4 = {
+#     'question': "Subscribers can access the advanced analytics module only if they have the professional tier subscription. Select the mathematical constraint that corresponds to this English sentence.",
+#     'options_list': [
+#         "$y_{\\text{analytics\_module}} \\leq y_{\\text{pro\_subscription}}$",
+#         "$y_{\\text{pro\_subscription}} = 1 - y_{\\text{analytics\_module}}$",
+#         "$y_{\\text{analytics\_module}} \\geq M \\times y_{\\text{pro\_subscription}}$",
+#         "$y_{\\text{pro\_subscription}} + y_{\\text{basic\_subscription}} \\leq 1$"
+#     ],
+#     'correct_answer': '$y_{\\text{analytics\_module}} \\leq y_{\\text{pro\_subscription}}$',
+#     'explanation': "This constraint specifies that the advanced analytics module is an exclusive feature available only to users with a professional tier subscription.",
+#     'chapter_information': 'Chapter 15: Optimization'
+# }
+
+# kc11__gpt_question_11_4 = {
+#     'question': "(GPT generated) Which formula represents the objective of Ridge Regression?",
+#     'options_list': [
+#         "Minimize: $\\sum (y_i - \\sum \\beta_j x_{ij})^2$ subject to $\\sum |\\beta_j| \\leq t$",
+#         "Minimize: $\\sum (y_i - \\sum \\beta_j x_{ij})^2 + \\lambda_1 \\sum |\\beta_j| + \\lambda_2 \\sum \\beta_j^2$",
+#         "Minimize: $\\sum (y_i - \\sum \\beta_j x_{ij})^2 + \\lambda \\sum \\beta_j^2$",
+#         "Minimize: $\\sum (y_i - \\sum \\beta_j x_{ij})^2 + \\lambda \\sum \\beta_j$"
+#     ],
+#     'correct_answer': 'Minimize: $\\sum (y_i - \\sum \\beta_j x_{ij})^2 + \\lambda \\sum \\beta_j^2$',
+#     'explanation': "Ridge Regression aims to minimize the sum of squared residuals with a penalty on the size of the coefficients, controlled by $\\lambda$, to avoid overfitting.",
+#     'chapter_information': 'Chapter 11: Variable Selection'
+# }
+
 
 
 
