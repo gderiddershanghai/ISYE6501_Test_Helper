@@ -1,28 +1,28 @@
-questions_1 = {
-    "fp": 'imgs/confusion_matrix_1.png',
-    "questions": [
-        {
-            'question': "What is the accuracy of the model?",
-            'options_list': ['85%', '90%', '95.5%', '92%'],
-            'correct_answer': "95.5%. Formula: Accuracy = (TP + TN) / (TP + TN + FP + FN). Calculation: (960 + 950) / (960 + 950 + 50 + 40) = 0.955. It reflects the overall effectiveness of the model in disease prediction."
-        },
-        {
-            'question': "What is the precision of the model?",
-            'options_list': ['90%', '95.05%', '93%', '96%'],
-            'correct_answer': "95.05%. Formula: Precision = TP / (TP + FP). Calculation: 960 / (960 + 50) = 0.9505. Indicates the model's ability to predict disease presence accurately."
-        },
-        {
-            'question': "What is the recall (sensitivity) of the model?",
-            'options_list': ['96%', '94%', '92%', '98%'],
-            'correct_answer': "96%. Formula: Recall = TP / (TP + FN). Calculation: 960 / (960 + 40) = 0.96. Shows the model's effectiveness at identifying all actual cases of the disease."
-        },
-        {
-            'question': "What is the specificity of the model?",
-            'options_list': ['95%', '93%', '90%', '97%'],
-            'correct_answer': "95%. Formula: Specificity = TN / (TN + FP). Calculation: 950 / (950 + 50) = 0.95. Demonstrates how well the model identifies individuals without the disease."
-        }
-    ]
-}
+# questions_1 = {
+#     "fp": 'imgs/confusion_matrix_1.png',
+#     "questions": [
+#         {
+#             'question': "What is the accuracy of the model?",
+#             'options_list': ['85%', '90%', '95.5%', '92%'],
+#             'correct_answer': "95.5%. Formula: Accuracy = (TP + TN) / (TP + TN + FP + FN). Calculation: (960 + 950) / (960 + 950 + 50 + 40) = 0.955. It reflects the overall effectiveness of the model in disease prediction."
+#         },
+#         {
+#             'question': "What is the precision of the model?",
+#             'options_list': ['90%', '95.05%', '93%', '96%'],
+#             'correct_answer': "95.05%. Formula: Precision = TP / (TP + FP). Calculation: 960 / (960 + 50) = 0.9505. Indicates the model's ability to predict disease presence accurately."
+#         },
+#         {
+#             'question': "What is the recall (sensitivity) of the model?",
+#             'options_list': ['96%', '94%', '92%', '98%'],
+#             'correct_answer': "96%. Formula: Recall = TP / (TP + FN). Calculation: 960 / (960 + 40) = 0.96. Shows the model's effectiveness at identifying all actual cases of the disease."
+#         },
+#         {
+#             'question': "What is the specificity of the model?",
+#             'options_list': ['95%', '93%', '90%', '97%'],
+#             'correct_answer': "95%. Formula: Specificity = TN / (TN + FP). Calculation: 950 / (950 + 50) = 0.95. Demonstrates how well the model identifies individuals without the disease."
+#         }
+#     ]
+# }
 
 
 questions_2 = {
@@ -139,6 +139,181 @@ questions_5 = {
     ]
 }
 
+questions_6 = {
+    "fp": 'imgs/roc_curve.png',
+    "questions": [
+        {
+            'question': "Based on the ROC curve provided, what is the AUC (Area Under the Curve) of the model?",
+            'options_list': ['0.25','0.48', '0.61', '0.75', '0.85'],
+            'correct_answer': "0.48. The AUC represents the model's ability to distinguish between classes. A value of 0.48 indicates the model is performing slightly worse than random guessing (0.5)."
+        },
+        {
+            'question': "What does the red point marked on the ROC curve signify?",
+            'options_list': ['The point where sensitivity equals specificity.', 'The default classification threshold for the model.', 'The threshold with the highest precision.', 'The threshold minimizing false negatives.'],
+            'correct_answer': "The default classification threshold for the model. This point shows the model's performance when the probability threshold is set to 0.5."
+        },
+        {
+            'question': "If the goal is to minimize false negatives, which region of the ROC curve should be considered?",
+            'options_list': ['Top-left corner.', 'Bottom-left corner.', 'Top-right corner.', 'Along the diagonal line.'],
+            'correct_answer': "Top-left corner. This region represents high true positive rates (sensitivity) and low false positive rates."
+        }
+    ]
+}
+
+questions_7 = {
+    "fp": 'imgs/svm_decision_boundary.png',
+    "questions": [
+        {
+            'question': "In the SVM plot provided, which points are the support vectors?",
+            'options_list': ['Points closest to the decision boundary.', 'Points farthest from the decision boundary.', 'All points in the majority class.', 'Randomly selected points.'],
+            'correct_answer': "Points closest to the decision boundary. Support vectors are the data points that lie closest to the decision boundary and influence its position."
+        },
+        {
+            'question': "What effect would increasing the penalty parameter C have on the decision boundary?",
+            'options_list': ['It would create a wider margin.', 'It would allow more misclassifications.', 'It would result in a narrower margin with fewer misclassifications.', 'It would have no effect.'],
+            'correct_answer': "It would result in a narrower margin with fewer misclassifications. A higher C penalizes misclassifications more, leading to a tighter fit."
+        },
+        {
+            'question': "If the data is not linearly separable, how can the SVM model be adapted?",
+            'options_list': ['By using a different classification algorithm.', 'By applying a kernel function.', 'By increasing the number of support vectors.', 'By reducing the dataset size.'],
+            'correct_answer': "By applying a kernel function. Kernel functions allow the SVM to create non-linear decision boundaries by transforming the data into a higher-dimensional space."
+        }
+    ]
+}
+
+questions_8 = {
+    "fp": 'imgs/time_series_seasonality.png',
+    "questions": [
+        {
+            'question': "What components are visible in the time series plot provided?",
+            'options_list': ['Trend only.', 'Seasonality only.', 'Trend and seasonality.', 'Random noise only.'],
+            'correct_answer': "Trend and seasonality. The plot shows both a general upward or downward trend and repeating patterns over regular intervals."
+        },
+        {
+            'question': "Which forecasting method is most appropriate for this time series?",
+            'options_list': ['Simple Moving Average.', "Holt's Linear Trend Method.", 'Holt-Winters Exponential Smoothing.', 'ARIMA without differencing.'],
+            'correct_answer': "Holt-Winters Exponential Smoothing. This method accounts for both trend and seasonality in the data."
+        },
+        {
+            'question': "How can the seasonality component be removed to analyze the underlying trend?",
+            'options_list': ['By differencing the data.', 'By applying a moving average.', 'By decomposing the time series.', 'By increasing the sample size.'],
+            'correct_answer': "By decomposing the time series. Decomposition separates the time series into trend, seasonal, and residual components."
+        }
+    ]
+}
+
+questions_9 = {
+    "fp": 'imgs/kmeans_clusters.png',
+    "questions": [
+        {
+            'question': "How many clusters are shown in the K-Means clustering plot?",
+            'options_list': ['2', '3', '4', '5'],
+            'correct_answer': "3. The plot displays three distinct clusters, each represented by a different color."
+        },
+        {
+            'question': "What is the primary goal of the K-Means algorithm?",
+            'options_list': ['To maximize the distance between clusters.', 'To minimize the distance within clusters.', 'To classify data based on labels.', 'To reduce dimensionality.'],
+            'correct_answer': "To minimize the distance within clusters. K-Means aims to group data points so that those within a cluster are as close as possible to each other."
+        },
+        {
+            'question': "Which method can help determine the optimal number of clusters in K-Means?",
+            'options_list': ['Silhouette Analysis.', 'Principal Component Analysis.', 'Linear Regression.', 'Decision Trees.'],
+            'correct_answer': "Silhouette Analysis. This method measures how similar an object is to its own cluster compared to other clusters, helping to select the optimal number of clusters."
+        }
+    ]
+}
+
+questions_12 = {
+    "fp": 'imgs/cusum_chart.png',
+    "questions": [
+        {
+            'question': "At approximately which time point does the CUSUM chart indicate a significant change in the process?",
+            'options_list': ['Time point 25', 'Time point 50', 'Time point 75', 'No significant change is indicated'],
+            'correct_answer': "Time point 50. The CUSUM chart shows a shift starting at time point 50, where the cumulative sum exceeds the decision interval."
+        },
+        {
+            'question': "What is the purpose of the decision interval (h) in the CUSUM method?",
+            'options_list': [
+                "To set the target value for the process.",
+                "To provide a threshold for detecting significant shifts in the process mean.",
+                "To adjust the sensitivity of the process to small fluctuations.",
+                "To calculate the slack value (k) used in the CUSUM formula."
+            ],
+            'correct_answer': "To provide a threshold for detecting significant shifts in the process mean. When the cumulative sum exceeds h, it signals a significant change."
+        },
+        {
+            'question': "In the context of the CUSUM chart, what does a positive cumulative sum (S_positive) indicate?",
+            'options_list': [
+                "A decrease in the process mean.",
+                "An increase in the process mean.",
+                "No change in the process mean.",
+                "An error in the data collection."
+            ],
+            'correct_answer': "An increase in the process mean. The positive CUSUM detects upward shifts in the process."
+        },
+        {
+            'question': "Why are both S_positive and S_negative plotted in a CUSUM chart?",
+            'options_list': [
+                "To monitor for both increases and decreases in the process mean.",
+                "To compare two different datasets.",
+                "To separate the data into training and testing sets.",
+                "To account for seasonal variations in the process."
+            ],
+            'correct_answer': "To monitor for both increases and decreases in the process mean. S_positive detects upward shifts, while S_negative detects downward shifts."
+        },
+        {
+            'question': "If the slack value (k) is increased, how does it affect the sensitivity of the CUSUM chart?",
+            'options_list': [
+                "The chart becomes more sensitive to small shifts.",
+                "The chart becomes less sensitive to small shifts.",
+                "It has no effect on sensitivity.",
+                "It reverses the direction of the cumulative sums."
+            ],
+            'correct_answer': "The chart becomes less sensitive to small shifts. A larger k reduces the impact of small deviations, requiring larger shifts to signal a change."
+        }
+    ]
+}
+
+questions_11_updated = {
+    "fp": 'imgs/regression_coefficients.png',
+    "questions": [
+        {
+            'question': "Based on the regression coefficients plot, which predictor has the largest positive effect on the response variable?",
+            'options_list': ['Intercept', 'X1', 'X2', 'X3'],
+            'correct_answer': "X1. The coefficient for X1 is positive and has the largest magnitude among the predictors, indicating the strongest positive effect."
+        },
+        {
+            'question': "Which predictor has a negative relationship with the response variable?",
+            'options_list': ['Intercept', 'X1', 'X2', 'X3'],
+            'correct_answer': "X2. The coefficient for X2 is negative, indicating an inverse relationship with the response variable."
+        },
+        {
+            'question': "Which predictor's coefficient is not statistically significant at the 95% confidence level?",
+            'options_list': ['Intercept', 'X1', 'X2', 'X3'],
+            'correct_answer': "X3. The confidence interval for X3 includes zero, suggesting it is not statistically significant."
+        },
+        {
+            'question': "What does the length of the error bar (confidence interval) for each coefficient represent?",
+            'options_list': [
+                "The variability of the predictor variable.",
+                "The precision of the coefficient estimate; longer bars indicate less precise estimates.",
+                "The importance of the predictor in the model.",
+                "The correlation between predictors."
+            ],
+            'correct_answer': "The precision of the coefficient estimate; longer bars indicate less precise estimates. Wider confidence intervals reflect greater uncertainty in the coefficient estimate."
+        },
+        {
+            'question': "If you were to remove one predictor to simplify the model, which one would be the best candidate based on the plot, and why?",
+            'options_list': [
+                "Intercept, because it doesn't have a confidence interval.",
+                "X1, because it has the largest effect.",
+                "X2, because it has a negative effect.",
+                "X3, because its coefficient is not statistically significant."
+            ],
+            'correct_answer': "X3, because its coefficient is not statistically significant. Removing non-significant predictors can simplify the model without sacrificing explanatory power."
+        }
+    ]
+}
 
 
 IMAGE_QUESTIONS = []
