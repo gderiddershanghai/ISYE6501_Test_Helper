@@ -16,7 +16,7 @@ class Token():
         self.STATE = 'review'
         review_questions = KC_MPC_QUESTIONS
         list_length = len(review_questions)
-        mpc_idxs = np.random.choice(range(list_length), size=4, replace=False)
+        mpc_idxs = np.random.choice(range(list_length), size=10, replace=False)
         print('______________________________________________')
         print('mpc_idxs: ',mpc_idxs, type(mpc_idxs))
         print('______________________________________________')
@@ -28,7 +28,7 @@ class Token():
         self.STATE = 'open'
         review_questions = OPEN_QUESTIONS
         list_length = len(review_questions)
-        open_idxs = np.random.choice(range(list_length), size=1, replace=False)
+        open_idxs = np.random.choice(range(list_length), size=4, replace=False)
         # print('______________________________________________')
         # print('mpc_idxs: ',mpc_idxs, type(mpc_idxs))
         # print('______________________________________________')

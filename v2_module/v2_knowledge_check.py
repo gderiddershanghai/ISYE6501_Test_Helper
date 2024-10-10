@@ -1115,6 +1115,185 @@ check_1_q30 = {
     'chapter_information': 'midterm 1'
 }
 
+check_1_q31 = {
+    'question': " (GPT) In the context of data analytics, what is the 'curse of dimensionality'?",
+    'options_list': [
+        'A. As the number of dimensions increases, the volume of the space increases exponentially, making the data sparse.',
+        'B. High-dimensional data always leads to better model performance.',
+        'C. Increasing dimensions reduces computational complexity.',
+        'D. It refers to the overfitting problem when the number of observations is larger than the number of features.'
+    ],
+    'correct_answer': 'A. As the number of dimensions increases, the volume of the space increases exponentially, making the data sparse.',
+    'explanation': "The 'curse of dimensionality' describes how as the number of features (dimensions) increases, the data becomes sparse, and algorithms struggle to find patterns, leading to decreased performance.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q32 = {
+    'question': " (GPT) Which of the following is true regarding overfitting in machine learning models?",
+    'options_list': [
+        'A. Overfitting occurs when a model performs well on both training and unseen data.',
+        'B. Regularization techniques can help prevent overfitting by adding a penalty term to the loss function.',
+        'C. Overfitting can be completely eliminated by increasing the complexity of the model.',
+        'D. Cross-validation cannot detect overfitting.'
+    ],
+    'correct_answer': 'B. Regularization techniques can help prevent overfitting by adding a penalty term to the loss function.',
+    'explanation': "Regularization adds a penalty for complexity to the loss function, discouraging overly complex models that might overfit the training data.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q34 = {
+    'question': " (GPT) Which of the following statements about Principal Component Analysis (PCA) is TRUE?",
+    'options_list': [
+        'A. PCA maximizes the variance along the new axes.',
+        'B. PCA can only be applied to categorical data.',
+        'C. PCA increases the dimensionality of the dataset.',
+        'D. The principal components are always aligned with the original features.'
+    ],
+    'correct_answer': 'A. PCA maximizes the variance along the new axes.',
+    'explanation': "PCA seeks to find the directions (principal components) that maximize the variance in the data, thereby reducing dimensionality while retaining the most important information.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q35 = {
+    'question': " (GPT) In the context of time series forecasting, what is 'stationarity'?",
+    'options_list': [
+        'A. A time series with constant mean and variance over time.',
+        'B. A time series that has no seasonal patterns.',
+        'C. A time series that shows a linear trend over time.',
+        'D. A time series that is unaffected by external factors.'
+    ],
+    'correct_answer': 'A. A time series with constant mean and variance over time.',
+    'explanation': "Stationarity refers to statistical properties of a time series being constant over time, meaning the mean, variance, and autocorrelation structure do not change.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q36 = {
+    'question': " (GPT) Which of the following methods can be used to transform a non-stationary time series into a stationary one?",
+    'options_list': [
+        'A. Differencing the data.',
+        'B. Applying exponential smoothing.',
+        'C. Calculating the moving average.',
+        'D. Using higher-degree polynomial fitting.'
+    ],
+    'correct_answer': 'A. Differencing the data.',
+    'explanation': "Differencing is a common technique to stabilize the mean of a time series by removing changes in the level of a time series, and thus eliminating (or reducing) trend and seasonality.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q37 = {
+    'question': " (GPT) Which of the following is NOT an assumption of linear regression?",
+    'options_list': [
+        'A. Linearity between the independent and dependent variables.',
+        'B. Homoscedasticity of residuals.',
+        'C. Multicollinearity among independent variables.',
+        'D. Independence of errors.'
+    ],
+    'correct_answer': 'C. Multicollinearity among independent variables.',
+    'explanation': "Linear regression assumes that there is no perfect multicollinearity among independent variables. Multicollinearity violates the assumption that the predictors are independent.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q38 = {
+    'question': " (GPT) Which evaluation metric is most appropriate for imbalanced classification problems?",
+    'options_list': [
+        'A. Accuracy',
+        'B. Precision',
+        'C. Recall',
+        'D. F1 Score'
+    ],
+    'correct_answer': 'D. F1 Score',
+    'explanation': "The F1 score balances precision and recall and is a better metric than accuracy for imbalanced datasets where the minority class is more important.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q39 = {
+    'question': " (GPT) In random forest models, how is 'bagging' used to improve model performance?",
+    'options_list': [
+        'A. By reducing variance through averaging multiple decision trees.',
+        'B. By reducing bias through increasing model complexity.',
+        'C. By selecting the best-performing tree from an ensemble.',
+        'D. By pruning trees to prevent overfitting.'
+    ],
+    'correct_answer': 'A. By reducing variance through averaging multiple decision trees.',
+    'explanation': "Bagging (Bootstrap Aggregating) reduces variance by training multiple models on different subsets of data and averaging their predictions, which is fundamental to random forests.",
+    'chapter_information': 'midterm 1'
+}
+
+check_1_q40 = {
+    'question': " (GPT) Which of the following is a disadvantage of using k-nearest neighbors (k-NN) algorithm?",
+    'options_list': [
+        'A. It requires a lot of storage space.',
+        'B. It is not sensitive to irrelevant features.',
+        'C. It can model complex nonlinear relationships.',
+        'D. It makes strong assumptions about the underlying data distribution.'
+    ],
+    'correct_answer': 'A. It requires a lot of storage space.',
+    'explanation': "k-NN is a lazy learning algorithm that stores all training data, which can be computationally expensive in terms of memory and processing time, especially with large datasets.",
+    'chapter_information': 'midterm 1'
+}
+
+
+check_2_q1tt = {
+    'question': " (GPT) What is the purpose of the 'validation set' in a machine learning model?",
+    'options_list': [
+        'A. To optimize hyperparameters',
+        'B. To improve training data accuracy',
+        'C. To provide an unbiased evaluation during training',
+        'D. To select the best features in a model'
+    ],
+    'correct_answer': 'C. To provide an unbiased evaluation during training',
+    'explanation': "The validation set is used during training to provide an unbiased evaluation of a model's performance. It's crucial for tuning hyperparameters without affecting the training process.",
+    'chapter_information': 'midterm 2'
+}
+
+check_2_q2tt = {
+    'question': "(GPT) In ridge regression, increasing the penalty term λ results in:",
+    'options_list': [
+        'A. Increasing the complexity of the model',
+        'B. Decreasing the complexity of the model',
+        'C. Increasing the variance of the model',
+        'D. No impact on the model’s complexity'
+    ],
+    'correct_answer': 'B. Decreasing the complexity of the model',
+    'explanation': "Ridge regression introduces a penalty term that controls the model's complexity by shrinking the coefficients. Increasing λ leads to a simpler, less complex model with lower variance.",
+    'chapter_information': 'midterm 2'
+}
+
+check_2_q3tt = {
+    'question': "(GPT) Which of the following scenarios would benefit from using a support vector machine (SVM)?",
+    'options_list': [
+        'A. High-dimensional data with clear separation between classes',
+        'B. Data with a significant number of outliers',
+        'C. Unlabeled data requiring clustering',
+        'D. Time series data with long-term dependencies'
+    ],
+    'correct_answer': 'A. High-dimensional data with clear separation between classes',
+    'explanation': "SVMs are effective in handling high-dimensional data and work well when there is a clear margin of separation between classes, using hyperplanes to maximize the margin.",
+    'chapter_information': 'midterm 1'
+}
+
+
+check_2_q7tt = {
+    'question': " (GPT) True or False: Lasso regression can set some feature coefficients to zero, effectively selecting features.",
+            'options_list': [
+        'True', 'False'
+            ]  ,
+            'correct_answer': 'True',
+    'explanation': "Lasso regression uses L1 regularization, which can shrink some coefficients to zero, effectively selecting important features and excluding irrelevant ones.",
+    'chapter_information': 'midterm 1'
+}
+
+check_2_q8tt = {
+    'question': "(GPT) True or False: Cross-validation is only necessary for small datasets.",
+            'options_list': [
+        'True', 'False'
+            ]  ,
+            'correct_answer': 'False',
+    'explanation': "Cross-validation is beneficial for all dataset sizes, as it helps ensure the model generalizes well to unseen data by reducing the risk of overfitting, regardless of dataset size.",
+    'chapter_information': 'midterm 1'
+}
+
+
 
 
 KC_MPC_QUESTIONS = []
