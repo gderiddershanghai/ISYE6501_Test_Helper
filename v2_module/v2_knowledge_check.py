@@ -1275,9 +1275,10 @@ check_2_q3tt = {
 
 check_2_q7tt = {
     'question': " (GPT) True or False: Lasso regression can set some feature coefficients to zero, effectively selecting features.",
-            'options_list': [
-        'True', 'False'
-            ]  ,
+    'options_list': [
+        'True',
+        'False'
+    ],
             'correct_answer': 'True',
     'explanation': "Lasso regression uses L1 regularization, which can shrink some coefficients to zero, effectively selecting important features and excluding irrelevant ones.",
     'chapter_information': 'midterm 1'
@@ -1285,9 +1286,10 @@ check_2_q7tt = {
 
 check_2_q8tt = {
     'question': "(GPT) True or False: Cross-validation is only necessary for small datasets.",
-            'options_list': [
-        'True', 'False'
-            ]  ,
+    'options_list': [
+        'True',
+        'False'
+    ],
             'correct_answer': 'False',
     'explanation': "Cross-validation is beneficial for all dataset sizes, as it helps ensure the model generalizes well to unseen data by reducing the risk of overfitting, regardless of dataset size.",
     'chapter_information': 'midterm 1'

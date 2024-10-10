@@ -28,7 +28,12 @@ def sa_questions():
 
     for i, q in enumerate(questions, start=0):
         label = q['question']
-        options = q['options_list']
+        if 'options_list' in q:
+            options = q['options_list']
+        else:
+            # Handle the missing key scenario (e.g., log an error or provide a default value)
+            options = []
+            print("Warning: 'options_list' key is missing from the dictionary")
         correct_answer = q['correct_answer']
         question_key = f"question_{i}"
         explanation = q['explanation']
