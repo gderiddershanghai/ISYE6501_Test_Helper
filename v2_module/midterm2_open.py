@@ -387,6 +387,84 @@ q9 = {
     )
 }
 
+# q10 = {
+#     'question': (
+#         "A tech startup is facing multiple challenges as it scales its operations, from analyzing customer feedback to optimizing its internal team dynamics and predicting market trends. "
+#         "The data science team at the startup is considering employing various advanced analytical models to address these challenges. "
+#         "Given the following scenarios, identify the most appropriate model or approach from the options: Non-Parametric Methods, Bayesian Modeling, Community Detection in Graphs, Neural Networks and Deep Learning, and Game Theory.\n\n"
+#         "a. The startup has collected a vast amount of unstructured customer feedback through various channels. They want to understand the overall sentiment towards their product to inform future development. The data varies widely in format and content.\n"
+#         "b. To enhance collaboration within the company, the team wants to analyze the communication patterns among employees. They have data on email interactions, meeting attendances, and project collaborations.\n"
+#         "c. The product team is considering several new features based on market trends and internal data. However, there is significant uncertainty regarding the adoption of these features by their user base.\n"
+#         "d. The company wants to create a predictive model for identifying potential churn customers based on their interaction with the product's online platform, including page views, feature usage, and support ticket submissions.\n"
+#         "e. In response to emerging competitive threats, the startup needs to strategize its pricing model. This requires understanding how competitors might react to their pricing changes and the potential impact on market share."
+#     ),
+#     'correct_answer': (
+#         "a. Neural Networks and Deep Learning\n"
+#         "b. Community Detection in Graphs\n"
+#         "c. Bayesian Modeling\n"
+#         "d. Neural Networks and Deep Learning\n"
+#         "e. Game Theory"
+#     ),
+#     'explanation': (
+#         "a. Neural Networks and Deep Learning are highly effective for processing and analyzing unstructured data, making them suitable for sentiment analysis of varied customer feedback.\n"
+#         "b. Community Detection in Graphs can identify clusters within large networks, such as communication patterns among employees, highlighting tightly-knit groups or isolated individuals.\n"
+#         "c. Bayesian Modeling allows for incorporating prior knowledge and handling uncertainty, ideal for assessing the potential adoption of new features based on limited or uncertain data.\n"
+#         "d. Neural Networks and Deep Learning excel at identifying complex patterns in high-dimensional data, suitable for predicting customer churn from varied interactions with an online platform.\n"
+#         "e. Game Theory provides a framework for competitive decision-making, enabling the startup to anticipate competitors' reactions to pricing changes and strategize accordingly."
+#     )
+# }
+
+# q11 = {
+#     'question': (
+#         "A financial analytics firm is analyzing historical stock market data to enhance its prediction models for future stock prices. The dataset includes daily closing prices, trading volume, and various economic indicators over the last 20 years. "
+#         "However, the data exhibits heteroscedasticity, trends, and high dimensionality, making standard modeling approaches inadequate. "
+#         "Given the scenarios described, identify the most appropriate model or approach from the options: Box-Cox Transformation, Detrending via linear regression, Principal Component Analysis (PCA), and Eigenvalues and Eigenvectors.\n\n"
+#         "a. The firm notices that the variance in trading volumes increases significantly with higher volumes. To stabilize the variance across the dataset, which transformation should be applied, and what is the primary reason for its application?\n"
+#         "b. Upon further analysis, a long-term upward trend in stock prices is evident, attributed to overall market growth. Before modeling, the firm wants to remove this trend to focus on underlying patterns. Which method should they use, and why?\n"
+#         "c. The firm aims to reduce the number of economic indicators in the dataset without losing essential information due to the high correlation among indicators. Which technique is most suitable, and what is its primary benefit?\n"
+#         "d. After applying PCA, the firm wants to understand the influence of the original economic indicators on the principal components. Which concept is crucial for this interpretation, and why?"
+#     ),
+#     'correct_answer': (
+#         "a. Box-Cox Transformation\n"
+#         "b. Detrending via linear regression\n"
+#         "c. Principal Component Analysis (PCA)\n"
+#         "d. Eigenvalues and Eigenvectors"
+#     ),
+#     'explanation': (
+#         "a. The Box-Cox Transformation is applied to correct heteroscedasticity, a common issue in financial data, by making the variance constant across the range of data.\n"
+#         "b. Detrending is essential for removing long-term trends, such as general market growth, to analyze the more nuanced fluctuations in stock prices that are of interest.\n"
+#         "c. PCA is used for dimensionality reduction, particularly useful in datasets with many correlated variables, by transforming them into a smaller number of uncorrelated variables while retaining most of the original variance.\n"
+#         "d. Eigenvectors from PCA provide insight into the contribution of each original variable to the principal components, helping interpret the reduced-dimensional space in terms of the original variables."
+#     )
+# }
+
+# q12 = {
+#     'question': (
+#         "An e-commerce company is revamping its analytics framework to address several critical areas: sales forecasting, customer segmentation, marketing effectiveness, and operational efficiency. "
+#         "The data science team plans to employ a range of optimization models to tackle these challenges effectively. "
+#         "Given the scenarios below, identify the most suitable optimization model or approach for each, based on the descriptions provided in the document.\n\n"
+#         "a. The company intends to forecast quarterly sales using historical sales data, which includes seasonal patterns and economic indicators. The model must accommodate fluctuating variance in sales volume.\n"
+#         "b. To better understand its customer base, the company seeks to segment customers into distinct groups based on purchasing behavior, frequency, and preferences.\n"
+#         "c. The marketing department wants to evaluate the impact of various advertising campaigns on sales. This requires a model that can handle both the campaigns' direct effects and their interactions.\n"
+#         "d. With an aim to reduce shipping costs and delivery times, the company is analyzing its logistics and supply chain operations. The challenge includes balancing multiple factors, such as warehouse stock levels, transportation costs, and delivery routes.\n"
+#         "e. Given the competitive nature of the e-commerce industry, the company also wants to optimize its pricing strategy to maximize profits while remaining attractive to customers, taking into account competitors' pricing and market demand elasticity."
+#     ),
+#     'correct_answer': (
+#         "a. Time Series Model with Box-Cox Transformation\n"
+#         "b. Clustering\n"
+#         "c. Elastic Net\n"
+#         "d. Linear/Quadratic Integer Program\n"
+#         "e. Game Theory"
+#     ),
+#     'explanation': (
+#         "a. The Box-Cox Transformation corrects heteroscedasticity, stabilizing variance in sales volume, making Time Series Models more effective.\n"
+#         "b. Clustering optimizes the sum of distances from each data point to its cluster center, effectively segmenting customers based on various behaviors.\n"
+#         "c. Elastic Net is ideal for models requiring variable selection and regularization to handle collinearity, perfect for marketing data with many predictors.\n"
+#         "d. Logistics optimization involves binary decisions (e.g., whether to use a specific route), making it a case for Linear/Quadratic Integer Programming.\n"
+#         "e. Game Theory models the strategic interactions between the company and its competitors, optimizing pricing strategies in a competitive environment."
+#     )
+# }
+
 q10 = {
     'question': (
         "A tech startup is facing multiple challenges as it scales its operations, from analyzing customer feedback to optimizing its internal team dynamics and predicting market trends. "
@@ -464,6 +542,7 @@ q12 = {
         "e. Game Theory models the strategic interactions between the company and its competitors, optimizing pricing strategies in a competitive environment."
     )
 }
+
 
 
 q13 = {
