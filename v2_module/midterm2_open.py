@@ -1,113 +1,98 @@
-
-# q1 = {
-#     'question': "For each of the scenarios listed, identify the most fitting model or technique from the given options. Note that certain models or techniques might be suitable for more than one scenario. \n\n**MODELS/TECHNIQUES**\n\ni. Support Vector Machines\n\nii. Decision Trees\n\niii. Linear Regression\n\niv. Poisson Models\n\nv. Time Series Analysis\n\nvi. Markov Decision Processes\n\n**SCENARIOS**\n\na. Predicting the number of times a particular software feature will be used in the next month based on historical usage data.\n\nb. Developing a plan for the sequential release of product features over time to maximize user adoption and satisfaction.\n\nc. Evaluating the impact of advertising spend on sales growth, adjusting for seasonal effects.\n\nd. Identifying the primary predictors of energy consumption in commercial buildings to improve efficiency.\n\ne. Calculating the optimal strategy for inventory management to minimize holding costs and avoid stockouts.",
-#     'correct_answer': """
-#     The most suitable models or techniques for each scenario are as follows:
-
-#     - a. Poisson Models
-#     - b. Markov Decision Processes
-#     - c. Time Series Analysis
-#     - d. Decision Trees
-#     - e. Linear Regression
-#     """,
-#         'explanation': """
-#     - Poisson Models are ideal for predicting counts or frequencies, making them suitable for scenario a.
-#     - Markov Decision Processes help in planning under uncertainty, fitting scenario b well.
-#     - Time Series Analysis is used for forecasting future values based on past data, applicable to scenario c.
-#     - Decision Trees can classify or predict based on decision rules, making them a good choice for scenario d.
-#     - Linear Regression models the relationship between a dependent variable and one or more independent variables, which suits the requirements of scenario e.
-#     """
-# }
-
-# q2 = {
-#     'question': "An e-commerce platform is exploring ways to optimize its recommendation system to increase sales while maintaining a high level of customer satisfaction. The platform proposes testing two new algorithms: \n\n1. An algorithm prioritizing products based on individual's browsing history and past purchase behavior.\n\n2. An algorithm considering broader trends, like seasonal purchases and top-rated products, alongside individual preferences.\n\n**Question A1:** Describe a comprehensive approach to evaluating these algorithms before full-scale implementation.\n\na. Discuss the experimental design for comparing the two algorithms, considering controlling variables such as time of day, product categories, and customer demographics.\n\nb. Identify the most appropriate models or approaches for predicting the outcomes of each recommendation algorithm from the following:\n- Time Series Analysis\n- Simulation Modelling\n- Queuing Theory\n- Bayesian Inference\n- Multivariate Regression Analysis\n\nc. Propose how the platform could use simulation to model the long-term effects of each algorithm on customer purchase patterns and satisfaction, including the key performance indicators (KPIs) to monitor.",
-#     'correct_answer': """
-#     a. The platform should utilize a randomized controlled trial (RCT) design, ensuring participants are randomly assigned to each algorithm to control for external variables.
-
-#     b. The most appropriate models for this scenario are:
-#     - Time Series Analysis for seasonal trends.
-#     - Simulation Modelling to predict customer behavior under each algorithm.
-#     - Bayesian Inference to update predictions as more data becomes available.
-
-#     c. The platform can use discrete event simulation to model long-term effects, focusing on KPIs such as customer lifetime value (CLV), repeat purchase rate, and customer satisfaction scores.
-#     """,
-#         'explanation': """
-#     - An RCT ensures a fair comparison by minimizing bias.
-#     - Time Series Analysis is ideal for capturing seasonal trends.
-#     - Simulation Modelling accurately predicts behavior in complex systems with many interacting variables.
-#     - Bayesian Inference provides a flexible framework for updating predictions.
-#     - Simulating the long-term effects allows the platform to anticipate changes in customer behavior and satisfaction, ensuring the chosen algorithm aligns with business goals and enhances the customer experience.
-#     """
-# }
-
-# q3 = {
-#     'question': "A finance research team is analyzing a dataset to predict future stock market trends, facing dataset challenges such as heteroscedasticity, evident trends and seasonal patterns, and high dimensionality with potential correlation among predictors.\n\n**a.** To address heteroscedasticity in stock prices, which transformation technique should the team apply?\n1. Linear Transformation\n2. Box-Cox Transformation\n3. Logarithmic Transformation\n4. Z-Score Normalization\n\n**b.** When detrending the data to remove evident trends and seasonal patterns, what is the primary reason for doing so?\n1. To increase the dataset size\n2. To enhance the computational speed of model training\n3. To reduce the effect of time-related confounding factors\n4. To improve the color scheme of data visualizations\n\n**c.** To reduce dimensionality and mitigate multicollinearity among economic indicators, which method should the team use?\n1. Principal Component Analysis (PCA)\n2. Linear Discriminant Analysis (LDA)\n3. K-Means Clustering\n4. Decision Trees\n\n**d.** In Principal Component Analysis (PCA), what role do eigenvalues and eigenvectors play?\n1. They determine the color palette for data visualization.\n2. They are used to calculate the mean and median of the dataset.\n3. They identify the principal components and ensure they are orthogonal.\n4. They enhance the dataset's security and privacy.",
-#     'correct_answer': (
-#         "a. Box-Cox Transformation\n\n"
-#         "b. To reduce the effect of time-related confounding factors\n\n"
-#         "c. Principal Component Analysis (PCA)\n\n"
-#         "d. They identify the principal components and ensure they are orthogonal.\n\n"
-#     ),
-#     'explanation': (
-#         "Box-Cox Transformation is used to stabilize variance across the data.\n\n"
-#         "Detrending is crucial for removing the influence of temporal trends on the analysis, "
-#         "making the underlying patterns in data more apparent.\n\n"
-#         "PCA is a powerful tool for dimensionality reduction and dealing with multicollinearity by "
-#         "transforming the dataset into a set of orthogonal (uncorrelated) variables, which are the principal components.\n\n"
-#         "Eigenvalues and eigenvectors are fundamental in determining the direction and magnitude of "
-#         "these principal components, helping to understand the dataset's variance structure.\n\n"
-#     )
-# }
-
 q1 = {
-    'question': "For each of the scenarios listed, identify the most fitting model or technique from the given options. Note that certain models or techniques might be suitable for more than one scenario.\n\n**MODELS/TECHNIQUES**\n\n- i. Support Vector Machines\n- ii. Decision Trees\n- iii. Linear Regression\n- iv. Poisson Models\n- v. Time Series Analysis\n- vi. Markov Decision Processes\n\n**SCENARIOS**\n\n- **a.** Predicting the number of times a particular software feature will be used in the next month based on historical usage data.\n- **b.** Developing a plan for the sequential release of product features over time to maximize user adoption and satisfaction.\n- **c.** Evaluating the impact of advertising spend on sales growth, adjusting for seasonal effects.\n- **d.** Identifying the primary predictors of energy consumption in commercial buildings to improve efficiency.\n- **e.** Calculating the optimal strategy for inventory management to minimize holding costs and avoid stockouts.",
-    'correct_answer': """
-    The most suitable models or techniques for each scenario are as follows:
-
-    - **a.** Poisson Models
-    - **b.** Markov Decision Processes
-    - **c.** Time Series Analysis
-    - **d.** Decision Trees
-    - **e.** Linear Regression
-    """,
-    'explanation': """
-    - **Poisson Models** are ideal for predicting counts or frequencies, making them suitable for scenario a.
-    - **Markov Decision Processes** help in planning under uncertainty, fitting scenario b well.
-    - **Time Series Analysis** is used for forecasting future values based on past data, applicable to scenario c.
-    - **Decision Trees** can classify or predict based on decision rules, making them a good choice for scenario d.
-    - **Linear Regression** models the relationship between a dependent variable and one or more independent variables, which suits the requirements of scenario e.
-    """
+    'question': (
+        "For each of the scenarios listed, identify the most fitting model or technique from the given options. Note that certain models or techniques might be suitable for more than one scenario.\n\n"
+        "**MODELS/TECHNIQUES**\n\n"
+        "- i. Support Vector Machines\n"
+        "- ii. Decision Trees\n"
+        "- iii. Linear Regression\n"
+        "- iv. Poisson Models\n"
+        "- v. Time Series Analysis\n"
+        "- vi. Markov Decision Processes\n\n"
+        "**SCENARIOS**\n\n"
+        "- **a.** Predicting the number of times a particular software feature will be used in the next month based on historical usage data.\n"
+        "- **b.** Developing a plan for the sequential release of product features over time to maximize user adoption and satisfaction.\n"
+        "- **c.** Evaluating the impact of advertising spend on sales growth, adjusting for seasonal effects.\n"
+        "- **d.** Identifying the primary predictors of energy consumption in commercial buildings to improve efficiency.\n"
+        "- **e.** Calculating the optimal strategy for inventory management to minimize holding costs and avoid stockouts."
+    ),
+    'correct_answer': (
+        "The most suitable models or techniques for each scenario are as follows:\n\n"
+        "- **a.** Poisson Models\n"
+        "- **b.** Markov Decision Processes\n"
+        "- **c.** Time Series Analysis\n"
+        "- **d.** Decision Trees\n"
+        "- **e.** Linear Regression"
+    ),
+    'explanation': (
+        "- **Poisson Models** are ideal for predicting counts or frequencies, making them suitable for scenario a.\n"
+        "- **Markov Decision Processes** help in planning under uncertainty, fitting scenario b well.\n"
+        "- **Time Series Analysis** is used for forecasting future values based on past data, applicable to scenario c.\n"
+        "- **Decision Trees** can classify or predict based on decision rules, making them a good choice for scenario d.\n"
+        "- **Linear Regression** models the relationship between a dependent variable and one or more independent variables, which suits the requirements of scenario e."
+    )
 }
 
 q2 = {
-    'question': "An e-commerce platform is exploring ways to optimize its recommendation system to increase sales while maintaining a high level of customer satisfaction. The platform proposes testing two new algorithms:\n\n1. An algorithm prioritizing products based on individual's browsing history and past purchase behavior.\n\n2. An algorithm considering broader trends, like seasonal purchases and top-rated products, alongside individual preferences.\n\n**Question A1:** Describe a comprehensive approach to evaluating these algorithms before full-scale implementation.\n\n- **a.** Discuss the experimental design for comparing the two algorithms, considering controlling variables such as time of day, product categories, and customer demographics.\n\n- **b.** Identify the most appropriate models or approaches for predicting the outcomes of each recommendation algorithm from the following:\n\n  - Time Series Analysis\n  - Simulation Modelling\n  - Queuing Theory\n  - Bayesian Inference\n  - Multivariate Regression Analysis\n\n- **c.** Propose how the platform could use simulation to model the long-term effects of each algorithm on customer purchase patterns and satisfaction, including the key performance indicators (KPIs) to monitor.",
-    'correct_answer': """
-    **a.** The platform should utilize a randomized controlled trial (RCT) design, ensuring participants are randomly assigned to each algorithm to control for external variables.
-
-    **b.** The most appropriate models for this scenario are:
-    
-    - Time Series Analysis for seasonal trends.
-    - Simulation Modelling to predict customer behavior under each algorithm.
-    - Bayesian Inference to update predictions as more data becomes available.
-
-    **c.** The platform can use discrete event simulation to model long-term effects, focusing on KPIs such as customer lifetime value (CLV), repeat purchase rate, and customer satisfaction scores.
-    """,
-    'explanation': """
-    - An **RCT** ensures a fair comparison by minimizing bias.
-    - **Time Series Analysis** is ideal for capturing seasonal trends.
-    - **Simulation Modelling** accurately predicts behavior in complex systems with many interacting variables.
-    - **Bayesian Inference** provides a flexible framework for updating predictions.
-    - Simulating the long-term effects allows the platform to anticipate changes in customer behavior and satisfaction, ensuring the chosen algorithm aligns with business goals and enhances the customer experience.
-    """
+    'question': (
+        "An e-commerce platform is exploring ways to optimize its recommendation system to increase sales while maintaining a high level of customer satisfaction. The platform proposes testing two new algorithms:\n\n"
+        "1. An algorithm prioritizing products based on individual's browsing history and past purchase behavior.\n"
+        "2. An algorithm considering broader trends, like seasonal purchases and top-rated products, alongside individual preferences.\n\n"
+        "**Question A1:** Describe a comprehensive approach to evaluating these algorithms before full-scale implementation.\n\n"
+        "- **a.** Discuss the experimental design for comparing the two algorithms, considering controlling variables such as time of day, product categories, and customer demographics.\n\n"
+        "- **b.** Identify the most appropriate models or approaches for predicting the outcomes of each recommendation algorithm from the following:\n\n"
+        "  - Time Series Analysis\n"
+        "  - Simulation Modelling\n"
+        "  - Queuing Theory\n"
+        "  - Bayesian Inference\n"
+        "  - Multivariate Regression Analysis\n\n"
+        "- **c.** Propose how the platform could use simulation to model the long-term effects of each algorithm on customer purchase patterns and satisfaction, including the key performance indicators (KPIs) to monitor."
+    ),
+    'correct_answer': (
+        "**a.** The platform should utilize a randomized controlled trial (RCT) design, ensuring participants are randomly assigned to each algorithm to control for external variables.\n\n"
+        "**b.** The most appropriate models for this scenario are:\n"
+        "- Time Series Analysis for seasonal trends.\n"
+        "- Simulation Modelling to predict customer behavior under each algorithm.\n"
+        "- Bayesian Inference to update predictions as more data becomes available.\n\n"
+        "**c.** The platform can use discrete event simulation to model long-term effects, focusing on KPIs such as customer lifetime value (CLV), repeat purchase rate, and customer satisfaction scores."
+    ),
+    'explanation': (
+        "- An **RCT** ensures a fair comparison by minimizing bias.\n"
+        "- **Time Series Analysis** is ideal for capturing seasonal trends.\n"
+        "- **Simulation Modelling** accurately predicts behavior in complex systems with many interacting variables.\n"
+        "- **Bayesian Inference** provides a flexible framework for updating predictions.\n"
+        "- Simulating the long-term effects allows the platform to anticipate changes in customer behavior and satisfaction, ensuring the chosen algorithm aligns with business goals and enhances the customer experience."
+    )
 }
 
 q3 = {
-    'question': "A finance research team is analyzing a dataset to predict future stock market trends, facing dataset challenges such as heteroscedasticity, evident trends and seasonal patterns, and high dimensionality with potential correlation among predictors.\n\n- **a.** To address heteroscedasticity in stock prices, which transformation technique should the team apply?\n\n  1. Linear Transformation\n  2. Box-Cox Transformation\n  3. Logarithmic Transformation\n  4. Z-Score Normalization\n\n- **b.** When detrending the data to remove evident trends and seasonal patterns, what is the primary reason for doing so?\n\n  1. To increase the dataset size\n  2. To enhance the computational speed of model training\n  3. To reduce the effect of time-related confounding factors\n  4. To improve the color scheme of data visualizations\n\n- **c.** To reduce dimensionality and mitigate multicollinearity among economic indicators, which method should the team use?\n\n  1. Principal Component Analysis (PCA)\n  2. Linear Discriminant Analysis (LDA)\n  3. K-Means Clustering\n  4. Decision Trees\n\n- **d.** In Principal Component Analysis (PCA), what role do eigenvalues and eigenvectors play?\n\n  1. They determine the color palette for data visualization.\n  2. They are used to calculate the mean and median of the dataset.\n  3. They identify the principal components and ensure they are orthogonal.\n  4. They enhance the dataset's security and privacy.",
+    'question': (
+        "A finance research team is analyzing a dataset to predict future stock market trends, facing dataset challenges such as heteroscedasticity, evident trends and seasonal patterns, and high dimensionality with potential correlation among predictors.\n\n"
+        "- **a.** To address heteroscedasticity in stock prices, which transformation technique should the team apply?\n\n"
+        "  1. Linear Transformation\n"
+        "  2. Box-Cox Transformation\n"
+        "  3. Logarithmic Transformation\n"
+        "  4. Z-Score Normalization\n\n"
+        "- **b.** When detrending the data to remove evident trends and seasonal patterns, what is the primary reason for doing so?\n\n"
+        "  1. To increase the dataset size\n"
+        "  2. To enhance the computational speed of model training\n"
+        "  3. To reduce the effect of time-related confounding factors\n"
+        "  4. To improve the color scheme of data visualizations\n\n"
+        "- **c.** To reduce dimensionality and mitigate multicollinearity among economic indicators, which method should the team use?\n\n"
+        "  1. Principal Component Analysis (PCA)\n"
+        "  2. Linear Discriminant Analysis (LDA)\n"
+        "  3. K-Means Clustering\n"
+        "  4. Decision Trees\n\n"
+        "- **d.** In Principal Component Analysis (PCA), what role do eigenvalues and eigenvectors play?\n\n"
+        "  1. They determine the color palette for data visualization.\n"
+        "  2. They are used to calculate the mean and median of the dataset.\n"
+        "  3. They identify the principal components and ensure they are orthogonal.\n"
+        "  4. They enhance the dataset's security and privacy."
+    ),
     'correct_answer': (
         "**a.** Box-Cox Transformation\n\n"
         "**b.** To reduce the effect of time-related confounding factors\n\n"
         "**c.** Principal Component Analysis (PCA)\n\n"
-        "**d.** They identify the principal components and ensure they are orthogonal.\n\n"
+        "**d.** They identify the principal components and ensure they are orthogonal."
     ),
     'explanation': (
         "Box-Cox Transformation is used to stabilize variance across the data.\n\n"
@@ -116,7 +101,7 @@ q3 = {
         "PCA is a powerful tool for dimensionality reduction and dealing with multicollinearity by "
         "transforming the dataset into a set of orthogonal (uncorrelated) variables, which are the principal components.\n\n"
         "Eigenvalues and eigenvectors are fundamental in determining the direction and magnitude of "
-        "these principal components, helping to understand the dataset's variance structure.\n\n"
+        "these principal components, helping to understand the dataset's variance structure."
     )
 }
 
@@ -402,70 +387,6 @@ q9 = {
     )
 }
 
-
-
-
-# q10 = {
-#     'question': "A tech startup is facing multiple challenges as it scales its operations, from analyzing customer feedback to optimizing its internal team dynamics and predicting market trends. The data science team at the startup is considering employing various advanced analytical models to address these challenges.\n\nGiven the following scenarios, identify the most appropriate model or approach from the options: Non-Parametric Methods, Bayesian Modeling, Community Detection in Graphs, Neural Networks and Deep Learning, and Game Theory.\n\na. The startup has collected a vast amount of unstructured customer feedback through various channels. They want to understand the overall sentiment towards their product to inform future development. The data varies widely in format and content.\n\nb. To enhance collaboration within the company, the team wants to analyze the communication patterns among employees. They have data on email interactions, meeting attendances, and project collaborations.\n\nc. The product team is considering several new features based on market trends and internal data. However, there is significant uncertainty regarding the adoption of these features by their user base.\n\nd. The company wants to create a predictive model for identifying potential churn customers based on their interaction with the product's online platform, including page views, feature usage, and support ticket submissions.\n\ne. In response to emerging competitive threats, the startup needs to strategize its pricing model. This requires understanding how competitors might react to their pricing changes and the potential impact on market share.",
-#     'correct_answer': (
-#         "a. Neural Networks and Deep Learning\n"
-#         "b. Community Detection in Graphs\n"
-#         "c. Bayesian Modeling\n"
-#         "d. Neural Networks and Deep Learning\n"
-#         "e. Game Theory"
-#     ),
-
-#     'explanation': (
-#         "a. Neural Networks and Deep Learning are highly effective for processing and analyzing unstructured data, making them suitable for sentiment analysis of varied customer feedback.\n\n"
-#         "b. Community Detection in Graphs can identify clusters within large networks, such as communication patterns among employees, highlighting tightly-knit groups or isolated individuals.\n\n"
-#         "c. Bayesian Modeling allows for incorporating prior knowledge and handling uncertainty, ideal for assessing the potential adoption of new features based on limited or uncertain data.\n\n"
-#         "d. Neural Networks and Deep Learning excel at identifying complex patterns in high-dimensional data, suitable for predicting customer churn from varied interactions with an online platform.\n\n"
-#         "e. Game Theory provides a framework for competitive decision-making, enabling the startup to anticipate competitors' reactions to pricing changes and strategize accordingly."
-#     )
-# }
-
-# q11 = {
-#     'question': "A financial analytics firm is analyzing historical stock market data to enhance its prediction models for future stock prices. The dataset includes daily closing prices, trading volume, and various economic indicators over the last 20 years. However, the data exhibits heteroscedasticity, trends, and high dimensionality, making standard modeling approaches inadequate.\n\nGiven the scenarios described, identify the most appropriate model or approach from the options: Box-Cox Transformation, Detrending via linear regression, Principal Component Analysis (PCA), and Eigenvalues and Eigenvectors.\n\na. The firm notices that the variance in trading volumes increases significantly with higher volumes. To stabilize the variance across the dataset, which transformation should be applied, and what is the primary reason for its application?\n\nb. Upon further analysis, a long-term upward trend in stock prices is evident, attributed to overall market growth. Before modeling, the firm wants to remove this trend to focus on underlying patterns. Which method should they use, and why?\n\nc. The firm aims to reduce the number of economic indicators in the dataset without losing essential information due to the high correlation among indicators. Which technique is most suitable, and what is its primary benefit?\n\nd. After applying PCA, the firm wants to understand the influence of the original economic indicators on the principal components. Which concept is crucial for this interpretation, and why?",
-#     'correct_answer': (
-#         "a. Box-Cox Transformation\n"
-#         "b. Detrending via linear regression\n"
-#         "c. Principal Component Analysis (PCA)\n"
-#         "d. Eigenvalues and Eigenvectors"
-#     ),
-#     'explanation': (
-#         "a. The Box-Cox Transformation is applied to correct heteroscedasticity, a common issue in financial data, by making the variance constant across the range of data.\n\n"
-#         "b. Detrending is essential for removing long-term trends, such as general market growth, to analyze the more nuanced fluctuations in stock prices that are of interest.\n\n"
-#         "c. PCA is used for dimensionality reduction, particularly useful in datasets with many correlated variables, by transforming them into a smaller number of uncorrelated variables while retaining most of the original variance.\n\n"
-#         "d. Eigenvectors from PCA provide insight into the contribution of each original variable to the principal components, helping interpret the reduced-dimensional space in terms of the original variables."
-#     )
-# }
-
-
-
-# q12 = {
-#     'question': ("An e-commerce company is revamping its analytics framework to address several critical areas: sales forecasting, customer segmentation, marketing effectiveness, and operational efficiency. The data science team plans to employ a range of optimization models to tackle these challenges effectively.\n\n"
-#                  "Given the scenarios below, identify the most suitable optimization model or approach for each, based on the descriptions provided in the document.\n\n"
-#                  "a. The company intends to forecast quarterly sales using historical sales data, which includes seasonal patterns and economic indicators. The model must accommodate fluctuating variance in sales volume.\n\n"
-#                  "b. To better understand its customer base, the company seeks to segment customers into distinct groups based on purchasing behavior, frequency, and preferences.\n\n"
-#                  "c. The marketing department wants to evaluate the impact of various advertising campaigns on sales. This requires a model that can handle both the campaigns' direct effects and their interactions.\n\n"
-#                  "d. With an aim to reduce shipping costs and delivery times, the company is analyzing its logistics and supply chain operations. The challenge includes balancing multiple factors, such as warehouse stock levels, transportation costs, and delivery routes.\n\n"
-#                  "e. Given the competitive nature of the e-commerce industry, the company also wants to optimize its pricing strategy to maximize profits while remaining attractive to customers, taking into account competitors' pricing and market demand elasticity.\n"
-#                 ),
-#     'correct_answer': (
-#         "a. Time Series Model with Box-Cox Transformation\n\n"
-#         "b. Clustering\n\n"
-#         "c. Elastic Net\n\n"
-#         "d. Linear/Quadratic Integer Program\n\n"
-#         "e. Game Theory"
-#     ),
-#     'explanation': (
-#         "a. The Box-Cox Transformation corrects heteroscedasticity, stabilizing variance in sales volume, making Time Series Models more effective.\n\n"
-#         "b. Clustering optimizes the sum of distances from each data point to its cluster center, effectively segmenting customers based on various behaviors.\n\n"
-#         "c. Elastic Net is ideal for models requiring variable selection and regularization to handle collinearity, perfect for marketing data with many predictors.\n\n"
-#         "d. Logistics optimization involves binary decisions (e.g., whether to use a specific route), making it a case for Linear/Quadratic Integer Programming.\n\n"
-#         "e. Game Theory models the strategic interactions between the company and its competitors, optimizing pricing strategies in a competitive environment."
-#     )
-# }
 q10 = {
     'question': (
         "A tech startup is facing multiple challenges as it scales its operations, from analyzing customer feedback to optimizing its internal team dynamics and predicting market trends. "
@@ -477,12 +398,18 @@ q10 = {
         "d. The company wants to create a predictive model for identifying potential churn customers based on their interaction with the product's online platform, including page views, feature usage, and support ticket submissions.\n"
         "e. In response to emerging competitive threats, the startup needs to strategize its pricing model. This requires understanding how competitors might react to their pricing changes and the potential impact on market share."
     ),
-    'correct_answer': "a. Neural Networks and Deep Learning\nb. Community Detection in Graphs\nc. Bayesian Modeling\nd. Neural Networks and Deep Learning\ne. Game Theory",
+    'correct_answer': (
+        "a. Neural Networks and Deep Learning\n"
+        "b. Community Detection in Graphs\n"
+        "c. Bayesian Modeling\n"
+        "d. Neural Networks and Deep Learning\n"
+        "e. Game Theory"
+    ),
     'explanation': (
-        "a. Neural Networks and Deep Learning are highly effective for processing and analyzing unstructured data, making them suitable for sentiment analysis of varied customer feedback. "
-        "b. Community Detection in Graphs can identify clusters within large networks, such as communication patterns among employees, highlighting tightly-knit groups or isolated individuals. "
-        "c. Bayesian Modeling allows for incorporating prior knowledge and handling uncertainty, ideal for assessing the potential adoption of new features based on limited or uncertain data. "
-        "d. Neural Networks and Deep Learning excel at identifying complex patterns in high-dimensional data, suitable for predicting customer churn from varied interactions with an online platform. "
+        "a. Neural Networks and Deep Learning are highly effective for processing and analyzing unstructured data, making them suitable for sentiment analysis of varied customer feedback.\n"
+        "b. Community Detection in Graphs can identify clusters within large networks, such as communication patterns among employees, highlighting tightly-knit groups or isolated individuals.\n"
+        "c. Bayesian Modeling allows for incorporating prior knowledge and handling uncertainty, ideal for assessing the potential adoption of new features based on limited or uncertain data.\n"
+        "d. Neural Networks and Deep Learning excel at identifying complex patterns in high-dimensional data, suitable for predicting customer churn from varied interactions with an online platform.\n"
         "e. Game Theory provides a framework for competitive decision-making, enabling the startup to anticipate competitors' reactions to pricing changes and strategize accordingly."
     )
 }
@@ -497,11 +424,16 @@ q11 = {
         "c. The firm aims to reduce the number of economic indicators in the dataset without losing essential information due to the high correlation among indicators. Which technique is most suitable, and what is its primary benefit?\n"
         "d. After applying PCA, the firm wants to understand the influence of the original economic indicators on the principal components. Which concept is crucial for this interpretation, and why?"
     ),
-    'correct_answer': "a. Box-Cox Transformation\nb. Detrending via linear regression\nc. Principal Component Analysis (PCA)\nd. Eigenvalues and Eigenvectors",
+    'correct_answer': (
+        "a. Box-Cox Transformation\n"
+        "b. Detrending via linear regression\n"
+        "c. Principal Component Analysis (PCA)\n"
+        "d. Eigenvalues and Eigenvectors"
+    ),
     'explanation': (
-        "a. The Box-Cox Transformation is applied to correct heteroscedasticity, a common issue in financial data, by making the variance constant across the range of data. "
-        "b. Detrending is essential for removing long-term trends, such as general market growth, to analyze the more nuanced fluctuations in stock prices that are of interest. "
-        "c. PCA is used for dimensionality reduction, particularly useful in datasets with many correlated variables, by transforming them into a smaller number of uncorrelated variables while retaining most of the original variance. "
+        "a. The Box-Cox Transformation is applied to correct heteroscedasticity, a common issue in financial data, by making the variance constant across the range of data.\n"
+        "b. Detrending is essential for removing long-term trends, such as general market growth, to analyze the more nuanced fluctuations in stock prices that are of interest.\n"
+        "c. PCA is used for dimensionality reduction, particularly useful in datasets with many correlated variables, by transforming them into a smaller number of uncorrelated variables while retaining most of the original variance.\n"
         "d. Eigenvectors from PCA provide insight into the contribution of each original variable to the principal components, helping interpret the reduced-dimensional space in terms of the original variables."
     )
 }
@@ -517,281 +449,203 @@ q12 = {
         "d. With an aim to reduce shipping costs and delivery times, the company is analyzing its logistics and supply chain operations. The challenge includes balancing multiple factors, such as warehouse stock levels, transportation costs, and delivery routes.\n"
         "e. Given the competitive nature of the e-commerce industry, the company also wants to optimize its pricing strategy to maximize profits while remaining attractive to customers, taking into account competitors' pricing and market demand elasticity."
     ),
-    'correct_answer': "a. Time Series Model with Box-Cox Transformation\nb. Clustering\nc. Elastic Net\nd. Linear/Quadratic Integer Program\ne. Game Theory",
+    'correct_answer': (
+        "a. Time Series Model with Box-Cox Transformation\n"
+        "b. Clustering\n"
+        "c. Elastic Net\n"
+        "d. Linear/Quadratic Integer Program\n"
+        "e. Game Theory"
+    ),
     'explanation': (
-        "a. The Box-Cox Transformation corrects heteroscedasticity, stabilizing variance in sales volume, making Time Series Models more effective. "
-        "b. Clustering optimizes the sum of distances from each data point to its cluster center, effectively segmenting customers based on various behaviors. "
-        "c. Elastic Net is ideal for models requiring variable selection and regularization to handle collinearity, perfect for marketing data with many predictors. "
-        "d. Logistics optimization involves binary decisions (e.g., whether to use a specific route), making it a case for Linear/Quadratic Integer Programming. "
+        "a. The Box-Cox Transformation corrects heteroscedasticity, stabilizing variance in sales volume, making Time Series Models more effective.\n"
+        "b. Clustering optimizes the sum of distances from each data point to its cluster center, effectively segmenting customers based on various behaviors.\n"
+        "c. Elastic Net is ideal for models requiring variable selection and regularization to handle collinearity, perfect for marketing data with many predictors.\n"
+        "d. Logistics optimization involves binary decisions (e.g., whether to use a specific route), making it a case for Linear/Quadratic Integer Programming.\n"
         "e. Game Theory models the strategic interactions between the company and its competitors, optimizing pricing strategies in a competitive environment."
     )
 }
 
 
-
-# q13 = {
-#     'question': ("A logistics company is analyzing its package sorting system to improve efficiency and reduce bottlenecks during peak operation hours. The system involves sorting packages based on destination, size, and priority, with a complex network of conveyor belts and automated sorting machines. The company has collected data on package arrival times, sorting times, and system throughput. The data science team intends to use probabilistic models and simulation to address several challenges.\n\n"
-#                  "a. To model the arrival of packages to the sorting facility, which probabilistic distribution should be applied, considering that arrivals are continuous and independent?\n\n"
-#                  "b. The company observes that the time taken by a sorting machine to process a package varies, but it generally follows a pattern. Which model best describes the processing time of packages, given the requirement for a memoryless property?\n\n"
-#                  "c. Given the complexity of the sorting system and the variability in package arrivals and processing times, which simulation approach would best allow the company to analyze system performance and identify potential improvements?\n\n"
-#                  "d. The management is considering implementing a new queueing strategy to prioritize urgent packages. They want to estimate the impact of this change on average waiting times and system throughput. How can simulation be utilized to assess the effectiveness of this new strategy?\n\n"
-#                  "e. Finally, the company wants to explore the long-term effects of adding an additional sorting machine to the system. Which method would allow them to model the system's states and transitions over time, considering the probabilistic nature of package arrivals and processing times?"
-#                 ),
-#     'correct_answer': (
-#         "a. Poisson Distribution\n\n"
-#         "b. Exponential Distribution\n\n"
-#         "c. Discrete Event Stochastic Simulation\n\n"
-#         "d. Prescriptive Simulation\n\n"
-#         "e. Markov Chain Model"
-#     ),
-#     'explanation': (
-#         "a. The Poisson Distribution is appropriate for modeling the arrival of packages because it deals with the number of events (package arrivals) that occur in a fixed interval of time and space, assuming these events occur with a known constant mean rate and independently of the time since the last event.\n\n"
-#         "b. The Exponential Distribution, known for its memoryless property, is suitable for modeling the time between events in a Poisson process, making it ideal for describing the sorting time of packages.\n\n"
-#         "c. Discrete Event Stochastic Simulation allows for modeling the complex interactions within the sorting system, including the randomness of package arrivals and processing times, to analyze performance and identify bottlenecks.\n\n"
-#         "d. Prescriptive Simulation can be used to simulate the effect of different queueing strategies on the system, allowing the company to assess changes before implementation based on various metrics such as average waiting times and system throughput.\n\n"
-#         "e. The Markov Chain Model is effective for modeling the system's states and transitions over time, providing insights into the long-term effects of operational changes such as adding an additional sorting machine."
-#     )
-# }
-
-
-# q14 = {
-#     'question': ("An agricultural technology company is developing a predictive model to optimize crop yields across various regions. The project involves integrating diverse datasets, including soil properties, weather patterns, crop genetics, and historical yield data. The analytics team is exploring several modeling techniques to address the challenges presented by the variability and complexity of the data.\n\n"
-#                  "a. Given the variability in weather patterns and their significant impact on crop yields, which modeling approach would best accommodate the uncertainty inherent in weather forecasts?\n\n"
-#                  "b. Considering the need to classify regions based on soil properties that directly influence crop choice and management practices, which technique is most suitable for segmenting the regions into distinct categories?\n\n"
-#                  "c. To account for the non-linear relationship between soil moisture levels and crop yield, which method should be applied to capture the complexity of this relationship?\n\n"
-#                  "d. In evaluating the effectiveness of different fertilizers on crop yield, how should the company approach the analysis to determine the most impactful factors?\n\n"
-#                  "e. The company aims to develop a model that predicts the likelihood of a pest outbreak based on historical data and current observations. Which model would allow for a dynamic assessment of risk over time?"
-#                 ),
-#     'correct_answer': (
-#         "a. Bayesian Modeling\n\n"
-#         "b. Clustering\n\n"
-#         "c. Neural Networks\n\n"
-#         "d. Elastic Net\n\n"
-#         "e. Markov Chains"
-#     ),
-#     'explanation': (
-#         "a. Bayesian Modeling is well-suited for incorporating uncertainty and making probabilistic predictions, ideal for weather-related forecasts.\n\n"
-#         "b. Clustering is an effective unsupervised learning technique for categorizing regions with similar soil properties without predefined labels.\n\n"
-#         "c. Neural Networks can model complex, non-linear relationships, making them suitable for understanding the nuanced effects of soil moisture on crop yield.\n\n"
-#         "d. Elastic Net combines Lasso and Ridge regression techniques, offering a balanced approach to variable selection and regularization, crucial for identifying the key factors influencing crop yield.\n\n"
-#         "e. Markov Chains are effective for modeling state transitions over time, providing a robust framework for predicting pest outbreaks based on changing conditions."
-#     )
-# }
-
-
-
-# q15 = {
-#     'question': ("A healthcare research institute is conducting a longitudinal study on the impact of lifestyle factors on chronic diseases. The dataset encompasses a wide range of variables, including dietary habits, physical activity levels, genetic predispositions, and health outcomes over ten years. However, the institute faces challenges with missing data across various time points and variables.\n\n"
-#                  "a. Dietary habit data is sporadically missing for some participants over the ten-year period, with no apparent pattern to the missingness. Which imputation method would best handle this scenario without introducing significant bias?\n\n"
-#                  "b. Physical activity levels are consistently missing for a subgroup of participants who dropped out after the first year. The researchers suspect this dropout is not random but related to the participants' health conditions. How should the missing data be treated to avoid bias in the study's conclusions?\n\n"
-#                  "c. Genetic predisposition data is missing for 2% of the participants due to technical issues with genetic testing. The missingness is considered completely random. What is the most straightforward imputation method that could be applied in this case?\n\n"
-#                  "d. The study plans to analyze the correlation between lifestyle factors and the onset of chronic diseases. However, health outcome data is missing for 5% of the observations. The missing health outcomes are mostly from the earlier part of the study. Which approach should the institute use to impute this missing data, considering the importance of temporal patterns?\n\n"
-#                  "e. Finally, the researchers want to ensure that their imputation strategy for missing dietary and physical activity data does not distort the study's findings. What validation technique could they employ to assess the effectiveness of their imputation methods?"
-#                 ),
-#     'correct_answer': (
-#         "a. Multiple Imputation\n\n"
-#         "b. Use a model-based approach, such as a mixed-effects model, to account for non-random dropout\n\n"
-#         "c. Mean/Median/Mode Imputation\n\n"
-#         "d. Time Series Imputation\n\n"
-#         "e. Cross-validation using a subset of complete cases to simulate missingness and then comparing imputed values against actual values"
-#     ),
-#     'explanation': (
-#         "a. Multiple Imputation is suitable for handling sporadic missing data across time, as it accounts for the uncertainty around the missing data and generates several imputed datasets for analysis.\n\n"
-#         "b. Model-based approaches like mixed-effects models can handle missing data due to dropout by incorporating random effects that account for the variability among participants and fixed effects for observed variables.\n\n"
-#         "c. Mean/Median/Mode Imputation is a straightforward method for handling completely random missing data, using the most central tendency measure that best fits the distribution of the data.\n\n"
-#         "d. Time Series Imputation is appropriate for data with temporal patterns, as it can use trends and seasonal components to estimate missing values more accurately.\n\n"
-#         "e. Cross-validation is a robust technique for validating imputation effectiveness, allowing researchers to simulate missingness in known cases and assess how well the imputation method recovers the original data."
-#     )
-# }
-
-
 q13 = {
     'question': (
-        "A logistics company is analyzing its package sorting system to improve efficiency and reduce bottlenecks during peak operation hours. The system involves sorting packages based on destination, size, and priority, with a complex network of conveyor belts and automated sorting machines. "
+        "A logistics company is analyzing its package sorting system to improve efficiency and reduce bottlenecks during peak operation hours. "
+        "The system involves sorting packages based on destination, size, and priority, with a complex network of conveyor belts and automated sorting machines. "
         "The company has collected data on package arrival times, sorting times, and system throughput. The data science team intends to use probabilistic models and simulation to address several challenges.\n\n"
-        "a. To model the arrival of packages to the sorting facility, which probabilistic distribution should be applied, considering that arrivals are continuous and independent?\n"
-        "b. The company observes that the time taken by a sorting machine to process a package varies, but it generally follows a pattern. Which model best describes the processing time of packages, given the requirement for a memoryless property?\n"
-        "c. Given the complexity of the sorting system and the variability in package arrivals and processing times, which simulation approach would best allow the company to analyze system performance and identify potential improvements?\n"
-        "d. The management is considering implementing a new queueing strategy to prioritize urgent packages. They want to estimate the impact of this change on average waiting times and system throughput. How can simulation be utilized to assess the effectiveness of this new strategy?\n"
-        "e. Finally, the company wants to explore the long-term effects of adding an additional sorting machine to the system. Which method would allow them to model the system's states and transitions over time, considering the probabilistic nature of package arrivals and processing times?"
+        
+        "**a. To model the arrival of packages to the sorting facility, which probabilistic distribution should be applied, considering that arrivals are continuous and independent?**\n"
+        
+        "**b. The company observes that the time taken by a sorting machine to process a package varies, but it generally follows a pattern. Which model best describes the processing time of packages, given the requirement for a memoryless property?**\n"
+        
+        "**c. Given the complexity of the sorting system and the variability in package arrivals and processing times, which simulation approach would best allow the company to analyze system performance and identify potential improvements?**\n"
+        
+        "**d. The management is considering implementing a new queueing strategy to prioritize urgent packages. They want to estimate the impact of this change on average waiting times and system throughput. How can simulation be utilized to assess the effectiveness of this new strategy?**\n"
+        
+        "**e. Finally, the company wants to explore the long-term effects of adding an additional sorting machine to the system. Which method would allow them to model the system's states and transitions over time, considering the probabilistic nature of package arrivals and processing times?**"
     ),
-    'correct_answer': "a. Poisson Distribution\nb. Exponential Distribution\nc. Discrete Event Stochastic Simulation\nd. Prescriptive Simulation\ne. Markov Chain Model",
+    'correct_answer': (
+        "a. Poisson Distribution\n"
+        "b. Exponential Distribution\n"
+        "c. Discrete Event Stochastic Simulation\n"
+        "d. Prescriptive Simulation\n"
+        "e. Markov Chain Model"
+    ),
     'explanation': (
-        "a. The Poisson Distribution is appropriate for modeling the arrival of packages because it deals with the number of events (package arrivals) that occur in a fixed interval of time and space, assuming these events occur with a known constant mean rate and independently of the time since the last event. "
-        "b. The Exponential Distribution, known for its memoryless property, is suitable for modeling the time between events in a Poisson process, making it ideal for describing the sorting time of packages. "
-        "c. Discrete Event Stochastic Simulation allows for modeling the complex interactions within the sorting system, including the randomness of package arrivals and processing times, to analyze performance and identify bottlenecks. "
-        "d. Prescriptive Simulation can be used to simulate the effect of different queueing strategies on the system, allowing the company to assess changes before implementation based on various metrics such as average waiting times and system throughput. "
+        "a. The Poisson Distribution is appropriate for modeling the arrival of packages because it deals with the number of events (package arrivals) that occur in a fixed interval of time and space, assuming these events occur with a known constant mean rate and independently of the time since the last event.\n"
+        "b. The Exponential Distribution, known for its memoryless property, is suitable for modeling the time between events in a Poisson process, making it ideal for describing the sorting time of packages.\n"
+        "c. Discrete Event Stochastic Simulation allows for modeling the complex interactions within the sorting system, including the randomness of package arrivals and processing times, to analyze performance and identify bottlenecks.\n"
+        "d. Prescriptive Simulation can be used to simulate the effect of different queueing strategies on the system, allowing the company to assess changes before implementation based on various metrics such as average waiting times and system throughput.\n"
         "e. The Markov Chain Model is effective for modeling the system's states and transitions over time, providing insights into the long-term effects of operational changes such as adding an additional sorting machine."
     )
 }
 
 q14 = {
     'question': (
-        "An agricultural technology company is developing a predictive model to optimize crop yields across various regions. The project involves integrating diverse datasets, including soil properties, weather patterns, crop genetics, and historical yield data. "
+        "An agricultural technology company is developing a predictive model to optimize crop yields across various regions. "
+        "The project involves integrating diverse datasets, including soil properties, weather patterns, crop genetics, and historical yield data. "
         "The analytics team is exploring several modeling techniques to address the challenges presented by the variability and complexity of the data.\n\n"
-        "a. Given the variability in weather patterns and their significant impact on crop yields, which modeling approach would best accommodate the uncertainty inherent in weather forecasts?\n"
-        "b. Considering the need to classify regions based on soil properties that directly influence crop choice and management practices, which technique is most suitable for segmenting the regions into distinct categories?\n"
-        "c. To account for the non-linear relationship between soil moisture levels and crop yield, which method should be applied to capture the complexity of this relationship?\n"
-        "d. In evaluating the effectiveness of different fertilizers on crop yield, how should the company approach the analysis to determine the most impactful factors?\n"
-        "e. The company aims to develop a model that predicts the likelihood of a pest outbreak based on historical data and current observations. Which model would allow for a dynamic assessment of risk over time?"
+        
+        "**a. Given the variability in weather patterns and their significant impact on crop yields, which modeling approach would best accommodate the uncertainty inherent in weather forecasts?**\n"
+        
+        "**b. Considering the need to classify regions based on soil properties that directly influence crop choice and management practices, which technique is most suitable for segmenting the regions into distinct categories?**\n"
+        
+        "**c. To account for the non-linear relationship between soil moisture levels and crop yield, which method should be applied to capture the complexity of this relationship?**\n"
+        
+        "**d. In evaluating the effectiveness of different fertilizers on crop yield, how should the company approach the analysis to determine the most impactful factors?**\n"
+        
+        "**e. The company aims to develop a model that predicts the likelihood of a pest outbreak based on historical data and current observations. Which model would allow for a dynamic assessment of risk over time?**"
     ),
-    'correct_answer': "a. Bayesian Modeling\nb. Clustering\nc. Neural Networks\nd. Elastic Net\ne. Markov Chains",
+    'correct_answer': (
+        "a. Bayesian Modeling\n"
+        "b. Clustering\n"
+        "c. Neural Networks\n"
+        "d. Elastic Net\n"
+        "e. Markov Chains"
+    ),
     'explanation': (
-        "a. Bayesian Modeling is well-suited for incorporating uncertainty and making probabilistic predictions, ideal for weather-related forecasts. "
-        "b. Clustering is an effective unsupervised learning technique for categorizing regions with similar soil properties without predefined labels. "
-        "c. Neural Networks can model complex, non-linear relationships, making them suitable for understanding the nuanced effects of soil moisture on crop yield. "
-        "d. Elastic Net combines Lasso and Ridge regression techniques, offering a balanced approach to variable selection and regularization, crucial for identifying the key factors influencing crop yield. "
+        "a. Bayesian Modeling is well-suited for incorporating uncertainty and making probabilistic predictions, ideal for weather-related forecasts.\n"
+        "b. Clustering is an effective unsupervised learning technique for categorizing regions with similar soil properties without predefined labels.\n"
+        "c. Neural Networks can model complex, non-linear relationships, making them suitable for understanding the nuanced effects of soil moisture on crop yield.\n"
+        "d. Elastic Net combines Lasso and Ridge regression techniques, offering a balanced approach to variable selection and regularization, crucial for identifying the key factors influencing crop yield.\n"
         "e. Markov Chains are effective for modeling state transitions over time, providing a robust framework for predicting pest outbreaks based on changing conditions."
     )
 }
 
 q15 = {
     'question': (
-        "A healthcare research institute is conducting a longitudinal study on the impact of lifestyle factors on chronic diseases. The dataset encompasses a wide range of variables, including dietary habits, physical activity levels, genetic predispositions, and health outcomes over ten years. "
+        "A healthcare research institute is conducting a longitudinal study on the impact of lifestyle factors on chronic diseases. "
+        "The dataset encompasses a wide range of variables, including dietary habits, physical activity levels, genetic predispositions, and health outcomes over ten years. "
         "However, the institute faces challenges with missing data across various time points and variables.\n\n"
-        "a. Dietary habit data is sporadically missing for some participants over the ten-year period, with no apparent pattern to the missingness. Which imputation method would best handle this scenario without introducing significant bias?\n"
-        "b. Physical activity levels are consistently missing for a subgroup of participants who dropped out after the first year. The researchers suspect this dropout is not random but related to the participants' health conditions. How should the missing data be treated to avoid bias in the study's conclusions?\n"
-        "c. Genetic predisposition data is missing for 2% of the participants due to technical issues with genetic testing. The missingness is considered completely random. What is the most straightforward imputation method that could be applied in this case?\n"
-        "d. The study plans to analyze the correlation between lifestyle factors and the onset of chronic diseases. However, health outcome data is missing for 5% of the observations. The missing health outcomes are mostly from the earlier part of the study. Which approach should the institute use to impute this missing data, considering the importance of temporal patterns?\n"
-        "e. Finally, the researchers want to ensure that their imputation strategy for missing dietary and physical activity data does not distort the study's findings. What validation technique could they employ to assess the effectiveness of their imputation methods?"
+        
+        "**a. Dietary habit data is sporadically missing for some participants over the ten-year period, with no apparent pattern to the missingness. Which imputation method would best handle this scenario without introducing significant bias?**\n"
+        
+        "**b. Physical activity levels are consistently missing for a subgroup of participants who dropped out after the first year. The researchers suspect this dropout is not random but related to the participants' health conditions. How should the missing data be treated to avoid bias in the study's conclusions?**\n"
+        
+        "**c. Genetic predisposition data is missing for 2% of the participants due to technical issues with genetic testing. The missingness is considered completely random. What is the most straightforward imputation method that could be applied in this case?**\n"
+        
+        "**d. The study plans to analyze the correlation between lifestyle factors and the onset of chronic diseases. However, health outcome data is missing for 5% of the observations. The missing health outcomes are mostly from the earlier part of the study. Which approach should the institute use to impute this missing data, considering the importance of temporal patterns?**\n"
+        
+        "**e. Finally, the researchers want to ensure that their imputation strategy for missing dietary and physical activity data does not distort the study's findings. What validation technique could they employ to assess the effectiveness of their imputation methods?**"
     ),
-    'correct_answer': "a. Multiple Imputation\nb. Use a model-based approach, such as a mixed-effects model, to account for non-random dropout\nc. Mean/Median/Mode Imputation\nd. Time Series Imputation\ne. Cross-validation using a subset of complete cases to simulate missingness and then comparing imputed values against actual values",
+    'correct_answer': (
+        "a. Multiple Imputation\n"
+        "b. Use a model-based approach, such as a mixed-effects model, to account for non-random dropout\n"
+        "c. Mean/Median/Mode Imputation\n"
+        "d. Time Series Imputation\n"
+        "e. Cross-validation using a subset of complete cases to simulate missingness and then comparing imputed values against actual values"
+    ),
     'explanation': (
-        "a. Multiple Imputation is suitable for handling sporadic missing data across time, as it accounts for the uncertainty around the missing data and generates several imputed datasets for analysis. "
-        "b. Model-based approaches like mixed-effects models can handle missing data due to dropout by incorporating random effects that account for the variability among participants and fixed effects for observed variables. "
-        "c. Mean/Median/Mode Imputation is a straightforward method for handling completely random missing data, using the most central tendency measure that best fits the distribution of the data. "
-        "d. Time Series Imputation is appropriate for data with temporal patterns, as it can use trends and seasonal components to estimate missing values more accurately. "
+        "a. Multiple Imputation is suitable for handling sporadic missing data across time, as it accounts for the uncertainty around the missing data and generates several imputed datasets for analysis.\n"
+        "b. Model-based approaches like mixed-effects models can handle missing data due to dropout by incorporating random effects that account for the variability among participants and fixed effects for observed variables.\n"
+        "c. Mean/Median/Mode Imputation is a straightforward method for handling completely random missing data, using the most central tendency measure that best fits the distribution of the data.\n"
+        "d. Time Series Imputation is appropriate for data with temporal patterns, as it can use trends and seasonal components to estimate missing values more accurately.\n"
         "e. Cross-validation is a robust technique for validating imputation effectiveness, allowing researchers to simulate missingness in known cases and assess how well the imputation method recovers the original data."
     )
 }
 
-# midterm_1_q25 = {
-#     'question': (
-#         "A marketing agency is segmenting its audience for targeted advertising campaigns."
-#         "\n\n"
-#         "a. For creating customer segments based on shopping behavior and preferences, which clustering method would be most suitable?"
-#         "\n"
-#         "K-means Clustering\n"
-#         "KNN Clustering\n"
-#         "PCA\n"
-#         "Poisson Variance Classification\n\n"
-#         "A retail chain is analyzing factors affecting its sales performance."
-#         "\n\n"
-#         "a. To predict future sales based on factors like store location, advertising spend, and local demographics, which regression method should be employed?"
-#         "\n"
-#         "Linear Regression\n"
-#         "Poisson Regression\n"
-#         "Bayesian Regression\n"
-#         "Lasso Regression\n\n"
-#         "b. The retailer needs to understand the relationship between temperature and outdoor sales. If the relationship is non-linear, what should they consider in their regression model?"
-#         "\n"
-#         "Transformation and Interaction Terms\n"
-#         "Logistic Regression\n"
-#         "Polynomial Regression\n"
-#         "Ridge Regression"
-#     ),
-#     'correct_answer': (
-#         "a. K-means Clustering\n\n"
-#         "a. Linear Regression\n\n"
-#         "b. Polynomial Regression"
-#     ),
-#     'explanation': (
-#         "a. K-means Clustering is commonly used in market segmentation due to its simplicity and efficiency in clustering similar items based on predefined characteristics.\n\n"
-#         "a. Linear Regression is suitable for predicting future sales based on several independent variables, offering a straightforward approach to regression analysis.\n\n"
-#         "b. Polynomial Regression helps capture non-linear relationships, providing flexibility when modeling sales trends influenced by varying temperatures."
-#     )
-# }
 
-# midterm_1_q24 = {
-#     'question': (
-#         "A financial institution is implementing a new system to classify loan applicants based on risk."
-#         "\n\n"
-#         "a. Which classifier would be more effective for categorizing applicants into 'high risk' and 'low risk', considering the cost of misclassification?"
-#         "\n"
-#         "Linear Regression\n"
-#         "K-Nearest Neighbor (KNN)\n"
-#         "Support Vector Machine (SVM)\n"
-#         "Random Forest\n\n"
-#         "b. In a scenario where the bank needs to identify potential fraudulent transactions, which approach should they use, given the transactions data is highly imbalanced?"
-#         "\n"
-#         "Hard Classifiers\n"
-#         "Soft Classifiers\n"
-#         "Decision Trees\n"
-#         "Bayesian Classifiers\n\n"
-#         "An e-commerce company is evaluating different models for predicting customer purchase behavior."
-#         "\n\n"
-#         "a. To ensure the chosen model is not overfitting, which method should be used for validating the model's effectiveness?"
-#         "\n"
-#         "Cross-Validation\n"
-#         "Training on Entire Dataset\n"
-#         "AIC/BIC Comparison\n"
-#         "Holdout Method\n\n"
-#         "b. If the model performs well on the training data but poorly on the validation data, what might this indicate?"
-#         "\n"
-#         "The model is underfitting\n"
-#         "The model is overfitting\n"
-#         "The model is perfectly fitted\n"
-#         "The model is not complex enough"
-#     ),
-#     'correct_answer': (
-#         "a. Support Vector Machine (SVM)\n\n"
-#         "b. Soft Classifiers\n\n"
-#         "a. Cross-Validation\n\n"
-#         "b. The model is overfitting"
-#     ),
-#     'explanation': (
-#         "a. Support Vector Machine (SVM) is effective for binary classification, particularly when the cost of misclassification is high. It creates a hyperplane that best separates the two categories, minimizing classification errors.\n\n"
-#         "b. Soft Classifiers, which include techniques like probability thresholds, are suitable for highly imbalanced datasets, allowing for a more flexible classification approach.\n\n"
-#         "a. Cross-Validation provides a reliable method for validating a model's effectiveness by testing it across different subsets of the data to ensure robustness.\n\n"
-#         "b. Overfitting occurs when the model is too closely fitted to the training data, resulting in poor performance on validation data."
-#     )
-# }
+
+
 
 midterm_1_q25 = {
     'question': (
-        "A marketing agency is segmenting its audience for targeted advertising campaigns. "
-        "a. For creating customer segments based on shopping behavior and preferences, which clustering method would be most suitable? "
-        "K-means Clustering, KNN Clustering, PCA, Poisson Variance Classification. "
+        "A marketing agency is segmenting its audience for targeted advertising campaigns.\n\n"
         
-        "A retail chain is analyzing factors affecting its sales performance. "
-        "a. To predict future sales based on factors like store location, advertising spend, and local demographics, which regression method should be employed? "
-        "Linear Regression, Poisson Regression, Bayesian Regression, Lasso Regression. "
+        "**a. For creating customer segments based on shopping behavior and preferences, which clustering method would be most suitable?**\n"
+        "- K-means Clustering\n"
+        "- KNN Clustering\n"
+        "- PCA\n"
+        "- Poisson Variance Classification\n\n"
         
-        "b. The retailer needs to understand the relationship between temperature and outdoor sales. If the relationship is non-linear, what should they consider in their regression model? "
-        "Transformation and Interaction Terms, Logistic Regression, Polynomial Regression, Ridge Regression."
+        "A retail chain is analyzing factors affecting its sales performance.\n\n"
+        
+        "**a. To predict future sales based on factors like store location, advertising spend, and local demographics, which regression method should be employed?**\n"
+        "- Linear Regression\n"
+        "- Poisson Regression\n"
+        "- Bayesian Regression\n"
+        "- Lasso Regression\n\n"
+        
+        "**b. The retailer needs to understand the relationship between temperature and outdoor sales. If the relationship is non-linear, what should they consider in their regression model?**\n"
+        "- Transformation and Interaction Terms\n"
+        "- Logistic Regression\n"
+        "- Polynomial Regression\n"
+        "- Ridge Regression."
     ),
-    'correct_answer': "a. K-means Clustering, a. Linear Regression, b. Polynomial Regression",
+    'correct_answer': (
+        "a. K-means Clustering\n"
+        "a. Linear Regression\n"
+        "b. Polynomial Regression"
+    ),
     'explanation': (
-        "a. K-means Clustering is commonly used in market segmentation due to its simplicity and efficiency in clustering similar items based on predefined characteristics. "
-        "a. Linear Regression is suitable for predicting future sales based on several independent variables, offering a straightforward approach to regression analysis. "
+        "a. K-means Clustering is commonly used in market segmentation due to its simplicity and efficiency in clustering similar items based on predefined characteristics.\n"
+        "a. Linear Regression is suitable for predicting future sales based on several independent variables, offering a straightforward approach to regression analysis.\n"
         "b. Polynomial Regression helps capture non-linear relationships, providing flexibility when modeling sales trends influenced by varying temperatures."
     )
 }
 
 midterm_1_q24 = {
     'question': (
-        "A financial institution is implementing a new system to classify loan applicants based on risk. "
-        "a. Which classifier would be more effective for categorizing applicants into 'high risk' and 'low risk', considering the cost of misclassification? "
-        "Linear Regression, K-Nearest Neighbor (KNN), Support Vector Machine (SVM), Random Forest. "
+        "A financial institution is implementing a new system to classify loan applicants based on risk.\n\n"
         
-        "b. In a scenario where the bank needs to identify potential fraudulent transactions, which approach should they use, given the transactions data is highly imbalanced? "
-        "Hard Classifiers, Soft Classifiers, Decision Trees, Bayesian Classifiers. "
+        "**a. Which classifier would be more effective for categorizing applicants into 'high risk' and 'low risk', considering the cost of misclassification?**\n"
+        "- Linear Regression\n"
+        "- K-Nearest Neighbor (KNN)\n"
+        "- Support Vector Machine (SVM)\n"
+        "- Random Forest\n\n"
         
-        "An e-commerce company is evaluating different models for predicting customer purchase behavior. "
-        "a. To ensure the chosen model is not overfitting, which method should be used for validating the model's effectiveness? "
-        "Cross-Validation, Training on Entire Dataset, AIC/BIC Comparison, Holdout Method. "
+        "**b. In a scenario where the bank needs to identify potential fraudulent transactions, which approach should they use, given the transactions data is highly imbalanced?**\n"
+        "- Hard Classifiers\n"
+        "- Soft Classifiers\n"
+        "- Decision Trees\n"
+        "- Bayesian Classifiers\n\n"
         
-        "b. If the model performs well on the training data but poorly on the validation data, what might this indicate? "
-        "The model is underfitting, The model is overfitting, The model is perfectly fitted, The model is not complex enough."
+        "An e-commerce company is evaluating different models for predicting customer purchase behavior.\n\n"
+        
+        "**a. To ensure the chosen model is not overfitting, which method should be used for validating the model's effectiveness?**\n"
+        "- Cross-Validation\n"
+        "- Training on Entire Dataset\n"
+        "- AIC/BIC Comparison\n"
+        "- Holdout Method\n\n"
+        
+        "**b. If the model performs well on the training data but poorly on the validation data, what might this indicate?**\n"
+        "- The model is underfitting\n"
+        "- The model is overfitting\n"
+        "- The model is perfectly fitted\n"
+        "- The model is not complex enough."
     ),
-    'correct_answer': "a. Support Vector Machine (SVM), b. Soft Classifiers, a. Cross-Validation, b. The model is overfitting",
+    'correct_answer': (
+        "a. Support Vector Machine (SVM)\n"
+        "b. Soft Classifiers\n"
+        "a. Cross-Validation\n"
+        "b. The model is overfitting"
+    ),
     'explanation': (
-        "a. Support Vector Machine (SVM) is effective for binary classification, particularly when the cost of misclassification is high. It creates a hyperplane that best separates the two categories, minimizing classification errors. "
-        "b. Soft Classifiers, which include techniques like probability thresholds, are suitable for highly imbalanced datasets, allowing for a more flexible classification approach. "
-        "a. Cross-Validation provides a reliable method for validating a model's effectiveness by testing it across different subsets of the data to ensure robustness. "
+        "a. Support Vector Machine (SVM) is effective for binary classification, particularly when the cost of misclassification is high. It creates a hyperplane that best separates the two categories, minimizing classification errors.\n"
+        "b. Soft Classifiers, which include techniques like probability thresholds, are suitable for highly imbalanced datasets, allowing for a more flexible classification approach.\n"
+        "a. Cross-Validation provides a reliable method for validating a model's effectiveness by testing it across different subsets of the data to ensure robustness.\n"
         "b. Overfitting occurs when the model is too closely fitted to the training data, resulting in poor performance on validation data."
     )
 }
+
 
 
 midterm_1_q23 = {
@@ -909,221 +763,119 @@ midterm_1_q22 = {
     )
 }
 
-
-
-
-# q16 = {
-#     'question': "A national health survey collects data on various health metrics, lifestyle choices, and demographic information from participants across the country. However, the dataset contains missing values in several variables, such as Body Mass Index (BMI), smoking status, and income level, which are crucial for the study's objectives. The data science team at the health department needs to decide on the best strategies for handling this missing data.\n\na. BMI values are missing for 5% of the participants. These missing values are believed to be Missing Completely at Random (MCAR). What imputation method should be applied to handle the missing BMI values?\n\nb. Smoking status is missing for a significant number of participants, especially among older demographics. The missingness is suspected to be Not Missing at Random (NMAR), possibly because older participants chose not to disclose their smoking habits. Which approach is most suitable for imputing missing data in this case?\n\nc. Income level data is missing for 10% of the participants, predominantly in regions with lower socio-economic status. This pattern suggests the missing data is Missing at Random (MAR). Given the importance of accurately estimating missing income levels, which imputation method would be most effective?\n\nd. After handling missing data for BMI, smoking status, and income level, what technique can the team use to assess the impact of imputation on the analysis results?\n\ne. Considering the need to maintain the integrity of the survey results and the potential bias introduced by missing data, what overarching strategy should guide the team's approach to imputation?",
-#     'correct_answer': {
-#         'a': "Mean/Median/Mode Imputation",
-#         'b': "Model-Based Imputation, incorporating variables correlated with smoking status",
-#         'c': "Multiple Imputation, using variables related to socio-economic status",
-#         'd': "Sensitivity Analysis, comparing results with and without imputed data",
-#         'e': "A comprehensive approach, prioritizing methods that minimize bias and reflect the underlying data distribution"
-#     },
-#     'explanation': {
-#         'a': "Mean/Median/Mode Imputation is straightforward and appropriate for MCAR data, as it does not introduce significant bias.",
-#         'b': "Model-Based Imputation allows for the inclusion of auxiliary variables that may explain the mechanism behind the missingness of smoking status.",
-#         'c': "Multiple Imputation is suitable for MAR data, as it accounts for the uncertainty of missing values and uses the relationships between variables to generate plausible estimates.",
-#         'd': "Sensitivity Analysis helps in evaluating the robustness of the study's findings by analyzing the effects of imputation on the results.",
-#         'e': "Considering the varied nature of missing data, a comprehensive approach ensures that the imputation strategy is aligned with the data's characteristics and the study's objectives, thereby maintaining the validity and reliability of the results."
-#     }
-# }
-
-# q17 = {
-#     'question': ("A research team is conducting a study on the effects of dietary habits on long-term health outcomes. They've collected a dataset over 10 years, tracking individuals' consumption of fruits, vegetables, processed foods, and their health outcomes, including cholesterol levels, blood pressure, and incidence of heart disease.\n\n"
-#                  "Given the dataset and research goals, answer the following questions:\n\n"
-#                  "a. Given the objective to analyze the impact of each dietary habit on cholesterol levels, which regression model should the team use, and why?\n\n"
-#                  "b. The team notices that blood pressure readings have a non-linear relationship with processed food consumption. How should they adjust their regression model to account for this?\n\n"
-#                  "c. To predict the likelihood of heart disease based on dietary habits, what type of regression model is most appropriate, and what is the primary reason for its selection?\n\n"
-#                  "d. The team wants to control for the variable 'age' while analyzing the effects of dietary habits on health outcomes. How should they incorporate 'age' into their regression analysis?\n\n"
-#                  "e. After initial analysis, the team realizes that multicollinearity between fruit and vegetable consumption might be skewing their results. What strategy should they consider to address this issue?"
-#                 ),
-#     'correct_answer': (
-#         "a. Multiple linear regression, because it allows for the assessment of the impact of multiple predictors (dietary habits) on a continuous outcome (cholesterol levels).\n\n"
-#         "b. Introduce polynomial terms for processed food consumption into the model to capture the non-linear relationship.\n\n"
-#         "c. Logistic regression, as it is designed for binary outcomes (e.g., the presence or absence of heart disease) and can handle predictors like dietary habits.\n\n"
-#         "d. Include 'age' as a covariate in the regression model to adjust for its potential confounding effect on the relationship between dietary habits and health outcomes.\n\n"
-#         "e. Apply Ridge or Lasso regression techniques to penalize the regression coefficients, thereby reducing the effect of multicollinearity and selecting the most relevant predictors."
-#     ),
-#     'explanation': (
-#         "a. Multiple linear regression is suitable for modeling the relationship between multiple independent variables and a single continuous dependent variable, making it ideal for assessing the impacts of various dietary habits on cholesterol levels.\n\n"
-#         "b. Polynomial regression allows for the modeling of non-linear relationships by adding polynomial terms, which can better fit the observed data when linear terms are insufficient.\n\n"
-#         "c. Logistic regression is used when the dependent variable is categorical, such as predicting a binary outcome. It models the probability that the outcome is present given the predictors.\n\n"
-#         "d. Including 'age' as a covariate helps to adjust for its effects, providing a clearer picture of how dietary habits alone influence health outcomes, without the confounding impact of age.\n\n"
-#         "e. Ridge and Lasso regression are regularization methods that address multicollinearity by penalizing the size of coefficients, which can help in selecting the most significant variables when predictors are correlated."
-#     )
-# }
-
-
-# q18 = {
-#     'question': ("A city's public transportation system is evaluating its bus service efficiency. The system operates with varying arrival rates throughout the day due to peak and off-peak hours. During peak hours (30% of the time), buses arrive at a rate of 10 buses/hour. During off-peak hours, buses arrive at a rate of 4 buses/hour. The average boarding time per passenger is consistently 1 minute.\n\n"
-#                  "Given this information, answer the following questions regarding the application of queuing theory and stochastic modeling to improve service efficiency:\n\n"
-#                  "a. Initially, the transportation system models bus arrivals with 15 buses running during peak hours and 6 buses during off-peak hours. What would you expect the model to show regarding passenger wait times?\n- Wait times are minimal at both peak and off-peak hours.\n- Wait times are minimal at peak hours and longer at off-peak hours.\n- Wait times are longer at peak hours and minimal at off-peak hours.\n- Wait times are long at both peak and off-peak hours.\n\n"
-#                  "b. After analyzing passenger feedback on wait times, the system experiments with dynamic scheduling, adjusting the number of buses to 12 during peak hours and 8 during off-peak hours. What would you expect the model to show under this new scheduling approach?\n- Wait times are reduced at both peak and off-peak hours compared to the initial model.\n- Wait times are reduced at peak hours but increased at off-peak hours compared to the initial model.\n- Wait times are increased at peak hours but reduced at off-peak hours compared to the initial model.\n- Wait times remain unchanged at both peak and off-peak hours compared to the initial model.\n\n"
-#                  "To optimize passenger wait times further, the transportation system considers implementing a real-time tracking and notification system for bus arrivals. This system could inform potential adjustments to bus frequency based on current demand and traffic conditions.\n\n"
-#                  "c. Considering the introduction of a real-time tracking and notification system, which statement best describes its expected impact on the modeling of the bus service?\n- It introduces variability that makes the queuing model less predictable.\n- It reduces the need for a queuing model by directly managing passenger expectations.\n- It enhances the accuracy of the queuing model by providing real-time data for better decision-making.\n- It has no significant impact on the queuing model as it does not affect bus arrival rates or boarding times.\n"
-#                 ),
-#     'correct_answer': (
-#         "a. Wait times are longer at peak hours and minimal at off-peak hours.\n\n"
-#         "b. Wait times are reduced at both peak and off-peak hours compared to the initial model.\n\n"
-#         "c. It enhances the accuracy of the queuing model by providing real-time data for better decision-making."
-#     ),
-#     'explanation': (
-#         "a. Given the higher arrival rate of buses during peak hours in the initial model, passenger wait times are expected to be longer due to the increased demand. The model's setup during off-peak hours should minimize wait times due to a better balance between bus arrivals and passenger demand.\n\n"
-#         "b. The adjusted number of buses during both peak and off-peak hours aims to more closely match the arrival rate with passenger demand, potentially reducing wait times across the board by optimizing resources.\n\n"
-#         "c. A real-time tracking and notification system provides passengers with current wait times and bus arrival information, allowing for more informed decision-making. For the transportation system, this real-time data can inform adjustments to bus frequencies, enhancing the queuing model's relevance and accuracy by incorporating current demand and traffic conditions."
-#     )
-# }
-
-
-
-# q19 = {
-#     'question': ("A data science team at a tech company is analyzing user interaction data with their software to improve user experience and engagement. The dataset includes daily active users (DAU), average session time, number of sessions per user, feature usage frequency, and user retention rate. The team wants to use regression analysis to predict user retention based on these variables.\n\n"
-#                  "a. Considering the team's objective to predict user retention rate, a continuous outcome variable, which regression model is most appropriate for initial analysis?\n- Simple linear regression\n- Multiple linear regression\n- Logistic regression\n\n"
-#                  "b. The team observes a potential non-linear relationship between average session time and user retention rate. Which method could effectively capture this non-linearity in the regression model?\n- Adding polynomial terms for average session time\n- Transforming the retention rate using a log function\n- Using a logistic regression model\n\n"
-#                  "c. To identify which features are most predictive of user retention while avoiding overfitting with too many variables, which technique should the team employ?\n- Stepwise regression\n- Ridge regression\n- Principal Component Analysis (PCA)\n\n"
-#                  "d. After developing the regression model, the team wants to evaluate its performance in predicting user retention. Which metric is most suitable for assessing the model's accuracy?\n- R-squared\n- Mean Squared Error (MSE)\n- Area Under the ROC Curve (AUC)\n\n"
-#                  "e. The team plans to segment users based on their likelihood of retention, as predicted by the regression model. For users classified as at risk of low retention, targeted engagement strategies will be implemented. Which approach allows the team to classify users based on predicted retention rates?\n- K-means clustering on predicted retention rates\n- Setting a threshold on the predicted retention rate to classify users\n- Using a logistic regression model for classification"
-#                 ),
-#     'correct_answer': (
-#         "a. Multiple linear regression\n\n"
-#         "b. Adding polynomial terms for average session time\n\n"
-#         "c. Stepwise regression\n\n"
-#         "d. Mean Squared Error (MSE)\n\n"
-#         "e. Setting a threshold on the predicted retention rate to classify users"
-#     ),
-#     'explanation': (
-#         "a. Multiple linear regression is appropriate for modeling the relationship between multiple predictors and a continuous outcome variable.\n\n"
-#         "b. Adding polynomial terms can help model non-linear relationships between predictors and the outcome variable within a linear regression framework.\n\n"
-#         "c. Stepwise regression is a method of adding or removing variables from the model based on their statistical significance, which helps in selecting the most predictive features while avoiding overfitting.\n\n"
-#         "d. Mean Squared Error (MSE) measures the average of the squares of the errors between the predicted and actual values, making it a suitable metric for evaluating the accuracy of regression models.\n\n"
-#         "e. Setting a threshold on the predicted retention rate allows for the classification of users into different categories (e.g., high risk vs. low risk of churn) based on their predicted likelihood of retention."
-#     ),
-# }
-
-
-# q20 ={
-#     'question': ("A marketing team is interested in understanding the factors that influence a customer's decision to subscribe to a new online service. The dataset includes customer demographics (age, income, education), previous subscription history, marketing engagement metrics (email opens, click-through rates), and whether the customer subscribed to the new service (yes or no).\n\n"
-#                  "a. Given the binary nature of the outcome variable (subscribed or not), which regression model should the marketing team use to analyze the data?\n- Simple linear regression\n- Multiple linear regression\n- Logistic regression\n\n"
-#                  "b. To understand the effect of age on the likelihood of subscribing, while controlling for income and education, which component should be included in the logistic regression model?\n- Interaction terms between age, income, and education\n- Age as a main effect, without interaction terms\n- Polynomial terms for age\n\n"
-#                  "c. The marketing team suspects that the relationship between click-through rates and subscription likelihood is not linear. How can they adjust their logistic regression model to account for this?\n- Include click-through rate as a categorical variable\n- Add polynomial terms for click-through rate\n- Transform click-through rate using a logistic function\n\n"
-#                  "d. After fitting the logistic regression model, which metric would be most appropriate for evaluating its performance in classifying customers as subscribers or non-subscribers?\n- R-squared\n- Mean Squared Error (MSE)\n- Area Under the ROC Curve (AUC)\n\n"
-#                  "e. If the marketing team wants to use the model to target customers who are most likely to subscribe, which strategy would effectively leverage the model's predictions?\n- Send marketing materials to customers with a predicted probability of subscribing above a certain threshold\n- Cluster customers into groups based on predicted probabilities and target the largest cluster\n- Perform A/B testing on a random sample of customers regardless of their predicted probabilities"
-#                 ),
-#  'correct_answer': (
-#         "a. Logistic regression\n\n"
-#         "b. Age as a main effect, without interaction terms\n\n"
-#         "c. Add polynomial terms for click-through rate\n\n"
-#         "d. Area Under the ROC Curve (AUC)\n\n"
-#         "e. Send marketing materials to customers with a predicted probability of subscribing above a certain threshold"
-#     ),
-#     'explanation': (
-#         "a. Logistic regression is suitable for binary outcome variables, making it the appropriate choice for analyzing subscription decisions.\n\n"
-#         "b. Including age as a main effect allows the model to assess its direct impact on subscription likelihood, controlling for other factors.\n\n"
-#         "c. Adding polynomial terms for click-through rate can capture non-linear effects on the likelihood of subscribing.\n\n"
-#         "d. The Area Under the ROC Curve (AUC) is a performance metric for classification models, indicating the model's ability to distinguish between classes.\n\n"
-#         "e. Targeting customers based on a probability threshold allows for more efficient allocation of marketing resources to those most likely to subscribe."
-#     ),
-# }
-
 q2217 = {
     'question': (
-        "A research team is conducting a study on the effects of dietary habits on long-term health outcomes. They've collected a dataset over 10 years, tracking individuals' consumption of fruits, vegetables, processed foods, and their health outcomes, including cholesterol levels, blood pressure, and incidence of heart disease. "
-        "Given the dataset and research goals, answer the following questions: "
-        "a. Given the objective to analyze the impact of each dietary habit on cholesterol levels, which regression model should the team use, and why? "
-        "b. The team notices that blood pressure readings have a non-linear relationship with processed food consumption. How should they adjust their regression model to account for this? "
-        "c. To predict the likelihood of heart disease based on dietary habits, what type of regression model is most appropriate, and what is the primary reason for its selection? "
-        "d. The team wants to control for the variable 'age' while analyzing the effects of dietary habits on health outcomes. How should they incorporate 'age' into their regression analysis? "
-        "e. After initial analysis, the team realizes that multicollinearity between fruit and vegetable consumption might be skewing their results. What strategy should they consider to address this issue?"
+        "A research team is conducting a study on the effects of dietary habits on long-term health outcomes. They've collected a dataset over 10 years, tracking individuals' consumption of fruits, vegetables, processed foods, and their health outcomes, including cholesterol levels, blood pressure, and incidence of heart disease.\n\n"
+        
+        "Given the dataset and research goals, answer the following questions:\n\n"
+        
+        "**a. Given the objective to analyze the impact of each dietary habit on cholesterol levels, which regression model should the team use, and why?**\n"
+        
+        "**b. The team notices that blood pressure readings have a non-linear relationship with processed food consumption. How should they adjust their regression model to account for this?**\n"
+        
+        "**c. To predict the likelihood of heart disease based on dietary habits, what type of regression model is most appropriate, and what is the primary reason for its selection?**\n"
+        
+        "**d. The team wants to control for the variable 'age' while analyzing the effects of dietary habits on health outcomes. How should they incorporate 'age' into their regression analysis?**\n"
+        
+        "**e. After initial analysis, the team realizes that multicollinearity between fruit and vegetable consumption might be skewing their results. What strategy should they consider to address this issue?**"
     ),
     'correct_answer': (
-        "a. Multiple linear regression, because it allows for the assessment of the impact of multiple predictors (dietary habits) on a continuous outcome (cholesterol levels). "
-        "b. Introduce polynomial terms for processed food consumption into the model to capture the non-linear relationship. "
-        "c. Logistic regression, as it is designed for binary outcomes (e.g., the presence or absence of heart disease) and can handle predictors like dietary habits. "
-        "d. Include 'age' as a covariate in the regression model to adjust for its potential confounding effect on the relationship between dietary habits and health outcomes. "
+        "a. Multiple linear regression, because it allows for the assessment of the impact of multiple predictors (dietary habits) on a continuous outcome (cholesterol levels).\n"
+        "b. Introduce polynomial terms for processed food consumption into the model to capture the non-linear relationship.\n"
+        "c. Logistic regression, as it is designed for binary outcomes (e.g., the presence or absence of heart disease) and can handle predictors like dietary habits.\n"
+        "d. Include 'age' as a covariate in the regression model to adjust for its potential confounding effect on the relationship between dietary habits and health outcomes.\n"
         "e. Apply Ridge or Lasso regression techniques to penalize the regression coefficients, thereby reducing the effect of multicollinearity and selecting the most relevant predictors."
     ),
     'explanation': (
-        "a. Multiple linear regression is suitable for modeling the relationship between multiple independent variables and a single continuous dependent variable, making it ideal for assessing the impacts of various dietary habits on cholesterol levels. "
-        "b. Polynomial regression allows for the modeling of non-linear relationships by adding polynomial terms, which can better fit the observed data when linear terms are insufficient. "
-        "c. Logistic regression is used when the dependent variable is categorical, such as predicting a binary outcome. It models the probability that the outcome is present given the predictors. "
-        "d. Including 'age' as a covariate helps to adjust for its effects, providing a clearer picture of how dietary habits alone influence health outcomes, without the confounding impact of age. "
+        "a. Multiple linear regression is suitable for modeling the relationship between multiple independent variables and a single continuous dependent variable, making it ideal for assessing the impacts of various dietary habits on cholesterol levels.\n"
+        "b. Polynomial regression allows for the modeling of non-linear relationships by adding polynomial terms, which can better fit the observed data when linear terms are insufficient.\n"
+        "c. Logistic regression is used when the dependent variable is categorical, such as predicting a binary outcome. It models the probability that the outcome is present given the predictors.\n"
+        "d. Including 'age' as a covariate helps to adjust for its effects, providing a clearer picture of how dietary habits alone influence health outcomes, without the confounding impact of age.\n"
         "e. Ridge and Lasso regression are regularization methods that address multicollinearity by penalizing the size of coefficients, which can help in selecting the most significant variables when predictors are correlated."
     )
 }
 
 q2218 = {
     'question': (
-        "A city's public transportation system is evaluating its bus service efficiency. The system operates with varying arrival rates throughout the day due to peak and off-peak hours. During peak hours (30% of the time), buses arrive at a rate of 10 buses/hour. During off-peak hours, buses arrive at a rate of 4 buses/hour. The average boarding time per passenger is consistently 1 minute. "
-        "Given this information, answer the following questions regarding the application of queuing theory and stochastic modeling to improve service efficiency: "
-        "a. Initially, the transportation system models bus arrivals with 15 buses running during peak hours and 6 buses during off-peak hours. What would you expect the model to show regarding passenger wait times? "
-        "- Wait times are minimal at both peak and off-peak hours. "
-        "- Wait times are minimal at peak hours and longer at off-peak hours. "
-        "- Wait times are longer at peak hours and minimal at off-peak hours. "
-        "- Wait times are long at both peak and off-peak hours. "
-        "b. After analyzing passenger feedback on wait times, the system experiments with dynamic scheduling, adjusting the number of buses to 12 during peak hours and 8 during off-peak hours. What would you expect the model to show under this new scheduling approach? "
-        "- Wait times are reduced at both peak and off-peak hours compared to the initial model. "
-        "- Wait times are reduced at peak hours but increased at off-peak hours compared to the initial model. "
-        "- Wait times are increased at peak hours but reduced at off-peak hours compared to the initial model. "
-        "- Wait times remain unchanged at both peak and off-peak hours compared to the initial model. "
-        "c. Considering the introduction of a real-time tracking and notification system, which statement best describes its expected impact on the modeling of the bus service? "
-        "- It introduces variability that makes the queuing model less predictable. "
-        "- It reduces the need for a queuing model by directly managing passenger expectations. "
-        "- It enhances the accuracy of the queuing model by providing real-time data for better decision-making. "
+        "A city's public transportation system is evaluating its bus service efficiency. The system operates with varying arrival rates throughout the day due to peak and off-peak hours. During peak hours (30% of the time), buses arrive at a rate of 10 buses/hour. During off-peak hours, buses arrive at a rate of 4 buses/hour. The average boarding time per passenger is consistently 1 minute.\n\n"
+        
+        "Given this information, answer the following questions regarding the application of queuing theory and stochastic modeling to improve service efficiency:\n\n"
+        
+        "**a. Initially, the transportation system models bus arrivals with 15 buses running during peak hours and 6 buses during off-peak hours. What would you expect the model to show regarding passenger wait times?**\n"
+        "- Wait times are minimal at both peak and off-peak hours.\n"
+        "- Wait times are minimal at peak hours and longer at off-peak hours.\n"
+        "- Wait times are longer at peak hours and minimal at off-peak hours.\n"
+        "- Wait times are long at both peak and off-peak hours.\n\n"
+        
+        "**b. After analyzing passenger feedback on wait times, the system experiments with dynamic scheduling, adjusting the number of buses to 12 during peak hours and 8 during off-peak hours. What would you expect the model to show under this new scheduling approach?**\n"
+        "- Wait times are reduced at both peak and off-peak hours compared to the initial model.\n"
+        "- Wait times are reduced at peak hours but increased at off-peak hours compared to the initial model.\n"
+        "- Wait times are increased at peak hours but reduced at off-peak hours compared to the initial model.\n"
+        "- Wait times remain unchanged at both peak and off-peak hours compared to the initial model.\n\n"
+        
+        "**c. Considering the introduction of a real-time tracking and notification system, which statement best describes its expected impact on the modeling of the bus service?**\n"
+        "- It introduces variability that makes the queuing model less predictable.\n"
+        "- It reduces the need for a queuing model by directly managing passenger expectations.\n"
+        "- It enhances the accuracy of the queuing model by providing real-time data for better decision-making.\n"
         "- It has no significant impact on the queuing model as it does not affect bus arrival rates or boarding times."
     ),
     'correct_answer': (
-        "a. Wait times are longer at peak hours and minimal at off-peak hours. "
-        "b. Wait times are reduced at both peak and off-peak hours compared to the initial model. "
+        "a. Wait times are longer at peak hours and minimal at off-peak hours.\n"
+        "b. Wait times are reduced at both peak and off-peak hours compared to the initial model.\n"
         "c. It enhances the accuracy of the queuing model by providing real-time data for better decision-making."
     ),
     'explanation': (
-        "a. Given the higher arrival rate of buses during peak hours in the initial model, passenger wait times are expected to be longer due to the increased demand. The model's setup during off-peak hours should minimize wait times due to a better balance between bus arrivals and passenger demand. "
-        "b. The adjusted number of buses during both peak and off-peak hours aims to more closely match the arrival rate with passenger demand, potentially reducing wait times across the board by optimizing resources. "
+        "a. Given the higher arrival rate of buses during peak hours in the initial model, passenger wait times are expected to be longer due to the increased demand. The model's setup during off-peak hours should minimize wait times due to a better balance between bus arrivals and passenger demand.\n"
+        "b. The adjusted number of buses during both peak and off-peak hours aims to more closely match the arrival rate with passenger demand, potentially reducing wait times across the board by optimizing resources.\n"
         "c. A real-time tracking and notification system provides passengers with current wait times and bus arrival information, allowing for more informed decision-making. For the transportation system, this real-time data can inform adjustments to bus frequencies, enhancing the queuing model's relevance and accuracy by incorporating current demand and traffic conditions."
     )
 }
 
 q2219 = {
     'question': (
-        "A data science team at a tech company is analyzing user interaction data with their software to improve user experience and engagement. The dataset includes daily active users (DAU), average session time, number of sessions per user, feature usage frequency, and user retention rate. The team wants to use regression analysis to predict user retention based on these variables. "
-        "a. Considering the team's objective to predict user retention rate, a continuous outcome variable, which regression model is most appropriate for initial analysis? "
-        "- Simple linear regression "
-        "- Multiple linear regression "
-        "- Logistic regression "
-        "b. The team observes a potential non-linear relationship between average session time and user retention rate. Which method could effectively capture this non-linearity in the regression model? "
-        "- Adding polynomial terms for average session time "
-        "- Transforming the retention rate using a log function "
-        "- Using a logistic regression model "
-        "c. To identify which features are most predictive of user retention while avoiding overfitting with too many variables, which technique should the team employ? "
-        "- Stepwise regression "
-        "- Ridge regression "
-        "- Principal Component Analysis (PCA) "
-        "d. After developing the regression model, the team wants to evaluate its performance in predicting user retention. Which metric is most suitable for assessing the model's accuracy? "
-        "- R-squared "
-        "- Mean Squared Error (MSE) "
-        "- Area Under the ROC Curve (AUC) "
-        "e. The team plans to segment users based on their likelihood of retention, as predicted by the regression model. For users classified as at risk of low retention, targeted engagement strategies will be implemented. Which approach allows the team to classify users based on predicted retention rates? "
-        "- K-means clustering on predicted retention rates "
-        "- Setting a threshold on the predicted retention rate to classify users "
+        "A data science team at a tech company is analyzing user interaction data with their software to improve user experience and engagement. The dataset includes daily active users (DAU), average session time, number of sessions per user, feature usage frequency, and user retention rate. The team wants to use regression analysis to predict user retention based on these variables.\n\n"
+        
+        "**a. Considering the team's objective to predict user retention rate, a continuous outcome variable, which regression model is most appropriate for initial analysis?**\n"
+        "- Simple linear regression\n"
+        "- Multiple linear regression\n"
+        "- Logistic regression\n\n"
+        
+        "**b. The team observes a potential non-linear relationship between average session time and user retention rate. Which method could effectively capture this non-linearity in the regression model?**\n"
+        "- Adding polynomial terms for average session time\n"
+        "- Transforming the retention rate using a log function\n"
+        "- Using a logistic regression model\n\n"
+        
+        "**c. To identify which features are most predictive of user retention while avoiding overfitting with too many variables, which technique should the team employ?**\n"
+        "- Stepwise regression\n"
+        "- Ridge regression\n"
+        "- Principal Component Analysis (PCA)\n\n"
+        
+        "**d. After developing the regression model, the team wants to evaluate its performance in predicting user retention. Which metric is most suitable for assessing the model's accuracy?**\n"
+        "- R-squared\n"
+        "- Mean Squared Error (MSE)\n"
+        "- Area Under the ROC Curve (AUC)\n\n"
+        
+        "**e. The team plans to segment users based on their likelihood of retention, as predicted by the regression model. For users classified as at risk of low retention, targeted engagement strategies will be implemented. Which approach allows the team to classify users based on predicted retention rates?**\n"
+        "- K-means clustering on predicted retention rates\n"
+        "- Setting a threshold on the predicted retention rate to classify users\n"
         "- Using a logistic regression model for classification"
     ),
     'correct_answer': (
-        "a. Multiple linear regression "
-        "b. Adding polynomial terms for average session time "
-        "c. Stepwise regression "
-        "d. Mean Squared Error (MSE) "
+        "a. Multiple linear regression\n"
+        "b. Adding polynomial terms for average session time\n"
+        "c. Stepwise regression\n"
+        "d. Mean Squared Error (MSE)\n"
         "e. Setting a threshold on the predicted retention rate to classify users"
     ),
     'explanation': (
-        "a. Multiple linear regression is appropriate for modeling the relationship between multiple predictors and a continuous outcome variable. "
-        "b. Adding polynomial terms can help model non-linear relationships between predictors and the outcome variable within a linear regression framework. "
-        "c. Stepwise regression is a method of adding or removing variables from the model based on their statistical significance, which helps in selecting the most predictive features while avoiding overfitting. "
-        "d. Mean Squared Error (MSE) measures the average of the squares of the errors between the predicted and actual values, making it a suitable metric for evaluating the accuracy of regression models. "
+        "a. Multiple linear regression is appropriate for modeling the relationship between multiple predictors and a continuous outcome variable.\n"
+        "b. Adding polynomial terms can help model non-linear relationships between predictors and the outcome variable within a linear regression framework.\n"
+        "c. Stepwise regression is a method of adding or removing variables from the model based on their statistical significance, which helps in selecting the most predictive features while avoiding overfitting.\n"
+        "d. Mean Squared Error (MSE) measures the average of the squares of the errors between the predicted and actual values, making it a suitable metric for evaluating the accuracy of regression models.\n"
         "e. Setting a threshold on the predicted retention rate allows for the classification of users into different categories (e.g., high risk vs. low risk of churn) based on their predicted likelihood of retention."
     )
 }
+
 
 q2220 = {
     'question': (
@@ -1622,298 +1374,302 @@ q23r = {
 
 q24r = {
     'question': (
-        "A manufacturing company needs to determine the optimal production levels for its two products, A and B, to maximize profits. Each unit of product A yields a profit of $50, and each unit of product B yields a profit of $40. The production of each product requires time on two machines: Machine 1 and Machine 2. Product A requires 2 hours on Machine 1 and 1 hour on Machine 2. Product B requires 1 hour on Machine 1 and 2 hours on Machine 2. Machine 1 is available for 100 hours, and Machine 2 is available for 80 hours. "
-        "a. Formulate the objective function for maximizing profit. "
-        "- Maximize Profit = $50A + 40B$ "
-        "- Maximize Profit = $40A + 50B$ "
-        "- Maximize Profit = $2A + B$ "
-        "- Maximize Profit = $A + B$ "
+        "A manufacturing company needs to determine the optimal production levels for its two products, A and B, to maximize profits. Each unit of product A yields a profit of $50, and each unit of product B yields a profit of $40. The production of each product requires time on two machines: Machine 1 and Machine 2. Product A requires 2 hours on Machine 1 and 1 hour on Machine 2. Product B requires 1 hour on Machine 1 and 2 hours on Machine 2. Machine 1 is available for 100 hours, and Machine 2 is available for 80 hours.\n\n"
+        "**a. Formulate the objective function for maximizing profit:**\n"
+        "- Maximize Profit = $50A + 40B$\n"
+        "- Maximize Profit = $40A + 50B$\n"
+        "- Maximize Profit = $2A + B$\n"
+        "- Maximize Profit = $A + B$\n\n"
         
-        "b. Which of the following constraints correctly represents the availability of Machine 1? "
-        "- $2A + 1B \\leq 100$ "
-        "- $2A + 1B \\geq 100$ "
-        "- $1A + 2B \\leq 100$ "
-        "- $1A + 2B \\leq 80$ "
+        "**b. Which of the following constraints correctly represents the availability of Machine 1?**\n"
+        "- $2A + 1B \\leq 100$\n"
+        "- $2A + 1B \\geq 100$\n"
+        "- $1A + 2B \\leq 100$\n"
+        "- $1A + 2B \\leq 80$\n\n"
         
-        "c. What type of optimization problem is this? "
-        "- Linear programming problem "
-        "- Non-linear programming problem "
-        "- Integer programming problem "
-        "- Dynamic programming problem "
+        "**c. What type of optimization problem is this?**\n"
+        "- Linear programming problem\n"
+        "- Non-linear programming problem\n"
+        "- Integer programming problem\n"
+        "- Dynamic programming problem\n\n"
         
-        "d. If the company wants to produce whole units of products (no fractions), which modification should be made to the model? "
-        "- Add integer constraints to A and B "
-        "- Use a non-linear objective function "
-        "- Increase the profit coefficients "
-        "- Remove the time constraints "
+        "**d. If the company wants to produce whole units of products (no fractions), which modification should be made to the model?**\n"
+        "- Add integer constraints to A and B\n"
+        "- Use a non-linear objective function\n"
+        "- Increase the profit coefficients\n"
+        "- Remove the time constraints\n\n"
         
-        "e. If the company is uncertain about the availability of Machine 2 and wants to ensure the solution is feasible under different scenarios, which approach should they take? "
-        "- Use conservative modeling by adding a margin of error to the Machine 2 constraint "
-        "- Ignore the Machine 2 constraint "
-        "- Double the production of product B "
+        "**e. If the company is uncertain about the availability of Machine 2 and wants to ensure the solution is feasible under different scenarios, which approach should they take?**\n"
+        "- Use conservative modeling by adding a margin of error to the Machine 2 constraint\n"
+        "- Ignore the Machine 2 constraint\n"
+        "- Double the production of product B\n"
         "- Use a Markov chain model"
     ),
     'correct_answer': (
-        "a. Maximize Profit = $50A + 40B$ "
-        "b. $2A + 1B \\leq 100$ "
-        "c. Linear programming problem "
-        "d. Add integer constraints to A and B "
+        "a. Maximize Profit = $50A + 40B$\n"
+        "b. $2A + 1B \\leq 100$\n"
+        "c. Linear programming problem\n"
+        "d. Add integer constraints to A and B\n"
         "e. Use conservative modeling by adding a margin of error to the Machine 2 constraint"
     ),
     'explanation': (
-        "a. The objective is to maximize profit, which is calculated as Profit = $50A + 40B$, where A and B are the quantities of products A and B. "
-        "b. The constraint for Machine 1 is $2A + 1B \\leq 100$, representing that the total hours used by products A and B cannot exceed the available 100 hours. "
-        "c. This is a linear programming problem because both the objective function and the constraints are linear. "
-        "d. To ensure that only whole units are produced, integer constraints need to be added to the variables A and B, making it an integer linear programming problem. "
+        "a. The objective is to maximize profit, which is calculated as Profit = $50A + 40B$, where A and B are the quantities of products A and B.\n\n"
+        "b. The constraint for Machine 1 is $2A + 1B \\leq 100$, representing that the total hours used by products A and B cannot exceed the available 100 hours.\n\n"
+        "c. This is a linear programming problem because both the objective function and the constraints are linear.\n\n"
+        "d. To ensure that only whole units are produced, integer constraints need to be added to the variables A and B, making it an integer linear programming problem.\n\n"
         "e. To account for uncertainty in Machine 2's availability, conservative modeling can be used by adding a margin of error to the constraint, ensuring the solution remains feasible under different scenarios."
     )
 }
 
 q2r5 = {
     'question': (
-        "A data scientist is developing a predictive model using a large dataset with numerous features. She is concerned about overfitting and wants to perform variable selection while handling multicollinearity among predictors. "
-        "a. Which regression method should she use to achieve variable selection by shrinking some coefficients exactly to zero? "
-        "- Ridge Regression "
-        "- Lasso Regression "
-        "- Elastic Net "
-        "- Principal Component Regression "
+        "A data scientist is developing a predictive model using a large dataset with numerous features. She is concerned about overfitting and wants to perform variable selection while handling multicollinearity among predictors.\n\n"
         
-        "b. She decides to use Elastic Net Regression to balance between variable selection and coefficient shrinkage. Which penalties does Elastic Net combine? "
-        "- L1 penalty only "
-        "- L2 penalty only "
-        "- Both L1 and L2 penalties "
-        "- Neither L1 nor L2 penalties "
+        "**a. Which regression method should she use to achieve variable selection by shrinking some coefficients exactly to zero?**\n"
+        "- Ridge Regression\n"
+        "- Lasso Regression\n"
+        "- Elastic Net\n"
+        "- Principal Component Regression\n\n"
         
-        "c. To find the optimal hyperparameters for her Elastic Net model, such as the mixing parameter and regularization strength, which method should she employ? "
-        "- Use default parameters provided by software "
-        "- Cross-validation "
-        "- Grid search without validation "
-        "- Randomly select parameters "
+        "**b. She decides to use Elastic Net Regression to balance between variable selection and coefficient shrinkage. Which penalties does Elastic Net combine?**\n"
+        "- L1 penalty only\n"
+        "- L2 penalty only\n"
+        "- Both L1 and L2 penalties\n"
+        "- Neither L1 nor L2 penalties\n\n"
         
-        "d. She is considering using a Support Vector Machine (SVM) for classification tasks. What is the main objective of an SVM in classification problems? "
-        "- Minimize the number of misclassifications "
-        "- Maximize the margin between classes "
-        "- Reduce the dimensionality of the data "
-        "- Cluster the data into groups "
+        "**c. To find the optimal hyperparameters for her Elastic Net model, such as the mixing parameter and regularization strength, which method should she employ?**\n"
+        "- Use default parameters provided by software\n"
+        "- Cross-validation\n"
+        "- Grid search without validation\n"
+        "- Randomly select parameters\n\n"
         
-        "e. To enable the SVM to handle non-linear relationships in the data, which technique should she apply? "
-        "- Use a linear kernel "
-        "- Increase the regularization parameter "
-        "- Use a kernel trick with a non-linear kernel (e.g., RBF kernel) "
+        "**d. She is considering using a Support Vector Machine (SVM) for classification tasks. What is the main objective of an SVM in classification problems?**\n"
+        "- Minimize the number of misclassifications\n"
+        "- Maximize the margin between classes\n"
+        "- Reduce the dimensionality of the data\n"
+        "- Cluster the data into groups\n\n"
+        
+        "**e. To enable the SVM to handle non-linear relationships in the data, which technique should she apply?**\n"
+        "- Use a linear kernel\n"
+        "- Increase the regularization parameter\n"
+        "- Use a kernel trick with a non-linear kernel (e.g., RBF kernel)\n"
         "- Standardize the features"
     ),
     'correct_answer': (
-        "a. Lasso Regression "
-        "b. Both L1 and L2 penalties "
-        "c. Cross-validation "
-        "d. Maximize the margin between classes "
+        "a. Lasso Regression\n"
+        "b. Both L1 and L2 penalties\n"
+        "c. Cross-validation\n"
+        "d. Maximize the margin between classes\n"
         "e. Use a kernel trick with a non-linear kernel (e.g., RBF kernel)"
     ),
     'explanation': (
-        "a. **Lasso Regression** uses an L1 penalty that can shrink some coefficients to exactly zero, effectively performing variable selection while handling multicollinearity. "
-        "b. **Elastic Net** combines both **L1 (Lasso)** and **L2 (Ridge)** penalties, balancing variable selection and coefficient shrinkage. "
-        "c. **Cross-validation** is used to determine optimal hyperparameters by evaluating model performance on different subsets of the data, ensuring the model generalizes well. "
-        "d. The main objective of an **SVM** in classification is to **maximize the margin** between different classes, finding the optimal hyperplane that best separates the classes. "
+        "a. **Lasso Regression** uses an L1 penalty that can shrink some coefficients to exactly zero, effectively performing variable selection while handling multicollinearity.\n\n"
+        "b. **Elastic Net** combines both **L1 (Lasso)** and **L2 (Ridge)** penalties, balancing variable selection and coefficient shrinkage.\n\n"
+        "c. **Cross-validation** is used to determine optimal hyperparameters by evaluating model performance on different subsets of the data, ensuring the model generalizes well.\n\n"
+        "d. The main objective of an **SVM** in classification is to **maximize the margin** between different classes, finding the optimal hyperplane that best separates the classes.\n\n"
         "e. Applying the **kernel trick with a non-linear kernel** (such as the RBF kernel) allows the SVM to handle non-linear relationships by mapping data into a higher-dimensional space."
     )
 }
 
 q26r = {
     'question': (
-        "A researcher is analyzing paired sample data where the assumption of normality is violated. She wants to test if there is a significant difference between the two related samples. "
-        "a. Which non-parametric test should she use? "
-        "- McNemar's Test "
-        "- Wilcoxon Signed-Rank Test "
-        "- Mann-Whitney U Test "
-        "- Paired t-test "
+        "A researcher is analyzing paired sample data where the assumption of normality is violated. She wants to test if there is a significant difference between the two related samples.\n\n"
         
-        "b. Another researcher wants to compare two independent samples to see if they come from the same distribution, without assuming normality. Which test is appropriate? "
-        "- McNemar's Test "
-        "- Wilcoxon Signed-Rank Test "
-        "- Mann-Whitney U Test "
-        "- Independent t-test "
+        "**a. Which non-parametric test should she use?**\n"
+        "- McNemar's Test\n"
+        "- Wilcoxon Signed-Rank Test\n"
+        "- Mann-Whitney U Test\n"
+        "- Paired t-test\n\n"
         
-        "c. In a study involving categorical data with paired observations, which test is suitable for detecting changes or differences in proportions? "
-        "- Chi-Squared Test "
-        "- McNemar's Test "
-        "- Fisher's Exact Test "
-        "- ANOVA "
+        "**b. Another researcher wants to compare two independent samples to see if they come from the same distribution, without assuming normality. Which test is appropriate?**\n"
+        "- McNemar's Test\n"
+        "- Wilcoxon Signed-Rank Test\n"
+        "- Mann-Whitney U Test\n"
+        "- Independent t-test\n\n"
         
-        "d. What is a key advantage of using non-parametric tests over parametric tests? "
-        "- They are more powerful when data is normally distributed "
-        "- They make fewer assumptions about the data distribution "
-        "- They are easier to interpret "
-        "- They require larger sample sizes "
+        "**c. In a study involving categorical data with paired observations, which test is suitable for detecting changes or differences in proportions?**\n"
+        "- Chi-Squared Test\n"
+        "- McNemar's Test\n"
+        "- Fisher's Exact Test\n"
+        "- ANOVA\n\n"
         
-        "e. Non-parametric tests are especially useful when dealing with which type of data? "
-        "- Normally distributed data "
-        "- Ordinal data or data with outliers "
-        "- Interval data without outliers "
+        "**d. What is a key advantage of using non-parametric tests over parametric tests?**\n"
+        "- They are more powerful when data is normally distributed\n"
+        "- They make fewer assumptions about the data distribution\n"
+        "- They are easier to interpret\n"
+        "- They require larger sample sizes\n\n"
+        
+        "**e. Non-parametric tests are especially useful when dealing with which type of data?**\n"
+        "- Normally distributed data\n"
+        "- Ordinal data or data with outliers\n"
+        "- Interval data without outliers\n"
         "- Nominal data only"
     ),
     'correct_answer': (
-        "a. Wilcoxon Signed-Rank Test "
-        "b. Mann-Whitney U Test "
-        "c. McNemar's Test "
-        "d. They make fewer assumptions about the data distribution "
+        "a. Wilcoxon Signed-Rank Test\n"
+        "b. Mann-Whitney U Test\n"
+        "c. McNemar's Test\n"
+        "d. They make fewer assumptions about the data distribution\n"
         "e. Ordinal data or data with outliers"
     ),
     'explanation': (
-        "a. The **Wilcoxon Signed-Rank Test** is a non-parametric test used for comparing two related samples when the data cannot be assumed to be normally distributed. "
-        "b. The **Mann-Whitney U Test** is appropriate for comparing two independent samples without assuming normality, testing whether they come from the same distribution. "
-        "c. **McNemar's Test** is used for paired nominal data to detect differences in proportions on a dichotomous trait. "
-        "d. A key advantage of non-parametric tests is that **they make fewer assumptions** about the data, particularly regarding the data's distribution. "
+        "a. The **Wilcoxon Signed-Rank Test** is a non-parametric test used for comparing two related samples when the data cannot be assumed to be normally distributed.\n\n"
+        "b. The **Mann-Whitney U Test** is appropriate for comparing two independent samples without assuming normality, testing whether they come from the same distribution.\n\n"
+        "c. **McNemar's Test** is used for paired nominal data to detect differences in proportions on a dichotomous trait.\n\n"
+        "d. A key advantage of non-parametric tests is that **they make fewer assumptions** about the data, particularly regarding the data's distribution.\n\n"
         "e. Non-parametric tests are useful for **ordinal data or data with outliers**, where parametric test assumptions (like normality) are violated."
     )
 }
 
 qr27 = {
     'question': (
-        "A company is analyzing its network of customers to identify communities for targeted marketing. They have data representing customers as nodes and their interactions as edges in a graph. "
-        "a. Which algorithm is suitable for detecting communities within this large network? "
-        "- K-means clustering "
-        "- Louvain Algorithm "
-        "- Apriori Algorithm "
-        "- Support Vector Machine "
+        "A company is analyzing its network of customers to identify communities for targeted marketing. They have data representing customers as nodes and their interactions as edges in a graph.\n\n"
         
-        "b. What is the primary goal of the Louvain Algorithm in network analysis? "
-        "- To minimize the distance between nodes "
-        "- To maximize the modularity of partitions "
-        "- To sort nodes based on centrality "
-        "- To predict future connections "
+        "**a. Which algorithm is suitable for detecting communities within this large network?**\n"
+        "- K-means clustering\n"
+        "- Louvain Algorithm\n"
+        "- Apriori Algorithm\n"
+        "- Support Vector Machine\n\n"
         
-        "c. In the context of network graphs, what does a high modularity score indicate? "
-        "- Strong community structure with dense connections within communities and sparse connections between them "
-        "- Weak community structure with random connections "
-        "- That the network is fully connected "
-        "- That there are no communities present "
+        "**b. What is the primary goal of the Louvain Algorithm in network analysis?**\n"
+        "- To minimize the distance between nodes\n"
+        "- To maximize the modularity of partitions\n"
+        "- To sort nodes based on centrality\n"
+        "- To predict future connections\n\n"
         
-        "d. Which of the following is a key advantage of using the Louvain Algorithm? "
-        "- It requires labeled data for training "
-        "- It is efficient and scalable for large networks "
-        "- It guarantees finding the global maximum modularity "
-        "- It only works on small datasets "
+        "**c. In the context of network graphs, what does a high modularity score indicate?**\n"
+        "- Strong community structure with dense connections within communities and sparse connections between them\n"
+        "- Weak community structure with random connections\n"
+        "- That the network is fully connected\n"
+        "- That there are no communities present\n\n"
         
-        "e. After detecting communities, the company wants to visualize the network. Which tool or method can help in visualizing complex networks? "
-        "- Histogram "
-        "- Scatter plot "
-        "- Network graph visualization software (e.g., Gephi) "
+        "**d. Which of the following is a key advantage of using the Louvain Algorithm?**\n"
+        "- It requires labeled data for training\n"
+        "- It is efficient and scalable for large networks\n"
+        "- It guarantees finding the global maximum modularity\n"
+        "- It only works on small datasets\n\n"
+        
+        "**e. After detecting communities, the company wants to visualize the network. Which tool or method can help in visualizing complex networks?**\n"
+        "- Histogram\n"
+        "- Scatter plot\n"
+        "- Network graph visualization software (e.g., Gephi)\n"
         "- Box plot"
     ),
     'correct_answer': (
-        "a. Louvain Algorithm "
-        "b. To maximize the modularity of partitions "
-        "c. Strong community structure with dense connections within communities and sparse connections between them "
-        "d. It is efficient and scalable for large networks "
+        "a. Louvain Algorithm\n"
+        "b. To maximize the modularity of partitions\n"
+        "c. Strong community structure with dense connections within communities and sparse connections between them\n"
+        "d. It is efficient and scalable for large networks\n"
         "e. Network graph visualization software (e.g., Gephi)"
     ),
     'explanation': (
-        "a. The **Louvain Algorithm** is designed for community detection in large networks, making it suitable for this task. "
-        "b. The primary goal of the Louvain Algorithm is **to maximize the modularity** of the network partitions, effectively detecting communities. "
-        "c. A high modularity score indicates a **strong community structure**, where nodes are densely connected within communities but sparsely connected between them. "
-        "d. A key advantage of the Louvain Algorithm is that **it is efficient and scalable**, allowing it to handle large networks effectively. "
+        "a. The **Louvain Algorithm** is designed for community detection in large networks, making it suitable for this task.\n\n"
+        "b. The primary goal of the Louvain Algorithm is **to maximize the modularity** of the network partitions, effectively detecting communities.\n\n"
+        "c. A high modularity score indicates a **strong community structure**, where nodes are densely connected within communities but sparsely connected between them.\n\n"
+        "d. A key advantage of the Louvain Algorithm is that **it is efficient and scalable**, allowing it to handle large networks effectively.\n\n"
         "e. **Network graph visualization software**, such as Gephi, helps in visualizing complex networks, making it easier to interpret community structures."
     )
 }
 
 rq28 = {
     'question': (
-        "An economist is studying market competition between two firms in an oligopoly. Each firm must decide whether to set high or low prices without knowing the other's decision. The payoffs for each combination of decisions are known. "
-        "a. Which field of study provides the framework for analyzing this strategic interaction? "
-        "- Game Theory "
-        "- Regression Analysis "
-        "- Time Series Analysis "
-        "- Cluster Analysis "
+        "An economist is studying market competition between two firms in an oligopoly. Each firm must decide whether to set high or low prices without knowing the other's decision. The payoffs for each combination of decisions are known.\n\n"
         
-        "b. What is the term for a situation where each player's strategy is optimal, given the other player's strategy, and no player has anything to gain by changing only their own strategy? "
-        "- Dominant Strategy "
-        "- Nash Equilibrium "
-        "- Pareto Efficiency "
-        "- Zero-Sum Game "
+        "**a. Which field of study provides the framework for analyzing this strategic interaction?**\n"
+        "- Game Theory\n"
+        "- Regression Analysis\n"
+        "- Time Series Analysis\n"
+        "- Cluster Analysis\n\n"
         
-        "c. If both firms choose to set low prices leading to lower profits for both, even though higher prices would benefit them more, what kind of dilemma is this? "
-        "- Coordination Game "
-        "- Prisoner's Dilemma "
-        "- Cooperative Game "
-        "- Bargaining Problem "
+        "**b. What is the term for a situation where each player's strategy is optimal, given the other player's strategy, and no player has anything to gain by changing only their own strategy?**\n"
+        "- Dominant Strategy\n"
+        "- Nash Equilibrium\n"
+        "- Pareto Efficiency\n"
+        "- Zero-Sum Game\n\n"
         
-        "d. In game theory, what is a dominant strategy? "
-        "- A strategy that results in the highest payoff regardless of the opponent's action "
-        "- A strategy that depends on the opponent's move "
-        "- A randomized strategy to confuse the opponent "
-        "- A strategy that results in a tie "
+        "**c. If both firms choose to set low prices leading to lower profits for both, even though higher prices would benefit them more, what kind of dilemma is this?**\n"
+        "- Coordination Game\n"
+        "- Prisoner's Dilemma\n"
+        "- Cooperative Game\n"
+        "- Bargaining Problem\n\n"
         
-        "e. How can repeated interactions between the firms affect their strategic choices? "
-        "- They will always choose low prices "
-        "- Repeated interactions can lead to cooperation and better outcomes over time "
-        "- Repeated interactions have no effect on strategy "
+        "**d. In game theory, what is a dominant strategy?**\n"
+        "- A strategy that results in the highest payoff regardless of the opponent's action\n"
+        "- A strategy that depends on the opponent's move\n"
+        "- A randomized strategy to confuse the opponent\n"
+        "- A strategy that results in a tie\n\n"
+        
+        "**e. How can repeated interactions between the firms affect their strategic choices?**\n"
+        "- They will always choose low prices\n"
+        "- Repeated interactions can lead to cooperation and better outcomes over time\n"
+        "- Repeated interactions have no effect on strategy\n"
         "- They will exit the market"
     ),
     'correct_answer': (
-        "a. Game Theory "
-        "b. Nash Equilibrium "
-        "c. Prisoner's Dilemma "
-        "d. A strategy that results in the highest payoff regardless of the opponent's action "
+        "a. Game Theory\n"
+        "b. Nash Equilibrium\n"
+        "c. Prisoner's Dilemma\n"
+        "d. A strategy that results in the highest payoff regardless of the opponent's action\n"
         "e. Repeated interactions can lead to cooperation and better outcomes over time"
     ),
     'explanation': (
-        "a. **Game Theory** is the study of mathematical models of strategic interaction among rational decision-makers. "
-        "b. A **Nash Equilibrium** occurs when each player's strategy is optimal given the other player's strategy, and no unilateral deviation is beneficial. "
-        "c. This scenario is an example of the **Prisoner's Dilemma**, where individual rationality leads to a worse outcome than cooperation. "
-        "d. A **dominant strategy** is one that results in the best payoff for a player, no matter what the opponent does. "
+        "a. **Game Theory** is the study of mathematical models of strategic interaction among rational decision-makers.\n\n"
+        "b. A **Nash Equilibrium** occurs when each player's strategy is optimal given the other player's strategy, and no unilateral deviation is beneficial.\n\n"
+        "c. This scenario is an example of the **Prisoner's Dilemma**, where individual rationality leads to a worse outcome than cooperation.\n\n"
+        "d. A **dominant strategy** is one that results in the best payoff for a player, no matter what the opponent does.\n\n"
         "e. **Repeated interactions** can encourage firms to cooperate (e.g., both setting high prices) to achieve better long-term outcomes, as they can punish non-cooperative behavior in future rounds."
     )
 }
 
 q249 = {
     'question': (
-        "A machine learning engineer is building a deep neural network for image classification. "
-        "a. Which activation function is commonly used in hidden layers of deep neural networks to introduce non-linearity? "
-        "- Sigmoid function "
-        "- ReLU (Rectified Linear Unit) "
-        "- Linear function "
-        "- Softmax function "
+        "A machine learning engineer is building a deep neural network for image classification.\n\n"
         
-        "b. To prevent overfitting in the neural network, which technique can be applied during training? "
-        "- Decrease the amount of training data "
-        "- Use dropout regularization "
-        "- Remove hidden layers "
-        "- Use a higher learning rate "
+        "**a. Which activation function is commonly used in hidden layers of deep neural networks to introduce non-linearity?**\n"
+        "- Sigmoid function\n"
+        "- ReLU (Rectified Linear Unit)\n"
+        "- Linear function\n"
+        "- Softmax function\n\n"
         
-        "c. What is the main purpose of using an optimizer like stochastic gradient descent (SGD) in training neural networks? "
-        "- To adjust the weights to minimize the loss function "
-        "- To initialize the weights and biases "
-        "- To evaluate the model's performance on test data "
-        "- To increase the complexity of the model "
+        "**b. To prevent overfitting in the neural network, which technique can be applied during training?**\n"
+        "- Decrease the amount of training data\n"
+        "- Use dropout regularization\n"
+        "- Remove hidden layers\n"
+        "- Use a higher learning rate\n\n"
         
-        "d. In a classification problem with multiple classes, which activation function is typically used in the output layer? "
-        "- ReLU (Rectified Linear Unit) "
-        "- Sigmoid function "
-        "- Tanh function "
-        "- Softmax function "
+        "**c. What is the main purpose of using an optimizer like stochastic gradient descent (SGD) in training neural networks?**\n"
+        "- To adjust the weights to minimize the loss function\n"
+        "- To initialize the weights and biases\n"
+        "- To evaluate the model's performance on test data\n"
+        "- To increase the complexity of the model\n\n"
         
-        "e. What is a key challenge when training very deep neural networks? "
-        "- Vanishing or exploding gradients "
-        "- Lack of computational resources "
-        "- Overabundance of training data "
+        "**d. In a classification problem with multiple classes, which activation function is typically used in the output layer?**\n"
+        "- ReLU (Rectified Linear Unit)\n"
+        "- Sigmoid function\n"
+        "- Tanh function\n"
+        "- Softmax function\n\n"
+        
+        "**e. What is a key challenge when training very deep neural networks?**\n"
+        "- Vanishing or exploding gradients\n"
+        "- Lack of computational resources\n"
+        "- Overabundance of training data\n"
         "- Simplicity of the model"
     ),
     'correct_answer': (
-        "a. ReLU (Rectified Linear Unit) "
-        "b. Use dropout regularization "
-        "c. To adjust the weights to minimize the loss function "
-        "d. Softmax function "
+        "a. ReLU (Rectified Linear Unit)\n"
+        "b. Use dropout regularization\n"
+        "c. To adjust the weights to minimize the loss function\n"
+        "d. Softmax function\n"
         "e. Vanishing or exploding gradients"
     ),
     'explanation': (
-        "a. **ReLU** is commonly used in hidden layers to introduce non-linearity while being computationally efficient. "
-        "b. **Dropout regularization** helps prevent overfitting by randomly dropping neurons during training, which prevents co-adaptation of neurons. "
-        "c. An optimizer like **stochastic gradient descent** adjusts the weights and biases to minimize the loss function during training. "
-        "d. The **Softmax function** is used in the output layer for multi-class classification to convert raw scores into probabilities summing to one. "
+        "a. **ReLU** is commonly used in hidden layers to introduce non-linearity while being computationally efficient.\n\n"
+        "b. **Dropout regularization** helps prevent overfitting by randomly dropping neurons during training, which prevents co-adaptation of neurons.\n\n"
+        "c. An optimizer like **stochastic gradient descent** adjusts the weights and biases to minimize the loss function during training.\n\n"
+        "d. The **Softmax function** is used in the output layer for multi-class classification to convert raw scores into probabilities summing to one.\n\n"
         "e. **Vanishing or exploding gradients** are challenges in training very deep networks, where gradients become too small or too large, hindering effective learning."
     )
 }
-
 
 
 
