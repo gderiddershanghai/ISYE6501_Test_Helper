@@ -1,68 +1,8 @@
-# def generate_open_questions():
-#     import streamlit as st
-#     from v2_module.states import Token
-
-#     st.markdown("""
-#         <style>
-#             .question-container {
-#                 padding: 10px;
-#                 border-radius: 5px;
-#                 margin: 10px 0;
-#                 border: 1px solid #EEE;
-#                 background-color: #FAFAFA;
-#             }
-#             .question-header {
-#                 font-weight: bold;
-#                 color: #333;
-#                 margin-bottom: 5px;
-#             }
-#             .question-text {
-#                 font-size: 16px;
-#                 margin-bottom: 10px;
-#             }
-#             .compare-button {
-#                 background-color: #FF4B4B;
-#                 color: white;
-#                 padding: 8px 24px;
-#                 border: none;
-#                 border-radius: 4px;
-#                 margin-top: 10px;
-#             }
-#             .compare-button:hover {
-#                 background-color: #FF6868;
-#             }
-#             .streamlit-expanderHeader {
-#                 font-size: 16px;
-#                 font-weight: bold;
-#             }
-#         </style>
-#         """, unsafe_allow_html=True)
-
-#     if 'token' not in st.session_state:
-#         st.session_state.token = Token(STATE='open')
-#         st.session_state.token.initialize_open_questions()
-
-#     questions = st.session_state.token.mpc_questions
-
-#     for i, q in enumerate(questions, start=1):
-#         with st.container():
-#             st.markdown(f'<div class="question-container">', unsafe_allow_html=True)
-#             st.markdown(f'<div class="question-header">Question {i}</div>', unsafe_allow_html=True)
-#             st.markdown(f'<div class="question-text">{q["question"]}</div>', unsafe_allow_html=True)
-#             correct_answer = q['correct_answer']
-#             explanation = q['explanation']
-#             answer = st.text_area("", key=f"question_{i}", placeholder="Type your answer here...", height=150)
-#             # if st.button('Compare Answers', key=f"compare_{i}"):
-#             #     with st.expander("See Correct Answer"):
-#             #         st.write(q["correct_answer"])
-#             if st.button('Compare Answers', key=f"submit_{i}"):
-#                 st.info(f"{correct_answer}")
-#                 st.info(f'Explanation: \n\n{explanation}')
-#             st.markdown('</div>', unsafe_allow_html=True)
 def generate_open_questions():
     import streamlit as st
     from v2_module.states import Token
 
+    # Define custom CSS for question and answer styling
     st.markdown("""
         <style>
             .question-container {
@@ -101,40 +41,50 @@ def generate_open_questions():
         </style>
         """, unsafe_allow_html=True)
 
-    if 'token' not in st.session_state:
-        st.session_state.token = Token(STATE='open')
-        st.session_state.token.initialize_open_questions()
+    # Dropdown for selecting exam type
+    exam_type = st.selectbox("Select Exam Type", ["Select an option", "midterm1", "midterm2", "final"])
 
-    questions = st.session_state.token.mpc_questions
+    # Check if a valid exam type has been selected before initializing questions
+    if exam_type != "Select an option":
+        # Initialize token and load questions based on the selected exam type
+        if 'token' not in st.session_state:
+            st.session_state.token = Token(STATE='open')
 
-    # for i, q in enumerate(questions, start=1):
-    #     with st.container():
-    #         st.markdown(f'<div class="question-container">', unsafe_allow_html=True)
-    #         st.markdown(f'<div class="question-header">Question {i}</div>', unsafe_allow_html=True)
-    #         st.markdown(f'<div class="question-text">{q["question"]}</div>', unsafe_allow_html=True)
-    #         answer = st.text_area("", key=f"question_{i}", placeholder="Type your answer here...", height=150)
-    #         if st.button('Compare Answers', key=f"submit_{i}"):
-    #             st.markdown('#### Correct Answer:')
-    #             st.info(q["correct_answer"])
-    #             st.markdown('#### Explanation:')
-    #             st.info(q["explanation"])
-    #         st.markdown('</div>', unsafe_allow_html=True)
-    for i, q in enumerate(questions, start=1):
-        with st.container():
-            st.markdown(f'<div class="question-container">', unsafe_allow_html=True)
-            st.markdown(f'<div class="question-header">Question {i}</div>', unsafe_allow_html=True)
-            st.markdown(f'<div class="question-text">{q["question"]}</div>', unsafe_allow_html=True)
-            answer = st.text_area("", key=f"question_{i}", placeholder="Type your answer here...", height=150)
-            if st.button('Compare Answers', key=f"submit_{i}"):
-                # Wrap the answer in a container with a specific class for styling
-                st.markdown(f'<div class="answer-container">', unsafe_allow_html=True)
-                st.markdown(f'<div class="answer-header">Correct Answer:</div>', unsafe_allow_html=True)
-                st.markdown(f'<div class="answer-text">{q["correct_answer"]}</div>', unsafe_allow_html=True)
-                st.markdown(f'</div>', unsafe_allow_html=True)
+        # Only initialize questions if the exam type has changed or if it's the first load
+        if st.session_state.token.STATE != exam_type:
+            st.session_state.token.STATE = exam_type
+            st.session_state.token.open_questions = []  # Clear previous questions
+            st.session_state.token.initialize_open_questions(exam_type)
 
-                # Wrap the explanation in a container with a specific class for styling
-                st.markdown(f'<div class="answer-container">', unsafe_allow_html=True)
-                st.markdown(f'<div class="answer-header">Explanation:</div>', unsafe_allow_html=True)
-                st.markdown(f'<div class="answer-text">{q["explanation"]}</div>', unsafe_allow_html=True)
-                st.markdown(f'</div>', unsafe_allow_html=True)
-            st.markdown('</div>', unsafe_allow_html=True)
+        # Get questions from the session state
+        questions = st.session_state.token.open_questions
+
+
+        # Display questions in a styled format
+        for i, q in enumerate(questions, start=1):
+            if "question" in q:
+                st.markdown(f'<div class="question-text">{q["question"]}</div>', unsafe_allow_html=True)
+            else:
+                print("Warning: 'question' key is missing in q", q)
+            with st.container():
+                st.markdown(f'<div class="question-container">', unsafe_allow_html=True)
+                st.markdown(f'<div class="question-header">Question {i}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="question-text">{q["question"]}</div>', unsafe_allow_html=True)
+                answer = st.text_area("", key=f"question_{i}", placeholder="Type your answer here...", height=150)
+
+                if st.button('Compare Answers', key=f"submit_{i}"):
+                    # Correct answer container
+                    st.markdown(f'<div class="answer-container">', unsafe_allow_html=True)
+                    st.markdown(f'<div class="answer-header">Correct Answer:</div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="answer-text">{q["correct_answer"]}</div>', unsafe_allow_html=True)
+                    st.markdown(f'</div>', unsafe_allow_html=True)
+
+                    # Explanation container
+                    st.markdown(f'<div class="answer-container">', unsafe_allow_html=True)
+                    st.markdown(f'<div class="answer-header">Explanation:</div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="answer-text">{q["explanation"]}</div>', unsafe_allow_html=True)
+                    st.markdown(f'</div>', unsafe_allow_html=True)
+                
+                st.markdown('</div>', unsafe_allow_html=True)
+    else:
+        st.info("Please select an exam type to display questions.")
