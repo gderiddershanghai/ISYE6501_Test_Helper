@@ -343,24 +343,6 @@ midterm_1_q8 = {
     )
 }
 
-midterm_1_q7 = {
-    'question': (
-        "Select all of the following statements that are correct:"
-        "\n\n"
-        "- It is likely that the first principal component has much more predictive power than each of the other principal components."
-        "\n- It is likely that the first original covariate has much more predictive power than each of the other covariates."
-        "\n- It is likely that the last original covariate has much less predictive power than each of the other covariates."
-        "\n- The first principal component cannot contain information from all 7 original covariates. (correct)"
-    ),
-    'correct_answer': (
-        "- The first principal component cannot contain information from all 7 original covariates."
-    ),
-    'explanation': (
-        "The first principal component (PCA) captures the most variance in the dataset but cannot contain all the information from the original covariates. It represents a linear combination of original variables, but not the complete set."
-    )
-}
-
-
 midterm_1_q5 = {
     'question': (
         "An airline wants to predict airline passenger traffic for the upcoming year."
