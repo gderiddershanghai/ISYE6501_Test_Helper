@@ -160,41 +160,40 @@ midterm_1_q14 = {
 
 midterm_1_q10 = {
     'question': (
-        "Model Suitability Analysis\n\n"
-        "For each statistical and machine learning model listed below, select the type of analysis it is best suited for."
-        " There may be more than one correct answer for each model, but you need only choose one. Assume 1 of 1 attempt for each part."
-        "\n\n"
-        "A1. Ridge Regression"
-        "\n- Predicting a continuous response variable with feature data."
-        "\n- Dealing with multicollinearity in regression analysis."
-        "\n- Forecasting future values in a time-series dataset."
-        "\n- Classifying binary outcomes."
-        "\n\n"
-        "A2. Lasso Regression"
-        "\n- Selecting important features in a large dataset."
-        "\n- Predicting a numerical outcome based on feature data."
-        "\n- Analyzing patterns in time-series data."
-        "\n- Identifying categories in unstructured data."
-        "\n\n"
-        "A3. Principal Component Analysis (PCA)"
-        "\n- Reducing the dimensionality of a large dataset."
-        "\n- Forecasting trends in a time-series dataset."
-        "\n- Classifying items into categories based on feature data."
-        "\n- Detecting changes in the variance of a dataset over time."
+        "Model Suitability Assessment\n\n"
+        "For each of the statistical and machine learning models listed below, determine the type of analysis for which it is best suited. "
+        "There may be multiple correct answers for each model, but please select one primary application for each.\n\n"
+        
+        "1. **K-Means Clustering**\n"
+        "- Segmenting customers based on purchasing behavior.\n"
+        "- Predicting the future stock prices.\n"
+        "- Identifying the sentiment of social media posts.\n"
+        "- Classifying handwritten digits.\n\n"
+
+        "2. **Support Vector Machine (SVM)**\n"
+        "- Classifying tumors as malignant or benign.\n"
+        "- Estimating housing prices based on various features.\n"
+        "- Detecting fraudulent transactions in banking.\n"
+        "- Clustering customer feedback into positive and negative categories.\n\n"
+
+        "3. **Principal Component Analysis (PCA)**\n"
+        "- Reducing the dimensionality of a dataset while retaining variance.\n"
+        "- Predicting customer lifetime value based on historical data.\n"
+        "- Classifying emails as spam or not spam.\n"
+        "- Analyzing time-series data for seasonal patterns."
     ),
     'correct_answer': (
-        "A1: Dealing with multicollinearity in regression analysis\n\n"
-        "A2: Selecting important features in a large dataset\n\n"
-        "A3: Reducing the dimensionality of a large dataset"
+        "1: Segmenting customers based on purchasing behavior\n\n"
+        "2: Classifying tumors as malignant or benign\n\n"
+        "3: Reducing the dimensionality of a dataset while retaining variance"
     ),
     'explanation': (
-        "A1: Ridge Regression is best suited for dealing with multicollinearity in regression analysis because it adds a regularization term that reduces the impact of correlated variables."
-        "\n\n"
-        "A2: Lasso Regression is ideal for selecting important features in a large dataset because it adds a regularization term that can shrink some coefficients to zero, effectively removing less important features."
-        "\n\n"
-        "A3: Principal Component Analysis (PCA) is designed to reduce dimensionality by transforming the original dataset into a smaller set of uncorrelated variables, retaining the most information."
+        "1: K-Means Clustering is best suited for segmenting customers based on purchasing behavior, as it effectively identifies distinct groups within the data.\n\n"
+        "2: Support Vector Machine (SVM) is ideal for classifying tumors as malignant or benign due to its robustness in handling high-dimensional data and providing clear margins between classes.\n\n"
+        "3: Principal Component Analysis (PCA) is used to reduce the dimensionality of a dataset while retaining the most important variance, making it suitable for simplifying complex datasets."
     )
 }
+
 
 midterm_1_q11 = {
     'question': (
